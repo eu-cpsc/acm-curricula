@@ -1,0 +1,851 @@
+{
+  "name": "Algorithmic Foundations",
+  "code": "AL",
+  "units": [
+    {
+      "name": "Foundational Data Structures and Algorithms",
+      "code": "AL-Foundational",
+      "topics-cs": [
+        {
+          "description": "Abstract Data Type (ADT) and operations on an ADT (See also: FPL-Types)",
+          "topics": [
+            {
+              "description": "Dictionary operations (insert, delete, find)"
+            }
+          ]
+        },
+        {
+          "description": "Arrays",
+          "topics": [
+            {
+              "description": "Numeric vs non-numeric, character strings"
+            },
+            {
+              "description": "Single (vector) vs multidimensional (matrix)"
+            }
+          ]
+        },
+        {
+          "description": "Records/Structs/Tuples and Objects (See also: FPL-OOP)"
+        },
+        {
+          "description": "Linked lists (for historical reasons)",
+          "topics": [
+            {
+              "description": "Single vs Double and Linear vs Circular"
+            }
+          ]
+        },
+        {
+          "description": "Stacks"
+        },
+        {
+          "description": "Queues and deques",
+          "topics": [
+            {
+              "description": "Heap-based priority queue"
+            }
+          ]
+        },
+        {
+          "description": "Hash tables/maps",
+          "topics": [
+            {
+              "description": "Collision resolution and complexity (e.g., probing, chaining, rehash)"
+            }
+          ]
+        },
+        {
+          "description": "Graphs (e.g., [un]directed, [a]cyclic, [un]connected, and [un]weighted) (See also: MSF-Discrete)",
+          "topics": [
+            {
+              "description": "Graph representation: adjacency list vs matrix"
+            }
+          ]
+        },
+        {
+          "description": "Trees (See also: MSF-Discrete)",
+          "topics": [
+            {
+              "description": "Binary, n-ary, and search trees"
+            },
+            {
+              "description": "Balanced (e.g., AVL, Red-Black, Heap)"
+            }
+          ]
+        },
+        {
+          "description": "Sets (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Search algorithms",
+          "topics": [
+            {
+              "description": "O(n) complexity (e.g., linear/sequential array/list search)"
+            },
+            {
+              "description": "O(log2 n) complexity (e.g., binary search)"
+            },
+            {
+              "description": "O(logb n) complexity (e.g., uninformed depth/breadth-first tree search)"
+            }
+          ]
+        },
+        {
+          "description": "Sorting algorithms (e.g., stable, unstable)",
+          "topics": [
+            {
+              "description": "O(n2) complexity (e.g., insertion, selection),"
+            },
+            {
+              "description": "O(n log n) complexity (e.g., quicksort, merge, timsort)"
+            }
+          ]
+        },
+        {
+          "description": "Graph algorithms",
+          "topics": [
+            {
+              "description": "Shortest path (e.g., Dijkstra’s, Floyd’s)"
+            },
+            {
+              "description": "Minimal spanning tree (e.g., Prim’s, Kruskal’s)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Sorting algorithms",
+          "topics": [
+            {
+              "description": "O(n log n) complexity heapsort"
+            },
+            {
+              "description": "Pseudo O(n) complexity (e.g., bucket, counting, radix)"
+            }
+          ]
+        },
+        {
+          "description": "Graph algorithms",
+          "topics": [
+            {
+              "description": "Transitive closure (e.g., Warshall’s)"
+            },
+            {
+              "description": "Topological sort"
+            }
+          ]
+        },
+        {
+          "description": "Matching",
+          "topics": [
+            {
+              "description": "Efficient string matching (e.g., Boyer-Moore, Knuth-Morris-Pratt)"
+            },
+            {
+              "description": "Longest common subsequence matching"
+            },
+            {
+              "description": "Regular expression matching"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Cryptography algorithms (e.g., SHA-256) (See also: SEC-Crypto)"
+        },
+        {
+          "description": "Parallel algorithms (See also: PDC-Algorithms, FPL-Parallel)"
+        },
+        {
+          "description": "Consensus algorithms (e.g., Blockchain) (See also: SEC-Crypto)",
+          "topics": [
+            {
+              "description": "Proof of work vs proof of stake (See also: SEP-Sustainability)"
+            }
+          ]
+        },
+        {
+          "description": "Quantum computing algorithms (See also: AL-Models, AR-Quantum)",
+          "topics": [
+            {
+              "description": "Oracle-based (e.g., Deutsch-Jozsa, Bernstein-Vazirani, Simon)"
+            },
+            {
+              "description": "Superpolynomial speed-up via QFT (e.g., Shor’s)"
+            },
+            {
+              "description": "Polynomial speed-up via amplitude amplification (e.g., Grover’s)"
+            }
+          ]
+        },
+        {
+          "description": "Fast-Fourier Transform (FFT) algorithm"
+        },
+        {
+          "description": "Differential evolution algorithm"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "For each ADT/Data-Structure in this unit",
+          "topics": [
+            {
+              "description": "Explain its definition, properties, representation(s), and associated ADT operations."
+            },
+            {
+              "description": "Explain step-by-step how the ADT operations associated with the data structure transform it."
+            }
+          ]
+        },
+        {
+          "description": "For each algorithm in this unit explain step-by-step how the algorithm operates."
+        },
+        {
+          "description": "For each algorithmic approach (e.g., sorting) in this unit apply a prototypical example of the approach (e.g., merge sort)."
+        },
+        {
+          "description": "Given requirements for a problem, develop multiple solutions using various data structures and algorithms. Subsequently, evaluate the suitability, strengths, and weaknesses selecting an approach that best satisfies the requirements."
+        },
+        {
+          "description": "Explain how collision avoidance and collision resolution is handled in hash tables."
+        },
+        {
+          "description": "Explain factors beyond computational efficiency that influence the choice of algorithms, such as programming time, maintainability, and the use of application-specific patterns in the input data."
+        },
+        {
+          "description": "Explain the heap property and the use of heaps as an implementation of a priority queue."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "For each of the algorithms and algorithmic approaches in the KA Core topics:",
+          "topics": [
+            {
+              "description": "Explain a prototypical example of the algorithm, and"
+            },
+            {
+              "description": "Explain step-by-step how the algorithm operates."
+            }
+          ]
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "An appreciation of quantum computation and its application to certain problems."
+        }
+      ],
+      "hours-cs": "11",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Algorithmic Strategies",
+      "code": "AL-Strategies",
+      "topics-cs": [
+        {
+          "description": "Paradigms",
+          "topics": [
+            {
+              "description": "Brute-Force (e.g., linear search, selection sort, traveling salesperson, knapsack)"
+            },
+            {
+              "description": "Decrease-and-Conquer",
+              "topics": [
+                {
+                  "description": "By a Constant (e.g., insertion sort, topological sort),"
+                },
+                {
+                  "description": "By a Constant Factor (e.g., binary search),"
+                },
+                {
+                  "description": "By a Variable Size (e.g., Euclid’s)"
+                }
+              ]
+            },
+            {
+              "description": "Divide-and-Conquer (e.g., binary search, quicksort, mergesort, Strassen’s)"
+            },
+            {
+              "description": "Greedy (e.g., Dijkstra’s, Kruskal’s, Knapsack)"
+            },
+            {
+              "description": "Transform-and-Conquer",
+              "topics": [
+                {
+                  "description": "Instance simplification (e.g., find duplicates via list presort)"
+                },
+                {
+                  "description": "Representation change (e.g., heapsort)"
+                },
+                {
+                  "description": "Problem reduction (e.g., least-common-multiple, linear programming)"
+                },
+                {
+                  "description": "Dynamic programming (e.g., Floyd’s, Warshall, Bellman-Ford)"
+                }
+              ]
+            },
+            {
+              "description": "Space vs time tradeoffs (e.g., hashing)"
+            }
+          ]
+        },
+        {
+          "description": "Handling exponential growth (e.g., heuristic A*, branch-and-bound, backtracking)"
+        },
+        {
+          "description": "Iteration vs recursion (e.g., factorial, tree search)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Paradigms",
+          "topics": [
+            {
+              "description": "Approximation algorithms"
+            },
+            {
+              "description": "Iterative improvement (e.g., Ford-Fulkerson, simplex)"
+            },
+            {
+              "description": "Randomized/Stochastic algorithms (e.g., max-cut, balls and bins)"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Quantum computing"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "For each of the paradigms in this unit,",
+          "topics": [
+            {
+              "description": "Explain its definitional characteristics,"
+            },
+            {
+              "description": "Explain an example that demonstrates the paradigm including how this example satisfies the paradigm’s characteristics."
+            }
+          ]
+        },
+        {
+          "description": "For each of the algorithms in the AL-Foundational unit, explain the paradigm used by the algorithm and how it exemplifies this paradigm."
+        },
+        {
+          "description": "Given an algorithm, explain the paradigm used by the algorithm and how it exemplifies this paradigm."
+        },
+        {
+          "description": "Give a real-world problem, evaluate appropriate algorithmic paradigms and algorithms from these paradigms that address the problem including evaluating the tradeoffs among the paradigms and algorithms selected."
+        },
+        {
+          "description": "Give examples of iterative and recursive algorithms that solve the same problem, explain the benefits and disadvantages of each approach."
+        },
+        {
+          "description": "Evaluate whether a greedy approach leads to an optimal solution."
+        },
+        {
+          "description": "Explain various approaches for addressing computational problems whose algorithmic solutions are exponential."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "6",
+      "hours-ka": ""
+    },
+    {
+      "name": "Complexity",
+      "code": "AL-Complexity",
+      "topics-cs": [
+        {
+          "description": "Complexity Analysis Framework",
+          "topics": [
+            {
+              "description": "Best, average, and worst-case performance of an algorithm"
+            },
+            {
+              "description": "Empirical and relative (Order of Growth) measurements"
+            },
+            {
+              "description": "Input size and primitive operations"
+            },
+            {
+              "description": "Time and space efficiency"
+            }
+          ]
+        },
+        {
+          "description": "Asymptotic complexity analysis (average and worst-case bounds)",
+          "topics": [
+            {
+              "description": "Big-O, Big-Omega, and Big-Theta formal notations"
+            },
+            {
+              "description": "Foundational Complexity Classes and Representative Examples/Problems",
+              "topics": [
+                {
+                  "description": "O(1) Constant (e.g., array access)"
+                },
+                {
+                  "description": "O(log2 n) Logarithmic (e.g., binary search)"
+                },
+                {
+                  "description": "O(n) Linear (e.g., linear search)"
+                },
+                {
+                  "description": "O(n log2 n) Log Linear (e.g., mergesort)",
+                  "topics": [
+                    {
+                      "description": "O(n2) Quadratic (e.g., selection sort)"
+                    }
+                  ]
+                },
+                {
+                  "description": "c O(n) Polynomial (e.g., O(n3) Gaussian elimination)"
+                },
+                {
+                  "description": "n O(2) Exponential (e.g., Knapsack, Satisfiability (SAT), Traveling Sales-Person (TSP), all subsets)"
+                },
+                {
+                  "description": "O(n!) Factorial (e.g., Hamiltonian circuit, all permutations)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Empirical measurements of performance"
+        },
+        {
+          "description": "Tractability and intractability",
+          "topics": [
+            {
+              "description": "P, NP, and NP-Complete Complexity Classes"
+            },
+            {
+              "description": "NP-Complete Problems (e.g., SAT, Knapsack, TSP)"
+            },
+            {
+              "description": "Reductions"
+            }
+          ]
+        },
+        {
+          "description": "Time and space tradeoffs in algorithms"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Little-o, Little-Omega, and Little Theta notations"
+        },
+        {
+          "description": "Formal recursive analysis"
+        },
+        {
+          "description": "Amortized analysis"
+        },
+        {
+          "description": "Turing Machine-based models of complexity",
+          "topics": [
+            {
+              "description": "Time complexity",
+              "topics": [
+                {
+                  "description": "P, NP, NP-C, and EXP classes"
+                },
+                {
+                  "description": "Cook-Levin theorem"
+                }
+              ]
+            },
+            {
+              "description": "Space Complexity",
+              "topics": [
+                {
+                  "description": "NSpace and PSpace"
+                },
+                {
+                  "description": "Savitch’s theorem"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Prepare a presentation that explains to first year students the basic concepts of algorithmic complexity including best, average, and worst-case algorithm behavior, Big- O, Omega, and Theta notations, complexity classes, time and space tradeoffs, empirical measurement, and impact on practical problems."
+        },
+        {
+          "description": "Using examples, explain each of the foundational complexity classes in this unit."
+        },
+        {
+          "description": "For each foundational complexity class in this unit, explain an algorithm that demonstrates the associated runtime complexity."
+        },
+        {
+          "description": "For each algorithm in the AL-Foundational unit, explain its runtime complexity class and why it belongs to this class."
+        },
+        {
+          "description": "Informally evaluate the foundational complexity class of simple algorithms."
+        },
+        {
+          "description": "Given a problem to program for which there may be several algorithmic approaches, evaluate them and determine which are feasible, and select one that is optimal in implementation and run-time behavior."
+        },
+        {
+          "description": "Develop empirical studies to determine and validate hypotheses about the runtime complexity of various algorithms by running algorithms on input of various sizes and comparing actual performance to the theoretical analysis."
+        },
+        {
+          "description": "Explain examples that illustrate time-space tradeoffs of algorithms."
+        },
+        {
+          "description": "Explain how tree balance affects the efficiency of binary search tree operations."
+        },
+        {
+          "description": "Explain to a non-technical audience the significance of tractable versus intractable algorithms using an intuitive explanation of Big-O complexity."
+        },
+        {
+          "description": "Explain the significance of NP-Completeness."
+        },
+        {
+          "description": "Explain how NP-Hard is a lower bound and NP is an upper bound for NP-Completeness."
+        },
+        {
+          "description": "Explain examples of NP-complete problems."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Use recurrence relations to evaluate the time complexity of recursively defined algorithms."
+        },
+        {
+          "description": "Apply elementary recurrence relations using a form of the Master Theorem."
+        },
+        {
+          "description": "Apply Big-O notation to give upper case bounds on time/space complexity of algorithms."
+        },
+        {
+          "description": "Explain the Cook-Levin Theorem and the NP-Completeness of SAT."
+        },
+        {
+          "description": "Explain the classes P and NP."
+        },
+        {
+          "description": "Prove that a problem is NP-Complete by reducing a classic known NP-C problem to it (e.g., 3SAT and Clique)."
+        },
+        {
+          "description": "Explain the P-space class and its relation to the EXP class."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "6",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Computational Models and Formal Languages",
+      "code": "AL-Models",
+      "topics-cs": [
+        {
+          "description": "Formal automata",
+          "topics": [
+            {
+              "description": "Finite State"
+            },
+            {
+              "description": "Pushdown"
+            },
+            {
+              "description": "Linear Bounded"
+            },
+            {
+              "description": "Turing Machine"
+            }
+          ]
+        },
+        {
+          "description": "Formal languages, grammars and Chomsky Hierarchy (See also: FPL-Translation, FPL-Syntax)",
+          "topics": [
+            {
+              "description": "Regular (Type-3)",
+              "topics": [
+                {
+                  "description": "Regular Expressions"
+                }
+              ]
+            },
+            {
+              "description": "Context-Free (Type-2)"
+            },
+            {
+              "description": "Context-Sensitive (Type-1)"
+            },
+            {
+              "description": "Recursively Enumerable (Type-0)"
+            }
+          ]
+        },
+        {
+          "description": "Relations among formal automata, languages, and grammars"
+        },
+        {
+          "description": "Decidability, (un)computability, and halting"
+        },
+        {
+          "description": "The Church-Turing thesis"
+        },
+        {
+          "description": "Algorithmic correctness",
+          "topics": [
+            {
+              "description": "Invariants (e.g., in iteration, recursion, tree search)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Deterministic and nondeterministic automata"
+        },
+        {
+          "description": "Pumping Lemma proofs",
+          "topics": [
+            {
+              "description": "Proof of Finite State/Regular-Language limitation"
+            },
+            {
+              "description": "Pushdown Automata/Context-Free-Language limitation"
+            }
+          ]
+        },
+        {
+          "description": "Decidability",
+          "topics": [
+            {
+              "description": "Arithmetization and diagonalization"
+            }
+          ]
+        },
+        {
+          "description": "Reducibility and reductions"
+        },
+        {
+          "description": "Time complexity based on Turing Machine"
+        },
+        {
+          "description": "Space complexity (e.g., Pspace, Savitch’s Theorem)"
+        },
+        {
+          "description": "Equivalent models of algorithmic computation",
+          "topics": [
+            {
+              "description": "Turing Machines and Variations (e.g., multi-tape, non-deterministic)"
+            },
+            {
+              "description": "Lambda Calculus (See also: FPL-Functional)"
+            },
+            {
+              "description": "Mu-Recursive Functions"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Quantum computation (See also: AR-Quantum)",
+          "topics": [
+            {
+              "description": "Postulates of quantum mechanics",
+              "topics": [
+                {
+                  "description": "State space"
+                },
+                {
+                  "description": "State evolution"
+                },
+                {
+                  "description": "State composition"
+                },
+                {
+                  "description": "State measurement"
+                }
+              ]
+            },
+            {
+              "description": "Column vector representations of qubits"
+            },
+            {
+              "description": "Matrix representations of quantum operations"
+            },
+            {
+              "description": "Simple quantum gates (e.g., XNOT, CNOT)"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "For each formal automaton in this unit:",
+          "topics": [
+            {
+              "description": "Explain its definition comparing its characteristics with this unit’s other automata,"
+            },
+            {
+              "description": "Using an example, explain step-by-step how the automaton operates on input including whether it accepts the associated input,"
+            },
+            {
+              "description": "Explain an example of inputs that can and cannot be accepted by the automaton."
+            }
+          ]
+        },
+        {
+          "description": "Given a problem, develop an appropriate automaton that addresses the problem."
+        },
+        {
+          "description": "Develop a regular expression for a given regular language expressed in natural language."
+        },
+        {
+          "description": "Explain the difference between regular expressions (Type-3 acceptors) and the regular expressions (Type-2 acceptors) used in programming languages."
+        },
+        {
+          "description": "For each formal model in this unit:",
+          "topics": [
+            {
+              "description": "Explain its definition comparing its characteristics with the others in this unit,"
+            },
+            {
+              "description": "Explain example inputs that are and cannot be accepted by the language/grammar."
+            }
+          ]
+        },
+        {
+          "description": "Explain a universal Turing Machine and its operation."
+        },
+        {
+          "description": "Present to an audience of co-workers and managers the impossibility of providing them a program that checks all other programs, including some seemingly simple ones, for infinite loops including an explanation of the Halting problem, why it has no algorithmic solution, and its significance for real-world algorithmic computation."
+        },
+        {
+          "description": "Explain examples of classic uncomputable problems."
+        },
+        {
+          "description": "Explain the Church-Turing Thesis and its significance for algorithmic computation."
+        },
+        {
+          "description": "Explain how (loop) invariants can be used to prove the correctness of an algorithm."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "For each formal automaton in this unit explain (compare/contrast) its deterministic and nondeterministic capabilities."
+        },
+        {
+          "description": "Apply pumping lemmas, or alternative means, to prove the limitations of Finite State and Pushdown automata."
+        },
+        {
+          "description": "Apply arithmetization and diagonalization to prove the Halting Problem for Turing Machines is Undecidability."
+        },
+        {
+          "description": "Given a known undecidable language, apply a mapping reduction or computational history to prove that another language is undecidable."
+        },
+        {
+          "description": "Convert among equivalently powerful notations for a language, including among DFAs, NFAs, and regular expressions, and between PDAs and CFGs."
+        },
+        {
+          "description": "Explain Rice’s theorem and its significance."
+        },
+        {
+          "description": "Explain an example proof of a problem that is uncomputable by reducing a classic known uncomputable problem to it."
+        },
+        {
+          "description": "Explain the Primitive and General Recursive functions (zero, successor, selection, primitive recursion, composition, and Mu), their significance, and Turing Machine implementations."
+        },
+        {
+          "description": "Explain how computation is performed in Lambda Calculus (e.g., Alpha conversion and Beta reduction)"
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "For a quantum system give examples that explain the following postulates.",
+          "topics": [
+            {
+              "description": "State Space – system state represented as a unit vector in Hilbert space,"
+            },
+            {
+              "description": "State Evolution – the use of unitary operators to evolve system state,"
+            },
+            {
+              "description": "State Composition – the use of tensor product to compose systems states,"
+            },
+            {
+              "description": "State Measurement – the probabilistic output of measuring a system state."
+            }
+          ]
+        },
+        {
+          "description": "Explain the operation of a quantum XNOT or CNOT gate on a quantum bit represented as a matrix and column vector, respectively."
+        }
+      ],
+      "hours-cs": "9",
+      "hours-ka": "23"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "AL-SEP",
+      "topics-cs": [
+        {
+          "description": "Social, ethical, and secure algorithms"
+        },
+        {
+          "description": "Algorithmic fairness"
+        },
+        {
+          "description": "Anonymity (e.g., Differential Privacy)"
+        },
+        {
+          "description": "Accountability/Transparency"
+        },
+        {
+          "description": "Responsible algorithms"
+        },
+        {
+          "description": "Economic and other impacts of inefficient algorithms"
+        },
+        {
+          "description": "Sustainability"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Context aware computing"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Develop algorithmic solutions to real-world societal problems, such as routing an ambulance to a hospital."
+        },
+        {
+          "description": "Explain the impact that an algorithm may have on the environment and society when used to solve a real-world problem while considering its sustainability and that it can affect different societal groups in different ways."
+        },
+        {
+          "description": "Prepare a presentation that justifies the selection of appropriate data structures and/or algorithms to solve a given real-world problem."
+        },
+        {
+          "description": "Explain an example that articulates how differential privacy protects knowledge of an individual’s data."
+        },
+        {
+          "description": "Explain the environmental impacts of design choices that relate to algorithm design."
+        },
+        {
+          "description": "Explain the tradeoffs involved in proof-of-work and proof-of-stake algorithms."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "Included in SE",
+      "hours-ka": "P hours"
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "name": "Systems Fundamentals",
+  "code": "SF",
+  "units": [
+    {
+      "name": "Overview of Computer Systems",
+      "code": "SF-Overview",
+      "topics-cs": [
+        {
+          "description": "Basic building blocks and components of a computer (gates, flip-flops, registers, interconnections; datapath + control + memory)"
+        },
+        {
+          "description": "Hardware as a computational paradigm: Fundamental logic building blocks; Logic expressions, minimization, sum of product forms (See also: AR-Logic)"
+        },
+        {
+          "description": "Programming abstractions, interfaces, use of libraries (See also: PDC-Programs)"
+        },
+        {
+          "description": "Distinction and interaction between application and OS services, remote procedure call (See also: OS-Purpose)"
+        },
+        {
+          "description": "Basic concept of pipelining, overlapped processing stages (See also: AR-Organization)"
+        },
+        {
+          "description": "Basic concept of scaling: performance vs problem size"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe the basic building blocks of computers and their role in the historical development of computer architecture."
+        },
+        {
+          "description": "Design a simple logic circuit using the fundamental building blocks of logic design to solve a simple problem (e.g., adder)."
+        },
+        {
+          "description": "Describe how computing systems are constructed of layers upon layers, based on separation of concerns, with well-defined interfaces, hiding details of low layers from the higher layers."
+        },
+        {
+          "description": "Describe that hardware, OS, VM, and application are additional layers of interpretation/processing."
+        },
+        {
+          "description": "Describe the mechanisms of how errors are detected, signaled back, and handled through the layers."
+        },
+        {
+          "description": "Construct a simple program (e.g., a TCP client/server) using methods of layering, error detection and recovery, and reflection of error status across layers."
+        },
+        {
+          "description": "Identify bugs in a layered program by using tools for program tracing, single stepping, and debugging."
+        },
+        {
+          "description": "Understand the concept of strong vs weak scaling, i.e., how performance is affected by the scale of the problem vs the scale of resources to solve the problem. This can be motivated by simple, real-world examples."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "3",
+      "hours-ka": "0"
+    },
+    {
+      "name": "Basic Concepts",
+      "code": "SF-Foundations",
+      "topics-cs": [
+        {
+          "description": "Digital vs Analog/Discrete vs Continuous Systems"
+        },
+        {
+          "description": "Simple logic gates, logical expressions, Boolean logic simplification"
+        },
+        {
+          "description": "Clocks, State, Sequencing"
+        },
+        {
+          "description": "State and state transition (e.g., starting state, final state, life cycle of states) (See also: AL-Models)"
+        },
+        {
+          "description": "Finite state machines (e.g., NFA, DFA) (See also: AL-Models)"
+        },
+        {
+          "description": "Combinational Logic, Sequential Logic, Registers, Memories (See also: AR-Logic)"
+        },
+        {
+          "description": "Computers and Network Protocols as examples of State Machines (See also: NC-Fundamentals)"
+        },
+        {
+          "description": "Sequential vs parallel processing. (See also: PDC-Programs, OS-Concurrency)"
+        },
+        {
+          "description": "Application-level sequential processing: single thread (See also: PDC-Programs, OS-Concurrency)"
+        },
+        {
+          "description": "Simple application-level parallel processing: request level (web services/client-server/distributed), single thread per server, multiple threads with multiple servers, pipelining (See also: PDC-Programs, OS-Concurrency)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe the differences between digital and analog systems, and between discrete and continuous systems. Can give real-world examples of these systems."
+        },
+        {
+          "description": "Describe computations as a system characterized by a known set of configurations with transitions from one unique configuration (state) to another (state)."
+        },
+        {
+          "description": "Describe the distinction between systems whose output is only a function of their input (stateless) and those with memory/history (stateful)."
+        },
+        {
+          "description": "Develop state machine descriptions for simple problem statement solutions (e.g., traffic light sequencing, pattern recognizers)."
+        },
+        {
+          "description": "Describe a computer as a state machine that interprets machine instructions."
+        },
+        {
+          "description": "Explain how a program or network protocol can also be expressed as a state machine and that alternative representations for the same computation can exist."
+        },
+        {
+          "description": "Derive the time-series behavior of a state machine from its state machine representation (e.g., TCP connection management state machine)."
+        },
+        {
+          "description": "Write a simple sequential problem and a simple parallel version of the same program."
+        },
+        {
+          "description": "Evaluate the performance of simple sequential and parallel versions of a program with different problem sizes and be able to describe the speed-ups achieved."
+        },
+        {
+          "description": "Describe on an execution timeline how parallelism events and operations can take place simultaneously (i.e., at the same time). Explain how work can be performed in less elapsed time if this can be exploited."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "4",
+      "hours-ka": "0"
+    },
+    {
+      "name": "Resource Management",
+      "code": "SF-Resource",
+      "topics-cs": [
+        {
+          "description": "Different types of resources (e.g., processor share, memory, disk, net bandwidth) (See also: OS-Scheduling, OS-Memory, OS-Files, NC-Fundamentals)"
+        },
+        {
+          "description": "Common resource allocation/scheduling algorithms (e.g., first-come-first-serve, priority-based scheduling, fair scheduling, and preemptive scheduling) (See also: OS-Scheduling)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Advantages and disadvantages of common scheduling algorithms (See also: OS-Scheduling)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Define how finite computer resources (e.g., processor share, memory, storage, and network bandwidth) are managed by their careful allocation to existing entities."
+        },
+        {
+          "description": "Describe how common resource allocation/scheduling algorithms work."
+        },
+        {
+          "description": "Develop common scheduling algorithms and evaluate their performances."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the pros and cons of common scheduling algorithms."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "1"
+    },
+    {
+      "name": "System Performance",
+      "code": "SF-Performance",
+      "topics-cs": [
+        {
+          "description": "Latencies in computer systems",
+          "topics": [
+            {
+              "description": "Speed of light and computers (one foot per nanosecond vs one GHz clocks) (See also: AR-Organization)"
+            },
+            {
+              "description": "Memory vs disk latencies vs across-the-network memory (See also: AR-Memory, AR-Performance-Energy)"
+            }
+          ]
+        },
+        {
+          "description": "Caches and the effects of spatial and temporal locality on performance in processors and systems (See also: AR-Memory, AR-Performance-Energy, OS-Memory)"
+        },
+        {
+          "description": "Caches and cache coherency in databases, operating systems, distributed systems, and computer architecture (See also: OS-Memory, AR-Memory, DM-Internals)"
+        },
+        {
+          "description": "Introduction to the processor memory hierarchy (See also: AR-Memory, AR-Performance-Energy)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "The formula for average memory access time (See also: AR-Memory)"
+        },
+        {
+          "description": "Rationale of virtualization and isolation: protection and predictable performance (See also: OS-Virtualization)"
+        },
+        {
+          "description": "Levels of indirection, illustrated by virtual memory for managing physical memory resources (See also: OS-Virtualization)"
+        },
+        {
+          "description": "Methods for implementing virtual memory and virtual machines (See also: OS-Virtualization)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe the breakdown of the latency of computer systems in terms of memory, disk, and network."
+        },
+        {
+          "description": "Explain the importance of locality in determining system performance."
+        },
+        {
+          "description": "Calculate average memory access time and describe the tradeoffs in memory hierarchy performance in terms of capacity, miss/hit rate, and access time."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Explain why it is important to isolate and protect the execution of individual programs and environments that share common underlying resources."
+        },
+        {
+          "description": "Describe how the concept of indirection can create the illusion of a dedicated machine and its resources even when physically shared among multiple programs and environments."
+        },
+        {
+          "description": "Evaluate the performance of two application instances running on separate virtual machines and determine the effect of performance isolation."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Performance Evaluation",
+      "code": "SF-Evaluation",
+      "topics-cs": [
+        {
+          "description": "Performance figures of merit (See also: AR-Performance-Energy, PDC-Evaluation)"
+        },
+        {
+          "description": "Workloads and representative benchmarks, and methods of collecting and analyzing performance figures of merit (See also: AR-Performance-Energy, PDC-Evaluation)"
+        },
+        {
+          "description": "CPI (Cycles per Instruction) equation as a tool for understanding tradeoffs in the design of instruction sets, processor pipelines, and memory system organizations (See also: AR-Performance-Energy, PDC-Evaluation)"
+        },
+        {
+          "description": "Amdahl’s Law: the part of the computation that cannot be sped up limits the effect of the parts that can (See also: AR-Performance-Energy, PDC-Evaluation)"
+        },
+        {
+          "description": "Order of magnitude analysis (Big O notation) (See also: AL-Complexity)"
+        },
+        {
+          "description": "Analysis of slow and fast paths of a system (See also: AR-Organization)"
+        },
+        {
+          "description": "Events on their effect on performance (e.g., instruction stalls, cache misses, page faults) (See also: OS-Memory, AR-Organization)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Analytical tools to guide quantitative evaluation"
+        },
+        {
+          "description": "Understanding layered systems, workloads, and platforms, their implications for performance, and the challenges they represent for evaluation"
+        },
+        {
+          "description": "Microbenchmark pitfalls"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain how the components of system architecture contribute to improving its performance."
+        },
+        {
+          "description": "Explain the circumstances in which a given figure of a system performance metric is useful."
+        },
+        {
+          "description": "Explain the usage and inadequacies of benchmarks as a measure of system performance."
+        },
+        {
+          "description": "Describe Amdahl’s law and discuss its limitations."
+        },
+        {
+          "description": "Apply limit studies or simple calculations to produce order-of-magnitude estimates for a given performance metric in a given context."
+        },
+        {
+          "description": "Apply software tools to profile and measure program performance."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Design and conduct a performance-oriented experiment of a common system (e.g., an OS and Spark)."
+        },
+        {
+          "description": "Design a performance experiment on a layered system to determine the effect of a system parameter on system performance."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "System Reliability",
+      "code": "SF-Reliability",
+      "topics-cs": [
+        {
+          "description": "Distinction between bugs, faults, and failures (See also: PDC-Coordination, SE-Reliability)"
+        },
+        {
+          "description": "Reliability vs availability"
+        },
+        {
+          "description": "Reliability through redundancy",
+          "topics": [
+            {
+              "description": "check and retry (See also: OS-Faults, NC-Reliability)"
+            },
+            {
+              "description": "redundant encoding (error correction codes, CRC, FEC, RAID) (See also: AR-Memory, NC-Reliability, DM-Distributed)"
+            },
+            {
+              "description": "duplication/mirroring/replicas (See also: DM-Distributed)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Other approaches to reliability (e.g., journaling) (See also: OS-Faults, NC-Reliability, SE-Reliability)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain the distinction between program errors, system errors, and hardware faults (e.g., corrupted memory) and exceptions (e.g., attempt to divide by zero)."
+        },
+        {
+          "description": "Articulate the distinction between detecting, handling, and recovering from faults and the methods for their implementation."
+        },
+        {
+          "description": "Describe the role of error correction codes in providing error checking and correction techniques in memories, storage, and networks."
+        },
+        {
+          "description": "Apply simple algorithms for exploiting redundant information for the purposes of data correction."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Compare different error detection and correction methods for their data overhead, implementation complexity, and relative execution time for encoding, detecting, and correcting errors."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "System Security",
+      "code": "SF-Security",
+      "topics-cs": [
+        {
+          "description": "Common system security issues (e.g., viruses, denial-of-service attacks, and eavesdropping) (See also: OS-Protection, NC-Security, SEC-Foundations, SEC-Engineering)"
+        },
+        {
+          "description": "Countermeasures (See also: OS-Principles, OS-Protection, NC-Security)",
+          "topics": [
+            {
+              "description": "Cryptography (See also: SEC-Crypto)"
+            },
+            {
+              "description": "Security architecture (See also: SEC-Engineering)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Representative countermeasure systems",
+          "topics": [
+            {
+              "description": "Intrusion detection systems, firewalls (See also: NC-Security)"
+            },
+            {
+              "description": "Antivirus systems"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe some common system security issues and give examples"
+        },
+        {
+          "description": "Describe some countermeasures against system security issues"
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe representative countermeasure systems"
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "System Design",
+      "code": "SF-Design",
+      "topics-cs": [
+        {
+          "description": "Common criteria of system design (e.g., liveness, safety, robustness, scalability, and security) (See also: PDC-Evaluation)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Designs of representative systems (e.g., Apache web server, Spark, and Linux)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe common criteria of system design."
+        },
+        {
+          "description": "Given the functionality requirements of a system and its key design criteria, provide a high-level design of this system."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the design of some representative systems."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "SF-SEP",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Intellectual property rights of computer systems (See also: SEP-IP)"
+        },
+        {
+          "description": "Common software licenses (See also: SEP-IP)"
+        },
+        {
+          "description": "Computer crimes (See also: SEP-Security)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe the intellectual property rights of computer systems."
+        },
+        {
+          "description": "List representative software licenses and compare their differences."
+        },
+        {
+          "description": "List representative computer crimes."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "Included in SEP hours"
+    }
+  ]
+}

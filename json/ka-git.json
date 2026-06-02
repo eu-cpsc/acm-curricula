@@ -1,0 +1,1336 @@
+{
+  "name": "Graphics and Interactive Techniques",
+  "code": "GIT",
+  "units": [
+    {
+      "name": "Fundamental Concepts",
+      "code": "GIT-Fundamentals",
+      "topics-cs": [
+        {
+          "description": "Uses of computer graphics and interactive techniques and their potential risks and abuses.",
+          "topics": [
+            {
+              "description": "Entertainment, business, and scientific applications: e.g., visual effects, generative imagery, computer vision, machine learning, user interfaces, video editing, games and game engines, computer-aided design and manufacturing, data visualization, and virtual/augmented/mixed reality"
+            },
+            {
+              "description": "Intellectual property, deep fakes, facial recognition, privacy (See also: SEP-DEIA, SEP-Privacy, SEP-IP, SEP-Professional-Ethics)"
+            }
+          ]
+        },
+        {
+          "description": "Graphic output",
+          "topics": [
+            {
+              "description": "Displays (e.g., LCD)"
+            },
+            {
+              "description": "Printers"
+            },
+            {
+              "description": "Analog film"
+            },
+            {
+              "description": "Concepts",
+              "topics": [
+                {
+                  "description": "Resolution (e.g., pixels, dots)"
+                },
+                {
+                  "description": "Aspect ratio"
+                },
+                {
+                  "description": "Frame rate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Human vision system",
+          "topics": [
+            {
+              "description": "Tristimulus reception (RGB)"
+            },
+            {
+              "description": "Eye as a camera (projection)"
+            },
+            {
+              "description": "Persistence of vision (frame rate, motion blur)"
+            },
+            {
+              "description": "Contrast (detection, Mach banding, dithering/aliasing)"
+            },
+            {
+              "description": "Non-linear response (dynamic range, tone mapping)"
+            },
+            {
+              "description": "Binocular vision (stereo)"
+            },
+            {
+              "description": "Accessibility (color deficiency, strobing, monocular vision, etc.) (See also: SEP-DEIA, HCI-User)"
+            }
+          ]
+        },
+        {
+          "description": "Standard image formats",
+          "topics": [
+            {
+              "description": "Raster",
+              "topics": [
+                {
+                  "description": "Lossless (e.g., TIF)"
+                },
+                {
+                  "description": "Lossy (e.g., JPG, GIF, etc.)"
+                }
+              ]
+            },
+            {
+              "description": "Vector (e.g., SVG, Adobe Illustrator)"
+            }
+          ]
+        },
+        {
+          "description": "Digitization of analog data",
+          "topics": [
+            {
+              "description": "Rasterization"
+            },
+            {
+              "description": "Resolution"
+            },
+            {
+              "description": "Sampling and quantization"
+            }
+          ]
+        },
+        {
+          "description": "Color models: additive (RGB), subtractive (CMYK), and color perception (HSV)"
+        },
+        {
+          "description": "Tradeoffs between storing image data and re-computing image data"
+        },
+        {
+          "description": "Spatialization: coordinate systems, absolute and relative positioning"
+        },
+        {
+          "description": "Animation as a sequence of still images"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Applied interactive graphics (e.g., processing, python)"
+        },
+        {
+          "description": "Display characteristics (protocols and ports)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify common uses of digital presentation to humans (e.g., computer graphics, sound)."
+        },
+        {
+          "description": "Describe how analog signals can be reasonably represented by discrete samples, for example, how images can be represented by pixels."
+        },
+        {
+          "description": "Compute the memory requirement for storing a color image given its resolution."
+        },
+        {
+          "description": "Create a graphic depicting how the limits of human perception affect choices about the digital representation of analog signals."
+        },
+        {
+          "description": "Indicate when and why you should use each of the following common file formats: JPG, PNG, MP3, MP4, and GIF."
+        },
+        {
+          "description": "Describe color models and their use in graphics display devices."
+        },
+        {
+          "description": "Compute the memory requirements for a multi-second movie (lasting n seconds) displaying at a specific framerate (f frames per second) at a specified resolution (r pixels per frame)"
+        },
+        {
+          "description": "Compare and contrast digital video to analog video."
+        },
+        {
+          "description": "Describe the basic process of producing continuous motion from a sequence of discrete frames (sometimes called “flicker fusion”)."
+        },
+        {
+          "description": "Describe a possible visual misrepresentation that could result from digitally sampling an analog world."
+        },
+        {
+          "description": "Compute memory space requirements based on resolution and color coding."
+        },
+        {
+          "description": "Compute time requirements based on refresh rates and rasterization techniques."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Design a user interface and an alternative for persons with color perception deficiency."
+        },
+        {
+          "description": "Construct a simple graphical user interface using a graphics library."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "4",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Visualization",
+      "code": "GIT-Visualization",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Scientific Data Visualization and Information Visualization"
+        },
+        {
+          "description": "Visualization techniques",
+          "topics": [
+            {
+              "description": "Statistical visualization (e.g., scatterplots, bar graphs, histograms, line graphs, pie charts, trees, and graphs)"
+            },
+            {
+              "description": "Text visualization"
+            },
+            {
+              "description": "Geospatial visualization"
+            },
+            {
+              "description": "2D/3D scalar fields"
+            },
+            {
+              "description": "Vector fields"
+            },
+            {
+              "description": "Direct volume rendering"
+            }
+          ]
+        },
+        {
+          "description": "Visualization pipeline",
+          "topics": [
+            {
+              "description": "Structuring data"
+            },
+            {
+              "description": "Mapping data to visual representations (e.g., scales, grammar of graphics)"
+            },
+            {
+              "description": "View transformations (e.g., pan, zoom, filter, select)"
+            }
+          ]
+        },
+        {
+          "description": "Common data formats (e.g., HDF, netCDF, geotiff, GeoJSON, shape files, raw binary, JSON, CSV, plain text)"
+        },
+        {
+          "description": "High-dimensional data handling techniques",
+          "topics": [
+            {
+              "description": "Statistical (e.g., averaging, clustering, filtering)"
+            },
+            {
+              "description": "Perceptual (e.g., multi-dimensional vis, parallel coordinates, trellis plots)"
+            }
+          ]
+        },
+        {
+          "description": "Perceptual and cognitive foundations that drive visual abstractions.",
+          "topics": [
+            {
+              "description": "Human optical system"
+            },
+            {
+              "description": "Color theory"
+            },
+            {
+              "description": "Gestalt theories"
+            }
+          ]
+        },
+        {
+          "description": "Design and evaluation of visualizations",
+          "topics": [
+            {
+              "description": "Purpose (e.g., analysis, communication, aesthetics)"
+            },
+            {
+              "description": "Accessibility"
+            },
+            {
+              "description": "Appropriateness of encodings"
+            },
+            {
+              "description": "Misleading visualizations"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Compare and contrast data visualization and information visualization."
+        },
+        {
+          "description": "Deploy basic algorithms for visualization."
+        },
+        {
+          "description": "Compare the tradeoffs of visualization algorithms in terms of accuracy and performance."
+        },
+        {
+          "description": "Design a suitable visualization for a particular combination of data characteristics, application tasks, and audience."
+        },
+        {
+          "description": "Analyze the effectiveness of a given visualization for a particular task."
+        },
+        {
+          "description": "Design a process to evaluate the utility of a visualization algorithm or system."
+        },
+        {
+          "description": "Identify a variety of applications of visualization including representations of scientific, medical, and mathematical data; flow visualization; and spatial analysis."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Applied Rendering and Techniques",
+      "code": "GIT-Rendering",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Object and scene modeling",
+          "topics": [
+            {
+              "description": "Object representations: polygonal, parametric, etc."
+            },
+            {
+              "description": "Modeling transformations: affine and coordinate-system transformations"
+            },
+            {
+              "description": "Scene representations: scene graphs"
+            }
+          ]
+        },
+        {
+          "description": "Camera and projection modeling",
+          "topics": [
+            {
+              "description": "Pinhole cameras, similar triangles, and projection model"
+            },
+            {
+              "description": "Camera models"
+            },
+            {
+              "description": "Projective geometry"
+            }
+          ]
+        },
+        {
+          "description": "Radiometry and light models",
+          "topics": [
+            {
+              "description": "Radiometry"
+            },
+            {
+              "description": "Rendering equation"
+            },
+            {
+              "description": "Rendering in nature – emission and scattering, etc."
+            }
+          ]
+        },
+        {
+          "description": "Rendering",
+          "topics": [
+            {
+              "description": "Simple triangle rasterization"
+            },
+            {
+              "description": "Rendering with a shader-based API"
+            },
+            {
+              "description": "Visibility and occlusion, including solutions to this problem (e.g., depth buffering, Painter’s algorithm, and ray tracing)"
+            },
+            {
+              "description": "Texture mapping, including minification and magnification (e.g., trilinear MIP mapping)"
+            },
+            {
+              "description": "Application of spatial data structures to rendering."
+            },
+            {
+              "description": "Ray tracing"
+            },
+            {
+              "description": "Sampling and anti-aliasing"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe and illustrate the light transport problem (i.e., light is emitted, scatters around the scene, and is measured by the eye)."
+        },
+        {
+          "description": "Describe the basic rendering pipeline."
+        },
+        {
+          "description": "Compare and contrast how forward and backwards rendering factor into the graphics pipeline."
+        },
+        {
+          "description": "Create a program to display 2D shapes in a window."
+        },
+        {
+          "description": "Create a program to display 3D models."
+        },
+        {
+          "description": "Produce linear perspective from similar triangles by converting points (x, y, z) to points (x/z, y/z, 1)."
+        },
+        {
+          "description": "Compute two-dimensional and 3-dimensional points by applying affine transformations."
+        },
+        {
+          "description": "Indicate the changes required to extend 2D transformation operations to handle transformations in 3D."
+        },
+        {
+          "description": "Define texture mapping, sampling, and anti-aliasing, and describe examples of each."
+        },
+        {
+          "description": "Compare ray tracing and rasterization for the visibility problem."
+        },
+        {
+          "description": "Construct a program that performs transformation and clipping operations on simple two-dimensional shapes."
+        },
+        {
+          "description": "Implement a simple real-time renderer using a rasterization API (e.g., OpenGL, webGL) using vertex buffers and shaders."
+        },
+        {
+          "description": "Compare and contrast the different rendering techniques."
+        },
+        {
+          "description": "Compare and contrast the difference in transforming the camera vs the models."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "15"
+    },
+    {
+      "name": "Geometric Modeling",
+      "code": "GIT-Modeling",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Basic geometric operations such as intersection calculation and proximity tests on 2D objects"
+        },
+        {
+          "description": "Surface representation/model",
+          "topics": [
+            {
+              "description": "Tessellation"
+            },
+            {
+              "description": "Mesh representation, mesh fairing, and mesh generation techniques such as Delaunay triangulation, and marching cubes/tetrahedrons"
+            },
+            {
+              "description": "Parametric polynomial curves and surfaces"
+            },
+            {
+              "description": "Implicit representation of curves and surfaces"
+            },
+            {
+              "description": "Spatial subdivision techniques"
+            }
+          ]
+        },
+        {
+          "description": "Volumetric representation/model",
+          "topics": [
+            {
+              "description": "Volumes, voxels, and point-based representations."
+            },
+            {
+              "description": "Signed Distance Fields"
+            },
+            {
+              "description": "Sparse Volumes, i.e., VDB"
+            },
+            {
+              "description": "Constructive Solid Geometry (CSG) representation"
+            }
+          ]
+        },
+        {
+          "description": "Procedural representation/model",
+          "topics": [
+            {
+              "description": "Fractals"
+            },
+            {
+              "description": "L-Systems"
+            }
+          ]
+        },
+        {
+          "description": "Multi-resolution modeling (See also: SPD-Game)"
+        },
+        {
+          "description": "Reconstruction, e.g., 3D scanning, photogrammetry"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Contrast representing curves and surfaces in both implicit and parametric forms."
+        },
+        {
+          "description": "Create simple polyhedral models by surface tessellation."
+        },
+        {
+          "description": "Create a mesh representation from an implicit surface."
+        },
+        {
+          "description": "Create a fractal model or terrain using a procedural method."
+        },
+        {
+          "description": "Create a mesh from data points acquired with a laser scanner."
+        },
+        {
+          "description": "Create CSG models from simple primitives, such as cubes and quadric surfaces."
+        },
+        {
+          "description": "Contrast modeling approaches with respect to space and time complexity and quality of image."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Shading and Advanced Rendering",
+      "code": "GIT-Shading",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Solutions and approximations to the rendering equation, for example",
+          "topics": [
+            {
+              "description": "Distribution ray tracing and path tracing"
+            },
+            {
+              "description": "Photon mapping"
+            },
+            {
+              "description": "Bidirectional path tracing"
+            },
+            {
+              "description": "Metropolis light transport"
+            }
+          ]
+        },
+        {
+          "description": "Time (motion blur), lens position (focus), and continuous frequency (color) and their impact on rendering"
+        },
+        {
+          "description": "Shadow mapping"
+        },
+        {
+          "description": "Occlusion culling"
+        },
+        {
+          "description": "Bidirectional Scattering Distribution function (BSDF) theory and microfacets"
+        },
+        {
+          "description": "Subsurface scattering"
+        },
+        {
+          "description": "Area light sources"
+        },
+        {
+          "description": "Hierarchical depth buffering"
+        },
+        {
+          "description": "Image-based rendering"
+        },
+        {
+          "description": "Non-photorealistic rendering"
+        },
+        {
+          "description": "Realtime rendering"
+        },
+        {
+          "description": "GPU architecture (See also: AR-Heterogeneity)"
+        },
+        {
+          "description": "Human visual systems including adaptation to light, sensitivity to noise, and flicker fusion (See also: HCI-Accessibility, SEP-DEIA)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe how an algorithm estimates a solution to the rendering equation."
+        },
+        {
+          "description": "Discuss the properties of a rendering algorithm (e.g., complete, consistent, and unbiased)."
+        },
+        {
+          "description": "Analyze the bandwidth and computation demands of a simple shading algorithm."
+        },
+        {
+          "description": "Implement a non-trivial shading algorithm (e.g., toon shading, cascaded shadow maps) under a rasterization API."
+        },
+        {
+          "description": "State how a particular artistic technique might be implemented in a renderer."
+        },
+        {
+          "description": "Describe how one might recognize the shading techniques used to create a particular image."
+        },
+        {
+          "description": "Write a program that implements any of the specified graphics techniques using a primitive graphics system at the individual pixel level."
+        },
+        {
+          "description": "Write a ray tracer for scenes using a simple (e.g., Phong’s) Bidirectional Reflection Distribution Function (BRDF) plus reflection and refraction."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Computer Animation",
+      "code": "GIT-Animation",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Principles of Animation: Squash and Stretch, Timing, Anticipation, Staging, Follow Through and Overlapping Action, Straight Ahead Action, and Pose-to-Pose Action, Slow In and Out, Arcs, Exaggeration, and Appeal"
+        },
+        {
+          "description": "Types of animation",
+          "topics": [
+            {
+              "description": "2- and 3-dimensional animation"
+            },
+            {
+              "description": "Motion graphics"
+            },
+            {
+              "description": "Motion capture"
+            },
+            {
+              "description": "Motion graphics"
+            },
+            {
+              "description": "Stop animation"
+            }
+          ]
+        },
+        {
+          "description": "Key-frame animation",
+          "topics": [
+            {
+              "description": "Keyframe Interpolation Methods: Lerp/Slerp/Spline"
+            }
+          ]
+        },
+        {
+          "description": "Forward and inverse kinematics (See also: SPD-Robot, AI-Robotics)"
+        },
+        {
+          "description": "Skinning algorithms",
+          "topics": [
+            {
+              "description": "Capturing"
+            },
+            {
+              "description": "Linear blend, dual quaternion"
+            },
+            {
+              "description": "Rigging"
+            },
+            {
+              "description": "Blend shapes"
+            },
+            {
+              "description": "Pose space deformation"
+            }
+          ]
+        },
+        {
+          "description": "Motion capture",
+          "topics": [
+            {
+              "description": "Set up and fundamentals"
+            },
+            {
+              "description": "Blending motion capture clips"
+            },
+            {
+              "description": "Blending motion capture and keyframe animation"
+            },
+            {
+              "description": "Ethical considerations (See also: SEP-DEIA, SEP-Privacy)",
+              "topics": [
+                {
+                  "description": "Avoidance of “default” captures - there is no typical human walk cycle."
+                },
+                {
+                  "description": "Accessibility"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Using a simple open-source character model and rig, describe visually why each of the principles of animation is fundamental to realistic animation."
+        },
+        {
+          "description": "Compute the location and orientation of model parts using a forward kinematic approach."
+        },
+        {
+          "description": "Compute the orientation of articulated parts of a model from a location and orientation using an inverse kinematic approach."
+        },
+        {
+          "description": "Compare the tradeoffs in different representations of rotations."
+        },
+        {
+          "description": "Write a script that implements the spline interpolation method for producing in-between positions and orientations."
+        },
+        {
+          "description": "Deploy off-the-shelf animation software to construct, rig, and animate simple organic forms."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Simulation",
+      "code": "GIT-Simulation",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Collision detection and response",
+          "topics": [
+            {
+              "description": "Signed Distance Fields"
+            },
+            {
+              "description": "Sphere/sphere"
+            },
+            {
+              "description": "Triangle/point"
+            },
+            {
+              "description": "Edge/edge"
+            }
+          ]
+        },
+        {
+          "description": "Procedural animation using noise"
+        },
+        {
+          "description": "Particle systems",
+          "topics": [
+            {
+              "description": "Integration methods (e.g., forward Euler, midpoint, leapfrog)"
+            },
+            {
+              "description": "Mass/spring networks"
+            },
+            {
+              "description": "Position-based dynamics"
+            },
+            {
+              "description": "Rules (e.g., boids, crowds)"
+            },
+            {
+              "description": "Rigid bodies"
+            }
+          ]
+        },
+        {
+          "description": "Grid-based fluids",
+          "topics": [
+            {
+              "description": "Semi-Lagrangian advection"
+            },
+            {
+              "description": "Pressure projection"
+            }
+          ]
+        },
+        {
+          "description": "Heightfields",
+          "topics": [
+            {
+              "description": "Terrain: transport, erosion"
+            },
+            {
+              "description": "Water: ripple, shallow water."
+            }
+          ]
+        },
+        {
+          "description": "Rule-based systems (e.g., L-systems, space-colonizing systems, Game of Life)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Implement algorithms for physical modeling of particle dynamics using simple Newtonian mechanics (e.g., Witkin & Kass, snakes and worms, symplectic Euler, Stormer/Verlet, or midpoint Euler methods)"
+        },
+        {
+          "description": "Contrast the basic ideas behind fluid simulation methods for modeling ballistic trajectories (e.g., for splashes, dust, fire, or smoke)."
+        },
+        {
+          "description": "Implement a smoke solver with user interaction."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Immersion",
+      "code": "GIT-Immersion",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Immersion levels (i.e., Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR))"
+        },
+        {
+          "description": "Definitions of and distinctions between immersion and presence"
+        },
+        {
+          "description": "360 Video"
+        },
+        {
+          "description": "Stereoscopic display",
+          "topics": [
+            {
+              "description": "Head-mounted displays"
+            },
+            {
+              "description": "Stereo glasses"
+            }
+          ]
+        },
+        {
+          "description": "Viewer tracking",
+          "topics": [
+            {
+              "description": "Inside out and outside In"
+            },
+            {
+              "description": "Head/Body/Hand/tracking"
+            }
+          ]
+        },
+        {
+          "description": "Time-critical rendering to achieve optimal Motion To Photon (MTP) latency",
+          "topics": [
+            {
+              "description": "Multiple Levels Of Details (LOD)"
+            },
+            {
+              "description": "Image-based VR"
+            },
+            {
+              "description": "Branching movies"
+            }
+          ]
+        },
+        {
+          "description": "Distributed VR, collaboration over computer network"
+        },
+        {
+          "description": "Presence and factors that impact level of immersion"
+        },
+        {
+          "description": "3D interaction"
+        },
+        {
+          "description": "Applications in medicine, simulation, training, and visualization"
+        },
+        {
+          "description": "Safety in immersive applications",
+          "topics": [
+            {
+              "description": "Motion sickness"
+            },
+            {
+              "description": "VR obscures the real world, which increases the potential for falls and physical accidents"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Create a stereoscopic image."
+        },
+        {
+          "description": "Design and write an AR or VR application."
+        },
+        {
+          "description": "Summarize the pros and cons of different types of viewer tracking."
+        },
+        {
+          "description": "Compare and contrast the differences between geometry- and image-based virtual reality."
+        },
+        {
+          "description": "Analyze the design issues of user action synchronization and data consistency in a networked environment."
+        },
+        {
+          "description": "Create the specifications for an augmented reality application to be used by surgeons in the operating room."
+        },
+        {
+          "description": "Assess an immersive application’s accessibility (See also: HCI-Accessibility, SEP-DEIA)"
+        },
+        {
+          "description": "Identify the most important technical characteristics of a VR system/application that should be controlled to avoid motion sickness and explain why."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Interaction",
+      "code": "GIT-Interaction",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Event Driven Programming (See also: FPL-Event-Driven)",
+          "topics": [
+            {
+              "description": "Mouse or touch events"
+            },
+            {
+              "description": "Keyboard events"
+            },
+            {
+              "description": "Voice input"
+            },
+            {
+              "description": "Sensors"
+            },
+            {
+              "description": "Message passing communication"
+            },
+            {
+              "description": "Network events"
+            }
+          ]
+        },
+        {
+          "description": "Graphical User Interface (Single Channel)",
+          "topics": [
+            {
+              "description": "Window"
+            },
+            {
+              "description": "Icons"
+            },
+            {
+              "description": "Menus"
+            },
+            {
+              "description": "Pointing Devices"
+            }
+          ]
+        },
+        {
+          "description": "Accessibility (See also: SEP-DEIA)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Gestural Interfaces (See also: SPD-Game)",
+          "topics": [
+            {
+              "description": "Touch screen gestures"
+            },
+            {
+              "description": "Hand and body gestures"
+            }
+          ]
+        },
+        {
+          "description": "Haptic Interfaces",
+          "topics": [
+            {
+              "description": "External actuators"
+            },
+            {
+              "description": "Gloves"
+            },
+            {
+              "description": "Exoskeletons"
+            }
+          ]
+        },
+        {
+          "description": "Multimodal Interfaces"
+        },
+        {
+          "description": "Head-worn Interfaces",
+          "topics": [
+            {
+              "description": "Brain-computer interfaces, e.g., Electroencephalography (EEG) electrodes and Multi-Electrode Arrays (MEAs)"
+            },
+            {
+              "description": "Headsets with embedded eye tracking"
+            },
+            {
+              "description": "AR glasses"
+            }
+          ]
+        },
+        {
+          "description": "Natural Language Interfaces (See also: AI-NLP)"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Create a simple game that responds to single channel mouse and keyboard events."
+        },
+        {
+          "description": "Create a mobile app that responds to touch events."
+        },
+        {
+          "description": "Design and create an application that responds to different event triggers. None-core:"
+        },
+        {
+          "description": "Assess the consistency or lack of consistency in cross-platform touch screen gestures."
+        },
+        {
+          "description": "Design and create an application that provides haptic feedback."
+        },
+        {
+          "description": "Write a program that is controlled by gestures."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    },
+    {
+      "name": "Image Processing",
+      "code": "GIT-Image",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Morphological operations",
+          "topics": [
+            {
+              "description": "Connected components"
+            },
+            {
+              "description": "Dilation"
+            },
+            {
+              "description": "Erosion"
+            },
+            {
+              "description": "Computing region properties (area, perimeter, centroid, etc.)"
+            }
+          ]
+        },
+        {
+          "description": "Color histograms",
+          "topics": [
+            {
+              "description": "Representation"
+            },
+            {
+              "description": "Contrast enhancement through normalization"
+            }
+          ]
+        },
+        {
+          "description": "Image enhancement",
+          "topics": [
+            {
+              "description": "Convolution"
+            },
+            {
+              "description": "Blur (e.g., Gaussian)"
+            },
+            {
+              "description": "Sharpen (e.g., Laplacian)"
+            },
+            {
+              "description": "Frequency filtering (e.g., low-pass, high-pass)"
+            }
+          ]
+        },
+        {
+          "description": "Image restoration",
+          "topics": [
+            {
+              "description": "Noise, degradation"
+            },
+            {
+              "description": "Inpainting and other completion algorithms"
+            },
+            {
+              "description": "Wiener filter"
+            }
+          ]
+        },
+        {
+          "description": "Image coding",
+          "topics": [
+            {
+              "description": "Redundancy"
+            },
+            {
+              "description": "Compression (e.g., Huffman coding)"
+            },
+            {
+              "description": "Discrete Cosine Transform (DCT), wavelet transform, Fourier transforms (See also: SPD-Interactive)"
+            },
+            {
+              "description": "Nyquist Theorem"
+            },
+            {
+              "description": "Watermarks"
+            }
+          ]
+        },
+        {
+          "description": "Connections to deep learning (e.g., Convolutional Neural Networks) (See also: AI-ML)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Write a program that uses dilation and erosion to smooth the edges of a binary image."
+        },
+        {
+          "description": "Manipulating the hue of an image."
+        },
+        {
+          "description": "Write a program that applies a high-pass filter to an image. (The advanced variation would be to filter an image using a high-pass filter in the frequency domain.)"
+        },
+        {
+          "description": "Write a program that restores missing parts of an image using an in-paint algorithm (e.g., Poisson image editing)"
+        },
+        {
+          "description": "Assess the results of selectively filtering an image in the frequency domain."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Tangible/Physical Computing",
+      "code": "GIT-Physical",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Interaction with the physical world (See also: SPD-Embedded)",
+          "topics": [
+            {
+              "description": "Acquisition of data from sensors"
+            },
+            {
+              "description": "Driving external actuators"
+            }
+          ]
+        },
+        {
+          "description": "Connection to physical artifacts",
+          "topics": [
+            {
+              "description": "Computer-Aided Design (CAD)"
+            },
+            {
+              "description": "Computer-Aided Manufacturing (CAM)"
+            },
+            {
+              "description": "Fabrication (See also: HCI-Design)",
+              "topics": [
+                {
+                  "description": "Prototyping"
+                },
+                {
+                  "description": "Additive (3D printing)"
+                },
+                {
+                  "description": "Subtractive (Computer Numerical Control (CNC) milling)"
+                },
+                {
+                  "description": "Forming (vacuum forming)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Internet of Things (See also: SPD-Interactive)",
+          "topics": [
+            {
+              "description": "Network connectivity"
+            },
+            {
+              "description": "Wireless communication"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Construct a simple virtual switch or application button and use it to turn on an LED."
+        },
+        {
+          "description": "Construct a simple system to move a servo in response to sensor data."
+        },
+        {
+          "description": "Create a circuit and accompanying microcontroller code that uses a light sensor to vary a property of something else (e.g., color or brightness of an LED or graphic, position of an external actuator)."
+        },
+        {
+          "description": "Create a circuit with a variable resistor and write a microcontroller program that reads and responds to the resistor’s changing values."
+        },
+        {
+          "description": "Create a 3D form in a CAD package.",
+          "topics": [
+            {
+              "description": "Show how affine transformations are achieved in the CAD program."
+            },
+            {
+              "description": "Show an example of instances of an object."
+            },
+            {
+              "description": "Create a fabrication plan. Provide a cost estimate for materials and time. How will you fabricate it?"
+            },
+            {
+              "description": "Fabricate it. How closely did your actual fabrication process match your plan? Where did it differ?"
+            }
+          ]
+        },
+        {
+          "description": "Write the G- and M-Code to construct a 3D maze and use a CAD/CAM package to check your work."
+        },
+        {
+          "description": "Decide and defend your decision to use Ethernet, WiFi, Bluetooth, RFID/NFC, or something else for internet connectivity when designing an IoT pill dispenser. Create an IoT pill dispenser."
+        },
+        {
+          "description": "Distinguish between the different types of fabrication and describe when you would use each."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "GIT-SEP",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Accessibility in immersive, interactive, and physical computing applications (See also: SEP-DEIA)",
+          "topics": [
+            {
+              "description": "Accessible to people with mobility impairments"
+            },
+            {
+              "description": "Accessible to people with vision and/or hearing impairments"
+            }
+          ]
+        },
+        {
+          "description": "Ethics/privacy in graphics applications. (See also: SEP-Privacy, SEP-Professional-Ethics, and SEP-Security)",
+          "topics": [
+            {
+              "description": "Acquisition of private data (room scans, body proportions, active cameras, etc.)"
+            },
+            {
+              "description": "Can’t look away from immersive applications easily"
+            },
+            {
+              "description": "Danger to self/surroundings while immersed"
+            },
+            {
+              "description": "Ethical pitfalls of facial recognition"
+            },
+            {
+              "description": "Misleading visualizations",
+              "topics": [
+                {
+                  "description": "Due to incorrect data because of exaggeration, hole filling, smoothing, data cleanup, etc."
+                },
+                {
+                  "description": "Even correct data can mislead (e.g., aliasing can cause back moving or stopped fan blades)"
+                }
+              ]
+            },
+            {
+              "description": "Privacy regarding health and other personal information"
+            },
+            {
+              "description": "Bias in image processing",
+              "topics": [
+                {
+                  "description": "Deep fakes"
+                },
+                {
+                  "description": "Applications that misidentify people based on skin color or hairstyle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Intellectual Property law as it relates to computer graphics and interactive techniques (See also: SEP-IP)",
+          "topics": [
+            {
+              "description": "images used to train generative AI"
+            },
+            {
+              "description": "images produced by generative AI"
+            }
+          ]
+        },
+        {
+          "description": "Current and past contributors to the field (See also: SEP-DEIA)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Discuss the security issues inherent in location tags."
+        },
+        {
+          "description": "Describe the ethical pitfalls of facial recognition. Can facial recognition be used ethically? If so, how?"
+        },
+        {
+          "description": "Discuss the copyright issues of using watermarked images to train a neural network."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "Included in SEP hours"
+    }
+  ]
+}

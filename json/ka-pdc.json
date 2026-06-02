@@ -1,0 +1,620 @@
+{
+  "name": "Parallel and Distributed Computing",
+  "code": "PDC",
+  "units": [
+    {
+      "name": "Programs",
+      "code": "PDC-Programs",
+      "topics-cs": [
+        {
+          "description": "Parallelism",
+          "topics": [
+            {
+              "description": "Declarative parallelism: Determining which actions may, or must not, be performed in parallel, at the level of instructions, functions, closures, composite actions, sessions, tasks, and services is the main idea underlying PDC algorithms; failing to do so is the main source of errors. (See also: PDC-Algorithms)"
+            },
+            {
+              "description": "Defining order: for example, using happens-before relations or series/parallel directed acyclic graphs representing programs."
+            },
+            {
+              "description": "Independence: determining when ordering does not matter, in terms of commutativity, dependencies, preconditions."
+            },
+            {
+              "description": "Ensuring ordering among otherwise parallel actions when necessary, including locking, safe publication; and imposing communication – sending a message happens before receiving it; conversely relaxing when unnecessary."
+            }
+          ]
+        },
+        {
+          "description": "Distribution",
+          "topics": [
+            {
+              "description": "Defining places, as devices executing actions, including hardware components, remote hosts, may also include external, uncontrolled devices, hosts, and users. (See also: AR-IO)"
+            },
+            {
+              "description": "One device may time-slice or otherwise emulate multiple parallel actions by fewer processors by scheduling and virtualization. (See also: OS-Scheduling)"
+            },
+            {
+              "description": "Naming or identifying places (e.g., device IDs) and actions as parties (e.g., thread IDs)."
+            },
+            {
+              "description": "Activities across places may communicate across media. (See also: PDC-Communication)"
+            }
+          ]
+        },
+        {
+          "description": "Starting activities",
+          "topics": [
+            {
+              "description": "Options that enable actions to be performed (eventually) at places range from hardwiring to configuration scripts; also establishing communication and resource management; these are expressed differently across languages and contexts, usually relying on automated provisioning and management by platforms (See also: SF-Resources)"
+            },
+            {
+              "description": "Procedural: Enabling multiple actions to start at a given program point; for example, starting new threads, possibly scoping, or otherwise organizing them in hierarchical groups"
+            },
+            {
+              "description": "Reactive: Enabling upon an event by installing an event handler, with less control of when actions begin or end, and may apply even on uniprocessors"
+            },
+            {
+              "description": "Dependent: Enabling upon completion of others; for example, sequencing sets of parallel actions (See also: PDC-Coordination)"
+            },
+            {
+              "description": "Granularity: Execution cost of action bodies should outweigh the overhead of arranging them"
+            }
+          ]
+        },
+        {
+          "description": "Execution Properties",
+          "topics": [
+            {
+              "description": "Nondeterministic execution of unordered actions"
+            },
+            {
+              "description": "Consistency: Ensuring agreement among parties about values and predicates when necessary to avoid races, maintain safety and atomicity, or arrive at consensus"
+            },
+            {
+              "description": "Fault tolerance: Handling failures in parties or communication, including (Byzantine) misbehavior due to untrusted parties and protocols, when necessary to maintain progress or availability (See also: SF-Reliability)"
+            },
+            {
+              "description": "Tradeoffs are one focus of evaluation (See also: PDC-Evaluation)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One or more of the following mappings and mechanisms across layered systems:",
+          "topics": [
+            {
+              "description": "CPU data- and instruction-level-parallelism (See also: AR-Organization)"
+            },
+            {
+              "description": "SIMD and heterogeneous data parallelism (See also: AR-Heterogeneity)"
+            },
+            {
+              "description": "Multicore scheduled concurrency, tasks, actors (See also: OS-Scheduling)"
+            },
+            {
+              "description": "Clusters, clouds; elastic provisioning. (See also: SPD-Common)"
+            },
+            {
+              "description": "Networked distributed systems (See also: NC-Applications)"
+            },
+            {
+              "description": "Emerging technologies such as quantum computing and molecular computing"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Graphically show (as a Directed Acyclic Graph (DAG)) how to parallelize a compound numerical expression; for example, a = (b + c) * (d + e)."
+        },
+        {
+          "description": "Explain why the concepts of consistency and fault tolerance do not arise in purely sequential programs."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Write a function that efficiently counts events such as networking packet receptions."
+        },
+        {
+          "description": "Write a filter/map/reduce program in multiple styles."
+        },
+        {
+          "description": "Write a service that creates a thread (or other procedural form of activation) to return a requested web page to each new client."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "oyment scrip",
+      "hours-ka": "ts), Prerequisites"
+    },
+    {
+      "name": "Communication",
+      "code": "PDC-Communication",
+      "topics-cs": [
+        {
+          "description": "Media",
+          "topics": [
+            {
+              "description": "Varieties: channels (message passing or I/O), shared memory, heterogeneous, data stores"
+            },
+            {
+              "description": "Reliance on the availability and nature of underlying hardware, connectivity, and protocols; language support, emulation (See also: AR-IO)"
+            }
+          ]
+        },
+        {
+          "description": "Channels",
+          "topics": [
+            {
+              "description": "Explicit (usually named) party-to-party communication media"
+            },
+            {
+              "description": "APIs: Sockets, architectural, language-based, and toolkit constructs, such as Message Passing Interface (MPI), and layered constructs such as Remote Procedure Call (RPC) (See also: NC-Fundamentals)"
+            },
+            {
+              "description": "I/O channel APIs"
+            }
+          ]
+        },
+        {
+          "description": "Memory",
+          "topics": [
+            {
+              "description": "Shared memory architectures in which parties directly communicate only with memory at given addresses, with extensions to heterogeneous memory supporting multiple memory stores with explicit data transfer across them; for example, GPU local and shared memory, Direct Memory Access (DMA)"
+            },
+            {
+              "description": "Memory hierarchies: Multiple layers of sharing domains, scopes, and caches; locality: latency, false-sharing"
+            },
+            {
+              "description": "Consistency properties: Bitwise atomicity limits, coherence, local ordering"
+            }
+          ]
+        },
+        {
+          "description": "Data Stores",
+          "topics": [
+            {
+              "description": "Cooperatively maintained data structures implementing maps and related ADTs"
+            },
+            {
+              "description": "Varieties: Owned, shared, sharded, replicated, immutable, versioned"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One or more of the following properties and extensions",
+          "topics": [
+            {
+              "description": "Topologies: Unicast, Multicast, Mailboxes, Switches; Routing via hardware and software interconnection networks"
+            },
+            {
+              "description": "Media concurrency properties: Ordering, consistency, idempotency, overlapping communication with computation"
+            },
+            {
+              "description": "Media performance: Latency, bandwidth (throughput) contention (congestion), responsiveness (liveness), reliability (error and drop rates), protocol-based progress (acks, timeouts, mediation)"
+            },
+            {
+              "description": "Media security properties: integrity, privacy, authentication, authorization (See also: SEC-Secure Coding)"
+            },
+            {
+              "description": "Data formats: Marshaling, validation, encryption, compression"
+            },
+            {
+              "description": "Channel policies: Endpoints, sessions, buffering, saturation response (waiting vs dropping), rate control"
+            },
+            {
+              "description": "Multiplexing and demultiplexing many relatively slow I/O devices or parties; completion-based and scheduler-based techniques; async-await, select and polling APIs"
+            },
+            {
+              "description": "Formalization and analysis of channel communication; for example, CSP"
+            },
+            {
+              "description": "Applications of queuing theory to model and predict performance."
+            },
+            {
+              "description": "Memory models: sequential and release/acquire consistency"
+            },
+            {
+              "description": "Memory management; including reclamation of shared data; reference counts and alternatives"
+            },
+            {
+              "description": "Bulk data placement and transfer; reducing message traffic and improving locality; overlapping data transfer and computation; impact of data layout such as array-of-structs vs struct-of-arrays"
+            },
+            {
+              "description": "Emulating shared memory: distributed shared memory, Remote Direct Memory Access (RDMA)"
+            },
+            {
+              "description": "Data store consistency: Atomicity, linearizability, transactionality, coherence, causal ordering, conflict resolution, eventual consistency, blockchains"
+            },
+            {
+              "description": "Faults, partitioning, and partial failures; voting; protocols such as Paxos and Raft."
+            },
+            {
+              "description": "Design tradeoffs among consistency, availability, partition (fault) tolerance; impossibility of meeting all at once"
+            },
+            {
+              "description": "Security and trust: Byzantine failures, proof of work and alternatives"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain the similarities and differences among: (1) Party A sends a message on channel X with contents 1 received by party B (2) A sets shared variable X to 1, read by B (3) A sets “X=1’ in a distributed shared map accessed by B."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Write a program that distributes different segments of a data set to multiple workers, and collects results (for the simplest example, summing segments of an array)."
+        },
+        {
+          "description": "Write a parallel program that requests data from multiple sites and summarizes them using some form of reduction."
+        },
+        {
+          "description": "Compare the performance of buffered versus unbuffered versions of a producer-consumer program."
+        },
+        {
+          "description": "Determine whether a given communication scheme provides sufficient security properties for a given usage."
+        },
+        {
+          "description": "Give an example of an ordering of accesses among concurrent activities (e.g., program with a data race) that is not sequentially consistent."
+        },
+        {
+          "description": "Give an example of a scenario in which blocking message sends can deadlock."
+        },
+        {
+          "description": "Describe at least one design technique for avoiding liveness failures in programs using multiple locks."
+        },
+        {
+          "description": "Write a program that illustrates memory-access or message reordering."
+        },
+        {
+          "description": "Describe the relative merits of optimistic versus conservative concurrency control under different rates of contention among updates."
+        },
+        {
+          "description": "Give an example of a scenario in which an attempted optimistic update may never complete."
+        },
+        {
+          "description": "Modify a concurrent system to use a more scalable, reliable, or available data store."
+        },
+        {
+          "description": "Using an existing platform supporting replicated data stores, write a program that maintains a key-value mapping even when one or more hosts fail."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "ation among",
+      "hours-ka": "parallel"
+    },
+    {
+      "name": "Coordination",
+      "code": "PDC-Coordination",
+      "topics-cs": [
+        {
+          "description": "Dependencies",
+          "topics": [
+            {
+              "description": "Initiation or progress of one activity may be dependent on other activities, so as to avoid race conditions, ensure termination, or meet other requirements"
+            },
+            {
+              "description": "Ensuring progress by avoiding dependency cycles, using monotonic conditions, removing inessential dependencies"
+            }
+          ]
+        },
+        {
+          "description": "Control constructs and design patterns",
+          "topics": [
+            {
+              "description": "Completion-based: Barriers, joins, including termination control"
+            },
+            {
+              "description": "Data-enabled: Queues, producer-consumer designs"
+            },
+            {
+              "description": "Condition-based: Polling, retrying, backoffs, helping, suspension, signaling, timeouts"
+            },
+            {
+              "description": "Reactive: Enabling and triggering continuations"
+            }
+          ]
+        },
+        {
+          "description": "Atomicity",
+          "topics": [
+            {
+              "description": "Atomic instructions, enforced local access orderings"
+            },
+            {
+              "description": "Locks and mutual exclusion; lock granularity",
+              "topics": [
+                {
+                  "description": "Using locks in a specific language; maintaining liveness without introducing races"
+                },
+                {
+                  "description": "Deadlock avoidance: Ordering, coarsening, randomized retries; backoffs, encapsulation via lock managers"
+                },
+                {
+                  "description": "Common errors: Failing to lock or unlock when necessary, holding locks while invoking unknown operations"
+                },
+                {
+                  "description": "Avoiding locks: replication, read-only, ownership, and non-blocking constructions"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One or more of the following properties and extensions",
+          "topics": [
+            {
+              "description": "Progress properties including lock-free, wait-free, fairness, priority scheduling, interactions with consistency, reliability"
+            },
+            {
+              "description": "Performance with respect to contention, granularity, convoying, scaling"
+            },
+            {
+              "description": "Non-blocking data structures and algorithms"
+            },
+            {
+              "description": "Ownership and resource control"
+            },
+            {
+              "description": "Lock variants and alternatives: sequence locks, read-write locks; Read-Copy-Update (RCU), reentrancy; tickets; controlling spinning versus blocking"
+            },
+            {
+              "description": "Transaction-based control: Optimistic and conservative"
+            },
+            {
+              "description": "Distributed locking: reliability"
+            },
+            {
+              "description": "Alternatives to barriers: Clocks; counters, virtual clocks; dataflow and continuations; futures and RPC; consensus-based, gathering results with reducers and collectors"
+            },
+            {
+              "description": "Speculation, selection, cancellation; observability and security consequences"
+            },
+            {
+              "description": "Resource control using semaphores and condition variables"
+            },
+            {
+              "description": "Control flow: Scheduling computations, series-parallel loops with (possibly elected) leaders, pipelines and streams, nested parallelism"
+            },
+            {
+              "description": "Exceptions and failures. Handlers, detection, timeouts, fault tolerance, voting"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Show how to avoid or repair a race error in a given program."
+        },
+        {
+          "description": "Show how to ensure that a program correctly terminates when all of a set of concurrent tasks have completed."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Write a function that efficiently counts events such as sensor inputs or networking packet receptions."
+        },
+        {
+          "description": "Write a filter/map/reduce program in multiple styles."
+        },
+        {
+          "description": "Write a program in which the termination of one set of parallel actions is followed by another."
+        },
+        {
+          "description": "Write a program that speculatively searches for a solution by multiple activities, terminating others when one is found."
+        },
+        {
+          "description": "Write a program in which a numerical exception (such as divide by zero) in one activity causes termination of others."
+        },
+        {
+          "description": "Write a program for multiple parties to agree upon the current time of day; discuss its limitations compared to protocols such as network transfer protocol (NTP)."
+        },
+        {
+          "description": "Write a service that creates a thread (or other procedural form of activation) to return a requested web page to each new client."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2 6"
+    },
+    {
+      "name": "Evaluation",
+      "code": "PDC-Evaluation",
+      "topics-cs": [
+        {
+          "description": "Safety and liveness requirements in terms of temporal logic constructs to express “always” and “eventually” (See also: FPL-Parallel)"
+        },
+        {
+          "description": "Identifying, testing for, and repairing violations, including common forms of errors such as failure to ensure necessary ordering (race errors), atomicity (including check-then-act errors), and termination (livelock)"
+        },
+        {
+          "description": "Performance requirements metrics for throughput, responsiveness, latency, availability, energy consumption, scalability, resource usage, communication costs, waiting and rate control, fairness; service level agreements (See also: SF-Performance)"
+        },
+        {
+          "description": "Performance impact of design and implementation choices, including granularity, overhead, consensus costs, and energy consumption (See also: SEP-Sustainability)"
+        },
+        {
+          "description": "Estimating scalability limitations, for example using Amdahl’s Law or Universal Scalability Law (See also: SF-Evaluation)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One or more of the following methods and tools:",
+          "topics": [
+            {
+              "description": "Extensions to formal sequential requirements such as linearizability"
+            },
+            {
+              "description": "Protocol, session, and transactional specifications"
+            },
+            {
+              "description": "Use of tools such as Unified Modelling Language (UML), Temporal Logic of Actions (TLA), program logics"
+            },
+            {
+              "description": "Security analysis: safety and liveness in the presence of hostile or buggy behaviors by other parties; required properties of communication mechanisms (for example lack of cross-layer leakage), input screening, rate limiting (See also: SEC-Foundations)"
+            },
+            {
+              "description": "Static analysis applied to correctness, throughput, latency, resources, energy (See also: SEP-Sustainability)"
+            },
+            {
+              "description": "Directed Acyclic Graph (DAG) model analysis of algorithmic efficiency (work, span, critical paths)"
+            },
+            {
+              "description": "Testing and debugging; tools such as race detectors, fuzzers, lock dependency checkers, unit/stress/torture tests, visualizations, continuous integration, continuous deployment, and test generators"
+            },
+            {
+              "description": "Measuring and comparing throughput, overhead, waiting, contention, communication, data movement, locality, resource usage, behavior in the presence of excessive numbers of events, clients, or threads (See also: SF-Evaluation)"
+            },
+            {
+              "description": "Application domain specific analyses and evaluation techniques"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Revise a specification to enable parallelism and distribution without violating other essential properties or features."
+        },
+        {
+          "description": "Explain how concurrent notions of safety and liveness extend their sequential counterparts."
+        },
+        {
+          "description": "Specify a set of invariants that must hold at each bulk-parallel step of a computation."
+        },
+        {
+          "description": "Write a test program that can reveal a data race error; for example, missing an update when two activities both try to increment a variable."
+        },
+        {
+          "description": "In a given context, explain the extent to which introducing parallelism in an otherwise sequential program would be expected to improve throughput and/or reduce latency, and how it may impact energy efficiency."
+        },
+        {
+          "description": "Show how scaling and efficiency change for sample problems without and with the assumption of problem size changing with the number of processors; further explain whether and how scalability would change under relaxations of sequential dependencies."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Specify and measure behavior when a service is requested by unexpectedly many clients."
+        },
+        {
+          "description": "Identify and repair a performance problem due to sequential bottlenecks."
+        },
+        {
+          "description": "Empirically compare throughput of two implementations of a common design (perhaps using an existing test harness framework)."
+        },
+        {
+          "description": "Identify and repair a performance problem due to communication or data latency."
+        },
+        {
+          "description": "Identify and repair a performance problem due to communication or data latency."
+        },
+        {
+          "description": "Identify and repair a performance problem due to resource management overhead."
+        },
+        {
+          "description": "Identify and repair a reliability or availability problem."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "ecifications",
+      "hours-ka": ", and Algorithms"
+    },
+    {
+      "name": "Algorithms",
+      "code": "PDC-Algorithms",
+      "topics-cs": [
+        {
+          "description": "Expressing and implementing algorithms in given languages and frameworks, to initiate activities (for example threads), use shared memory constructs, and channel, socket, and/or remote procedure call APIs. (See also: FPL-Parallel).",
+          "topics": [
+            {
+              "description": "Data parallel examples including map/reduce."
+            },
+            {
+              "description": "Using channel, socket, and/or RPC APIs in a given language, with program control for sending (usually procedural) vs receiving. (usually reactive or RPC-based)."
+            },
+            {
+              "description": "Using locks, barriers, and/or synchronizers to maintain liveness without introducing races."
+            }
+          ]
+        },
+        {
+          "description": "Survey of common application domains across multicore, reactive, data parallel, cluster, cloud, open distributed systems, and frameworks (with reference to the following table). Category Typical Typical Typical Typical Execution agents Communication Algorithmic Engineering mechanisms domains goals Multicore Threads Shared memory, Resource Throughput, Atomics, locks management, latency, data processing energy Reactive Handlers, threads I/O Channels Services, real- Latency time Data parallel GPU, SIMD, Heterogeneous Linear algebra, Throughput, accelerators, memory graphics, data energy hybrid analysis Cluster Managed hosts Sockets, channels Simulation, data Throughput analysis Cloud Provisioned hosts Service APIs Web Scalability applications Open Autonomous hosts Sockets, Data Fault tolerant Reliability distributed stores data stores and services"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One of more of the following algorithmic domains. (See also: AL-Strategies):",
+          "topics": [
+            {
+              "description": "Linear algebra: Vector and matrix operations, numerical precision/stability, applications in data analytics and machine learning."
+            },
+            {
+              "description": "Data processing: sorting, searching and retrieval, concurrent data structures."
+            },
+            {
+              "description": "Graphs, search, and combinatorics: Marking, edge-parallelization, bounding, speculation, network-based analytics."
+            },
+            {
+              "description": "Modeling and simulation: differential equations; randomization, N-body problems, genetic algorithms."
+            },
+            {
+              "description": "Computational logic: satisfiability (SAT), concurrent logic programming."
+            },
+            {
+              "description": "Graphics and computational geometry: Transforms, rendering, ray-tracing."
+            },
+            {
+              "description": "Resource management: Allocating, placing, recycling and scheduling processors, memory, channels, and hosts; exclusive vs shared resources; static, dynamic and elastic algorithms; Real-time constraints; Batching, prioritization, partitioning; decentralization via work-stealing and related techniques."
+            },
+            {
+              "description": "Services: Implementing web APIs, electronic currency, transaction systems, multiplayer games."
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Implement a parallel/distributed component based on a known algorithm."
+        },
+        {
+          "description": "Write a data-parallel program that for example computes the average of an array of numbers."
+        },
+        {
+          "description": "Write a producer-consumer program in which one component generates numbers, and another computes their average. Measure speedups when the numbers are small scalars versus large multi-precision values."
+        },
+        {
+          "description": "Extend an event-driven sequential program by establishing a new activity in an event handler (for example a new thread in a GUI action handler)."
+        },
+        {
+          "description": "Improve the performance of a sequential component by introducing parallelism and/or distribution."
+        },
+        {
+          "description": "Choose among different parallel/distributed designs for components of a given system."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Design, implement, analyze, and evaluate a component or application for X operating in a given context, where X is in one of the listed domains, for example, a genetic algorithm for factory floor design."
+        },
+        {
+          "description": "Critique the design and implementation of an existing component or application, or one developed by classmates."
+        },
+        {
+          "description": "Compare the performance and energy efficiency of multiple implementations of a similar design, for example, multicore versus clustered versus GPU."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2 9"
+    }
+  ]
+}

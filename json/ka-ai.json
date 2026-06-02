@@ -1,0 +1,1606 @@
+{
+  "name": "Artificial Intelligence",
+  "code": "AI",
+  "units": [
+    {
+      "name": "Fundamental Issues",
+      "code": "AI-Introduction",
+      "topics-cs": [
+        {
+          "description": "Overview of AI problems, Examples of successful recent AI applications"
+        },
+        {
+          "description": "Definitions of agents with examples (e.g., reactive, deliberative)"
+        },
+        {
+          "description": "What is intelligent behavior?",
+          "topics": [
+            {
+              "description": "The Turing test and its flaws"
+            },
+            {
+              "description": "Multimodal input and output"
+            },
+            {
+              "description": "Simulation of intelligent behavior"
+            },
+            {
+              "description": "Rational versus non-rational reasoning"
+            }
+          ]
+        },
+        {
+          "description": "Problem characteristics",
+          "topics": [
+            {
+              "description": "Fully versus partially observable"
+            },
+            {
+              "description": "Single versus multi-agent"
+            },
+            {
+              "description": "Deterministic versus stochastic"
+            },
+            {
+              "description": "Static versus dynamic"
+            },
+            {
+              "description": "Discrete versus continuous"
+            }
+          ]
+        },
+        {
+          "description": "Nature of agents",
+          "topics": [
+            {
+              "description": "Autonomous, semi-autonomous, mixed-initiative autonomy"
+            },
+            {
+              "description": "Reflexive, goal-based, and utility-based"
+            },
+            {
+              "description": "Decision making under uncertainty and with incomplete information"
+            },
+            {
+              "description": "The importance of perception and environmental interactions"
+            },
+            {
+              "description": "Learning-based agents"
+            },
+            {
+              "description": "Embodied agents",
+              "topics": [
+                {
+                  "description": "sensors, dynamics, effectors"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Overview of AI Applications, growth, and impact (economic, societal, ethics)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Practice identifying problem characteristics in example environments"
+        },
+        {
+          "description": "Additional depth on nature of agents with examples"
+        },
+        {
+          "description": "Additional depth on AI Applications, Growth, and Impact (economic, societal, ethics, security)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Philosophical issues"
+        },
+        {
+          "description": "History of AI"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2 1",
+      "hours-ka": ""
+    },
+    {
+      "name": "Search",
+      "code": "AI-Search",
+      "topics-cs": [
+        {
+          "description": "State space representation of a problem",
+          "topics": [
+            {
+              "description": "Specifying states, goals, and operators"
+            },
+            {
+              "description": "Factoring states into representations (hypothesis spaces)"
+            },
+            {
+              "description": "Problem solving by graph search",
+              "topics": [
+                {
+                  "description": "e.g., Graphs as a space, and tree traversals as exploration of that space"
+                },
+                {
+                  "description": "Dynamic construction of the graph (not given upfront)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Uninformed graph search for problem solving (See also: AL-Foundational)",
+          "topics": [
+            {
+              "description": "Breadth-first search"
+            },
+            {
+              "description": "Depth-first search",
+              "topics": [
+                {
+                  "description": "With iterative deepening"
+                }
+              ]
+            },
+            {
+              "description": "Uniform cost search"
+            }
+          ]
+        },
+        {
+          "description": "Heuristic graph search for problem solving (See also: AL-Strategies)",
+          "topics": [
+            {
+              "description": "Heuristic construction and admissibility"
+            },
+            {
+              "description": "Hill-climbing"
+            },
+            {
+              "description": "Local minima and the search landscape",
+              "topics": [
+                {
+                  "description": "Local vs global solutions"
+                }
+              ]
+            },
+            {
+              "description": "Greedy best-first search"
+            },
+            {
+              "description": "A* search"
+            }
+          ]
+        },
+        {
+          "description": "Space and time complexities of graph search algorithms"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Bidirectional search"
+        },
+        {
+          "description": "Beam search"
+        },
+        {
+          "description": "Two-player adversarial games",
+          "topics": [
+            {
+              "description": "Minimax search"
+            },
+            {
+              "description": "Alpha-beta pruning",
+              "topics": [
+                {
+                  "description": "Ply cutoff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Implementation of A* search"
+        },
+        {
+          "description": "Constraint satisfaction"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Understanding the search space",
+          "topics": [
+            {
+              "description": "Constructing search trees"
+            },
+            {
+              "description": "Dynamic search spaces"
+            },
+            {
+              "description": "Combinatorial explosion of search space"
+            },
+            {
+              "description": "Search space topology (e.g., ridges, saddle points, local minima)"
+            }
+          ]
+        },
+        {
+          "description": "Local search"
+        },
+        {
+          "description": "Tabu search"
+        },
+        {
+          "description": "Variations on A* (IDA*, SMA*, RBFS)"
+        },
+        {
+          "description": "Two-player adversarial games",
+          "topics": [
+            {
+              "description": "The horizon effect"
+            },
+            {
+              "description": "Opening playbooks/endgame solutions"
+            },
+            {
+              "description": "What it means to “solve” a game (e.g., checkers)"
+            }
+          ]
+        },
+        {
+          "description": "Implementation of minimax search, beam search"
+        },
+        {
+          "description": "Expectimax search (MDP-solving) and chance nodes"
+        },
+        {
+          "description": "Stochastic search",
+          "topics": [
+            {
+              "description": "Simulated annealing"
+            },
+            {
+              "description": "Genetic algorithms"
+            },
+            {
+              "description": "Monte-Carlo tree search"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2 + 3 (AL) 6",
+      "hours-ka": ""
+    },
+    {
+      "name": "Fundamental Knowledge Representation and Reasoning",
+      "code": "AI-KRR",
+      "topics-cs": [
+        {
+          "description": "Types of representations",
+          "topics": [
+            {
+              "description": "Symbolic, logical",
+              "topics": [
+                {
+                  "description": "Creating a representation from a natural language problem statement"
+                }
+              ]
+            },
+            {
+              "description": "Learned subsymbolic representations"
+            },
+            {
+              "description": "Graphical models (e.g., naive Bayes, Bayesian network)"
+            }
+          ]
+        },
+        {
+          "description": "Review of probabilistic reasoning, Bayes theorem (See also: MSF-Probability)"
+        },
+        {
+          "description": "Bayesian reasoning",
+          "topics": [
+            {
+              "description": "Bayesian inference"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Random variables and probability distributions",
+          "topics": [
+            {
+              "description": "Axioms of probability"
+            },
+            {
+              "description": "Probabilistic inference"
+            },
+            {
+              "description": "Bayes’ Rule (derivation)"
+            },
+            {
+              "description": "Bayesian inference (more complex examples)"
+            }
+          ]
+        },
+        {
+          "description": "Independence"
+        },
+        {
+          "description": "Conditional Independence"
+        },
+        {
+          "description": "Markov chains and Markov models"
+        },
+        {
+          "description": "Utility and decision making"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "1 + 1 Reasoning (MSF) 2",
+      "hours-ka": ""
+    },
+    {
+      "name": "Machine Learning",
+      "code": "AI-ML",
+      "topics-cs": [
+        {
+          "description": "Definition and examples of a broad variety of machine learning tasks",
+          "topics": [
+            {
+              "description": "Supervised learning",
+              "topics": [
+                {
+                  "description": "Classification"
+                },
+                {
+                  "description": "Regression"
+                }
+              ]
+            },
+            {
+              "description": "Reinforcement learning"
+            },
+            {
+              "description": "Unsupervised learning",
+              "topics": [
+                {
+                  "description": "Clustering"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fundamental ideas:",
+          "topics": [
+            {
+              "description": "No free lunch theorem: no one learner can solve all problems; representational design decisions have consequences."
+            },
+            {
+              "description": "Sources of error and undecidability in machine learning"
+            }
+          ]
+        },
+        {
+          "description": "A simple statistical-based supervised learning such as linear regression or decision trees",
+          "topics": [
+            {
+              "description": "Focus on how they work without going into mathematical or optimization details; enough to understand and use existing implementations correctly"
+            }
+          ]
+        },
+        {
+          "description": "The overfitting problem/controlling solution complexity (regularization, pruning – intuition only)",
+          "topics": [
+            {
+              "description": "The bias (underfitting) – variance (overfitting) tradeoff"
+            }
+          ]
+        },
+        {
+          "description": "Working with Data",
+          "topics": [
+            {
+              "description": "Data preprocessing",
+              "topics": [
+                {
+                  "description": "Importance and pitfalls of preprocessing choices"
+                }
+              ]
+            },
+            {
+              "description": "Handling missing values (imputing, flag-as-missing)",
+              "topics": [
+                {
+                  "description": "Implications of imputing vs flag-as-missing"
+                }
+              ]
+            },
+            {
+              "description": "Encoding categorical variables, encoding real-valued data"
+            },
+            {
+              "description": "Normalization/standardization"
+            },
+            {
+              "description": "Emphasis on real data, not textbook examples"
+            }
+          ]
+        },
+        {
+          "description": "Representations",
+          "topics": [
+            {
+              "description": "Hypothesis spaces and complexity"
+            },
+            {
+              "description": "Simple basis feature expansion, such as squaring univariate features"
+            },
+            {
+              "description": "Learned feature representations"
+            }
+          ]
+        },
+        {
+          "description": "Machine learning evaluation",
+          "topics": [
+            {
+              "description": "Separation of train, validation, and test sets"
+            },
+            {
+              "description": "Performance metrics for classifiers"
+            },
+            {
+              "description": "Estimation of test performance on held-out data"
+            },
+            {
+              "description": "Tuning the parameters of a machine learning model with a validation set"
+            },
+            {
+              "description": "Importance of understanding what a model is doing, where its pitfalls/shortcomings are, and the implications of its decisions"
+            }
+          ]
+        },
+        {
+          "description": "Basic neural networks",
+          "topics": [
+            {
+              "description": "Fundamentals of understanding how neural networks work and their training process, without details of the calculations"
+            },
+            {
+              "description": "Basic introduction to generative neural networks (e.g., large language models)"
+            }
+          ]
+        },
+        {
+          "description": "Ethics for Machine Learning (See also: SEP-Context)",
+          "topics": [
+            {
+              "description": "Focus on real data, real scenarios, and case studies"
+            },
+            {
+              "description": "Dataset/algorithmic/evaluation bias and unintended consequences"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Formulation of simple machine learning as an optimization problem, such as least squares linear regression or logistic regression",
+          "topics": [
+            {
+              "description": "Objective function"
+            },
+            {
+              "description": "Gradient descent"
+            },
+            {
+              "description": "Regularization to avoid overfitting (mathematical formulation)"
+            }
+          ]
+        },
+        {
+          "description": "Ensembles of models",
+          "topics": [
+            {
+              "description": "Simple weighted majority combination"
+            }
+          ]
+        },
+        {
+          "description": "Deep learning",
+          "topics": [
+            {
+              "description": "Deep feed-forward networks (intuition only, no mathematics)"
+            },
+            {
+              "description": "Convolutional neural networks (intuition only, no mathematics)"
+            },
+            {
+              "description": "Visualization of learned feature representations from deep nets"
+            },
+            {
+              "description": "Other architectures (generative NN, recurrent NN, transformers, etc.)"
+            }
+          ]
+        },
+        {
+          "description": "Performance evaluation",
+          "topics": [
+            {
+              "description": "Other metrics for classification (e.g., error, precision, recall)"
+            },
+            {
+              "description": "Performance metrics for regressors"
+            },
+            {
+              "description": "Confusion matrix"
+            },
+            {
+              "description": "Cross-validation",
+              "topics": [
+                {
+                  "description": "Parameter tuning (grid/random search, via cross-validation)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Overview of reinforcement learning methods"
+        },
+        {
+          "description": "Two or more applications of machine learning algorithms",
+          "topics": [
+            {
+              "description": "E.g., medicine and health, economics, vision, natural language, robotics, game play"
+            }
+          ]
+        },
+        {
+          "description": "Ethics for Machine Learning",
+          "topics": [
+            {
+              "description": "Continued focus on real data, real scenarios, and case studies (See also: SEP-Context)"
+            },
+            {
+              "description": "Privacy (See also: SEP-Privacy)"
+            },
+            {
+              "description": "Fairness (See also: SEP-Privacy)"
+            },
+            {
+              "description": "Intellectual property"
+            },
+            {
+              "description": "Explainability"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "General statistical-based learning, parameter estimation (maximum likelihood)"
+        },
+        {
+          "description": "Supervised learning",
+          "topics": [
+            {
+              "description": "Decision trees"
+            },
+            {
+              "description": "Nearest-neighbor classification and regression"
+            },
+            {
+              "description": "Learning simple neural networks / multi-layer perceptrons"
+            },
+            {
+              "description": "Linear regression"
+            },
+            {
+              "description": "Logistic regression"
+            },
+            {
+              "description": "Support vector machines (SVMs) and kernels"
+            },
+            {
+              "description": "Gaussian Processes"
+            }
+          ]
+        },
+        {
+          "description": "Overfitting",
+          "topics": [
+            {
+              "description": "The curse of dimensionality"
+            },
+            {
+              "description": "Regularization (mathematical computations, L2 and L1 regularization)"
+            }
+          ]
+        },
+        {
+          "description": "Experimental design",
+          "topics": [
+            {
+              "description": "Data preparation (e.g., standardization, representation, one-hot encoding)"
+            },
+            {
+              "description": "Hypothesis space"
+            },
+            {
+              "description": "Biases (e.g., algorithmic, search)"
+            },
+            {
+              "description": "Partitioning data: stratification, training set, validation set, test set"
+            },
+            {
+              "description": "Parameter tuning (grid/random search, via cross-validation)"
+            },
+            {
+              "description": "Performance evaluation",
+              "topics": [
+                {
+                  "description": "Cross-validation"
+                },
+                {
+                  "description": "Metric: error, precision, recall, confusion matrix"
+                },
+                {
+                  "description": "Receiver operating characteristic (ROC) curve and area under ROC curve"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Bayesian learning (Cross-Reference AI/Reasoning Under Uncertainty)",
+          "topics": [
+            {
+              "description": "Naive Bayes and its relationship to linear models"
+            },
+            {
+              "description": "Bayesian networks"
+            },
+            {
+              "description": "Prior/posterior"
+            },
+            {
+              "description": "Generative models"
+            }
+          ]
+        },
+        {
+          "description": "Deep learning",
+          "topics": [
+            {
+              "description": "Deep feed-forward networks"
+            },
+            {
+              "description": "Neural tangent kernel and understanding neural network training"
+            },
+            {
+              "description": "Convolutional neural networks"
+            },
+            {
+              "description": "Autoencoders"
+            },
+            {
+              "description": "Recurrent networks"
+            },
+            {
+              "description": "Representations and knowledge transfer"
+            },
+            {
+              "description": "Adversarial training and generative adversarial networks"
+            },
+            {
+              "description": "Attention mechanisms"
+            }
+          ]
+        },
+        {
+          "description": "Representations",
+          "topics": [
+            {
+              "description": "Manually crafted representations"
+            },
+            {
+              "description": "Basis expansion"
+            },
+            {
+              "description": "Learned representations (e.g., deep neural networks)"
+            }
+          ]
+        },
+        {
+          "description": "Unsupervised learning and clustering",
+          "topics": [
+            {
+              "description": "K-means"
+            },
+            {
+              "description": "Gaussian mixture models"
+            },
+            {
+              "description": "Expectation maximization (EM)"
+            },
+            {
+              "description": "Self-organizing maps"
+            }
+          ]
+        },
+        {
+          "description": "Graph analysis (e.g., PageRank)"
+        },
+        {
+          "description": "Semi-supervised learning"
+        },
+        {
+          "description": "Graphical models (See also: AI-Probability)"
+        },
+        {
+          "description": "Ensembles",
+          "topics": [
+            {
+              "description": "Weighted majority"
+            },
+            {
+              "description": "Boosting/bagging"
+            },
+            {
+              "description": "Random forest"
+            },
+            {
+              "description": "Gated ensemble"
+            }
+          ]
+        },
+        {
+          "description": "Learning theory",
+          "topics": [
+            {
+              "description": "General overview of learning theory / why learning works"
+            },
+            {
+              "description": "VC dimension"
+            },
+            {
+              "description": "Generalization bounds"
+            }
+          ]
+        },
+        {
+          "description": "Reinforcement learning",
+          "topics": [
+            {
+              "description": "Exploration vs exploitation tradeoff"
+            },
+            {
+              "description": "Markov decision processes"
+            },
+            {
+              "description": "Value and policy iteration"
+            },
+            {
+              "description": "Policy gradient methods"
+            },
+            {
+              "description": "Deep reinforcement learning"
+            },
+            {
+              "description": "Learning from demonstration and inverse RL"
+            }
+          ]
+        },
+        {
+          "description": "Explainable / interpretable machine learning",
+          "topics": [
+            {
+              "description": "Understanding feature importance (e.g., LIME, Shapley values)"
+            },
+            {
+              "description": "Interpretable models and representations"
+            }
+          ]
+        },
+        {
+          "description": "Recommender systems"
+        },
+        {
+          "description": "Hardware for machine learning",
+          "topics": [
+            {
+              "description": "GPUs / TPUs"
+            }
+          ]
+        },
+        {
+          "description": "Application of machine learning algorithms to:",
+          "topics": [
+            {
+              "description": "Medicine and health"
+            },
+            {
+              "description": "Economics"
+            },
+            {
+              "description": "Education"
+            },
+            {
+              "description": "Vision"
+            },
+            {
+              "description": "Natural language"
+            },
+            {
+              "description": "Robotics"
+            },
+            {
+              "description": "Game play"
+            },
+            {
+              "description": "Data mining (Cross-reference DM/Data Analytics)"
+            }
+          ]
+        },
+        {
+          "description": "Ethics for Machine Learning",
+          "topics": [
+            {
+              "description": "Continued focus on real data, real scenarios, and case studies (See also: SEP-Context)"
+            },
+            {
+              "description": "In depth exploration of dataset/algorithmic/evaluation bias, data privacy, and fairness (See also: SEP-Privacy, SEP-Context)"
+            },
+            {
+              "description": "Trust / explainability"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "4 6",
+      "hours-ka": ""
+    },
+    {
+      "name": "Applications and Societal Impact",
+      "code": "AI-SEP",
+      "topics-cs": [
+        {
+          "description": "At least one application of AI to a specific problem and field, such as medicine, health, sustainability, social media, economics, education, robotics, etc. (choose at least one for the CS Core).",
+          "topics": [
+            {
+              "description": "Formulating and evaluating a specific application as an AI problem",
+              "topics": [
+                {
+                  "description": "How to deal with underspecified or ill-posed problems"
+                }
+              ]
+            },
+            {
+              "description": "Data availability/scarcity and cleanliness",
+              "topics": [
+                {
+                  "description": "Basic data cleaning and preprocessing"
+                },
+                {
+                  "description": "Data set bias"
+                }
+              ]
+            },
+            {
+              "description": "Algorithmic bias"
+            },
+            {
+              "description": "Evaluation bias"
+            },
+            {
+              "description": "Assessment of societal implications of the application"
+            }
+          ]
+        },
+        {
+          "description": "Deployed deep generative models",
+          "topics": [
+            {
+              "description": "High-level overview of deep image generative models (e.g., as of 2023, DALL-E, Midjourney, Stable Diffusion, etc.), their uses, and their shortcomings/pitfalls."
+            },
+            {
+              "description": "High-level overview of large language models (e.g., as of 2023, ChatGPT, Bard, etc.), their uses, and their shortcomings/pitfalls."
+            }
+          ]
+        },
+        {
+          "description": "Overview of societal impact of AI",
+          "topics": [
+            {
+              "description": "Ethics (See also: SEP-Context)"
+            },
+            {
+              "description": "Fairness (See also: SEP-Privacy, SEP-DEIA)"
+            },
+            {
+              "description": "Trust/explainability (See also: SEP-Context)"
+            },
+            {
+              "description": "Privacy and usage of training data (See also: SEP-Privacy)"
+            },
+            {
+              "description": "Human autonomy and oversight/regulations/legal requirements (See also: SEP-Context)"
+            },
+            {
+              "description": "Sustainability (See also: SEP-Sustainability)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "One or more additional applications of AI to a broad set of problems and diverse fields, such as medicine, health, sustainability, social media, economics, education, robotics, etc. (choose a different area from that chosen for the CS Core).",
+          "topics": [
+            {
+              "description": "Formulating and evaluating a specific application as an AI problem",
+              "topics": [
+                {
+                  "description": "How to deal with underspecified or ill-posed problems"
+                }
+              ]
+            },
+            {
+              "description": "Data availability/scarcity and cleanliness",
+              "topics": [
+                {
+                  "description": "Basic data cleaning and preprocessing"
+                },
+                {
+                  "description": "Data set bias"
+                }
+              ]
+            },
+            {
+              "description": "Algorithmic bias"
+            },
+            {
+              "description": "Evaluation bias"
+            },
+            {
+              "description": "Assessment of societal implications of the application"
+            }
+          ]
+        },
+        {
+          "description": "Additional depth on deployed deep generative models",
+          "topics": [
+            {
+              "description": "Introduction to how deep image generative models work, (e.g., as of 2023, DALL-E, Midjourney, Stable Diffusion) including discussion of attention"
+            },
+            {
+              "description": "Introduction to how large language models work, (e.g., as of 2023, ChatGPT, Bard) including discussion of attention"
+            },
+            {
+              "description": "Idea of foundational models, how to use them, and the benefits/issues with training them from big data"
+            }
+          ]
+        },
+        {
+          "description": "Analysis and discussion of the societal impact of AI",
+          "topics": [
+            {
+              "description": "Ethics (See also: SEP-Context)"
+            },
+            {
+              "description": "Fairness (See also: SEP-Privacy, SEP-DEIA)"
+            },
+            {
+              "description": "Trust/explainability (See also: SEP-Context)"
+            },
+            {
+              "description": "Privacy and usage of training data (See also: SEP-Privacy)"
+            },
+            {
+              "description": "Human autonomy and oversight/regulations/legal requirements (See also: SEP-Context)"
+            },
+            {
+              "description": "Sustainability (See also: SEP-Sustainability)"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "3 3",
+      "hours-ka": ""
+    },
+    {
+      "name": "Logical Representation and Reasoning",
+      "code": "AI-LRR",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Review of propositional and predicate logic (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Resolution and theorem proving (propositional logic only)",
+          "topics": [
+            {
+              "description": "Forward chaining, backward chaining"
+            }
+          ]
+        },
+        {
+          "description": "Knowledge representation issues",
+          "topics": [
+            {
+              "description": "Description logics"
+            },
+            {
+              "description": "Ontology engineering"
+            }
+          ]
+        },
+        {
+          "description": "Semantic web"
+        },
+        {
+          "description": "Non-monotonic reasoning (e.g., non-classical logics, default reasoning)"
+        },
+        {
+          "description": "Argumentation"
+        },
+        {
+          "description": "Reasoning about action and change (e.g., situation and event calculus)"
+        },
+        {
+          "description": "Temporal and spatial reasoning"
+        },
+        {
+          "description": "Logic programming",
+          "topics": [
+            {
+              "description": "Prolog, Answer Set Programming"
+            }
+          ]
+        },
+        {
+          "description": "Rule-based Expert Systems"
+        },
+        {
+          "description": "Semantic networks"
+        },
+        {
+          "description": "Model-based and Case-based reasoning"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Probabilistic Representation and Reasoning",
+      "code": "AI-Probability",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Conditional Independence review"
+        },
+        {
+          "description": "Knowledge representations",
+          "topics": [
+            {
+              "description": "Bayesian Networks",
+              "topics": [
+                {
+                  "description": "Exact inference and its complexity"
+                },
+                {
+                  "description": "Markov blankets and d-separation"
+                },
+                {
+                  "description": "Randomized sampling (Monte Carlo) methods (e.g., Gibbs sampling)"
+                }
+              ]
+            },
+            {
+              "description": "Markov Networks"
+            },
+            {
+              "description": "Relational probability models"
+            },
+            {
+              "description": "Hidden Markov Models"
+            }
+          ]
+        },
+        {
+          "description": "Decision Theory",
+          "topics": [
+            {
+              "description": "Preferences and utility functions"
+            },
+            {
+              "description": "Maximizing expected utility"
+            },
+            {
+              "description": "Game theory"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Planning",
+      "code": "AI-Planning",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Review of propositional and first-order logic"
+        },
+        {
+          "description": "Planning operators and state representations"
+        },
+        {
+          "description": "Total order planning"
+        },
+        {
+          "description": "Partial-order planning"
+        },
+        {
+          "description": "Plan graphs and GraphPlan"
+        },
+        {
+          "description": "Hierarchical planning"
+        },
+        {
+          "description": "Planning languages and representations",
+          "topics": [
+            {
+              "description": "PDDL"
+            }
+          ]
+        },
+        {
+          "description": "Multi-agent planning"
+        },
+        {
+          "description": "MDP-based planning"
+        },
+        {
+          "description": "Interconnecting planning, execution, and dynamic replanning",
+          "topics": [
+            {
+              "description": "Conditional planning"
+            },
+            {
+              "description": "Continuous planning"
+            },
+            {
+              "description": "Probabilistic planning"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Agents and Cognitive Systems",
+      "code": "AI-Agents",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Agent architectures (e.g., reactive, layered, cognitive)"
+        },
+        {
+          "description": "Agent theory (including mathematical formalisms)"
+        },
+        {
+          "description": "Rationality, Game Theory",
+          "topics": [
+            {
+              "description": "Decision-theoretic agents"
+            },
+            {
+              "description": "Markov decision processes (MDP)"
+            },
+            {
+              "description": "Bandit algorithms"
+            }
+          ]
+        },
+        {
+          "description": "Software agents, personal assistants, and information access",
+          "topics": [
+            {
+              "description": "Collaborative agents"
+            },
+            {
+              "description": "Information-gathering agents"
+            },
+            {
+              "description": "Believable agents (synthetic characters, modeling emotions in agents)"
+            }
+          ]
+        },
+        {
+          "description": "Learning agents"
+        },
+        {
+          "description": "Cognitive systems",
+          "topics": [
+            {
+              "description": "Cognitive architectures (e.g., ACT-R, SOAR, ICARUS, FORR)"
+            },
+            {
+              "description": "Capabilities (e.g., perception, decision making, prediction, knowledge maintenance)"
+            },
+            {
+              "description": "Knowledge representation, organization, utilization, acquisition, and refinement"
+            },
+            {
+              "description": "Applications and evaluation of cognitive systems"
+            }
+          ]
+        },
+        {
+          "description": "Multi-agent systems",
+          "topics": [
+            {
+              "description": "Collaborating agents"
+            },
+            {
+              "description": "Agent teams"
+            },
+            {
+              "description": "Competitive agents (e.g., auctions, voting)"
+            },
+            {
+              "description": "Swarm systems and biologically inspired models"
+            },
+            {
+              "description": "Multi-agent learning"
+            }
+          ]
+        },
+        {
+          "description": "Human-agent interaction (See also: HCI-User, HCI-Accessibility)",
+          "topics": [
+            {
+              "description": "Communication methodologies (verbal and non-verbal)"
+            },
+            {
+              "description": "Practical issues"
+            },
+            {
+              "description": "Applications",
+              "topics": [
+                {
+                  "description": "Trading agents, supply chain management"
+                },
+                {
+                  "description": "Ethical issues of AI interactions with humans"
+                },
+                {
+                  "description": "Regulation and legal requirements of AI systems for interacting with humans"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Natural Language Processing",
+      "code": "AI-NLP",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Deterministic and stochastic grammars"
+        },
+        {
+          "description": "Parsing algorithms",
+          "topics": [
+            {
+              "description": "CFGs and chart parsers (e.g., CYK)"
+            },
+            {
+              "description": "Probabilistic CFGs and weighted CYK"
+            }
+          ]
+        },
+        {
+          "description": "Representing meaning/Semantics",
+          "topics": [
+            {
+              "description": "Logic-based knowledge representations"
+            },
+            {
+              "description": "Semantic roles"
+            },
+            {
+              "description": "Temporal representations"
+            },
+            {
+              "description": "Beliefs, desires, and intentions"
+            }
+          ]
+        },
+        {
+          "description": "Corpus-based methods"
+        },
+        {
+          "description": "N-grams and HMMs"
+        },
+        {
+          "description": "Smoothing and backoff"
+        },
+        {
+          "description": "Examples of use: POS tagging and morphology"
+        },
+        {
+          "description": "Information retrieval (See also: DM-Unstructured)",
+          "topics": [
+            {
+              "description": "Vector space model",
+              "topics": [
+                {
+                  "description": "TF & IDF"
+                }
+              ]
+            },
+            {
+              "description": "Precision and recall"
+            }
+          ]
+        },
+        {
+          "description": "Information extraction"
+        },
+        {
+          "description": "Language translation"
+        },
+        {
+          "description": "Text classification, categorization",
+          "topics": [
+            {
+              "description": "Bag of words model"
+            }
+          ]
+        },
+        {
+          "description": "Deep learning for NLP (See also: AI-ML)",
+          "topics": [
+            {
+              "description": "RNNs"
+            },
+            {
+              "description": "Transformers"
+            },
+            {
+              "description": "Multi-modal embeddings (e.g., images + text)"
+            },
+            {
+              "description": "Generative language models"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Robotics",
+      "code": "AI-Robotics",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Overview: problems and progress",
+          "topics": [
+            {
+              "description": "State-of-the-art robot systems, including their sensors and an overview of their sensor processing",
+              "topics": [
+                {
+                  "description": "Robot control architectures, e.g., deliberative vs reactive control and Braitenberg vehicles"
+                },
+                {
+                  "description": "World modeling and world models"
+                },
+                {
+                  "description": "Inherent uncertainty in sensing and in control"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Sensors and effectors",
+          "topics": [
+            {
+              "description": "Sensors: e.g., LIDAR, sonar, vision, depth, stereoscopic, event cameras, microphones, haptics,"
+            },
+            {
+              "description": "Effectors: e.g., wheels, arms, grippers"
+            }
+          ]
+        },
+        {
+          "description": "Coordinate frames, translation, and rotation (2D and 3D)"
+        },
+        {
+          "description": "Configuration space and environmental maps"
+        },
+        {
+          "description": "Interpreting uncertain sensor data"
+        },
+        {
+          "description": "Localization and mapping"
+        },
+        {
+          "description": "Navigation and control"
+        },
+        {
+          "description": "Forward and inverse kinematics"
+        },
+        {
+          "description": "Motion path planning and trajectory optimization"
+        },
+        {
+          "description": "Manipulation and grasping"
+        },
+        {
+          "description": "Joint control and dynamics"
+        },
+        {
+          "description": "Vision-based control"
+        },
+        {
+          "description": "Multiple-robot coordination and collaboration"
+        },
+        {
+          "description": "Human-robot interaction (See also: HCI-User, HCI-Accessibility)",
+          "topics": [
+            {
+              "description": "Shared workspaces"
+            },
+            {
+              "description": "Human-robot teaming and physical HRI"
+            },
+            {
+              "description": "Social assistive robots"
+            },
+            {
+              "description": "Motion/task/goal prediction"
+            },
+            {
+              "description": "Collaboration and communication (explicit vs implicit, verbal or symbolic vs non-verbal or visual)"
+            },
+            {
+              "description": "Trust"
+            }
+          ]
+        },
+        {
+          "description": "Applications and Societal, Economic, and Ethical Issues",
+          "topics": [
+            {
+              "description": "Societal, economic, right-to-work implications"
+            },
+            {
+              "description": "Ethical and privacy implications of robotic applications"
+            },
+            {
+              "description": "Liability in autonomous robotics"
+            },
+            {
+              "description": "Autonomous weapons and ethics"
+            },
+            {
+              "description": "Human oversight and control"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Perception and Computer Vision",
+      "code": "AI-Vision",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Computer vision",
+          "topics": [
+            {
+              "description": "Image acquisition, representation, processing, and properties"
+            },
+            {
+              "description": "Shape representation, object recognition, and segmentation"
+            },
+            {
+              "description": "Motion analysis"
+            },
+            {
+              "description": "Generative models"
+            }
+          ]
+        },
+        {
+          "description": "Audio and speech recognition"
+        },
+        {
+          "description": "Touch and proprioception"
+        },
+        {
+          "description": "Other modalities (e.g., olfaction)"
+        },
+        {
+          "description": "Modularity in recognition"
+        },
+        {
+          "description": "Approaches to pattern recognition (See also: AI-ML)",
+          "topics": [
+            {
+              "description": "Classification algorithms and measures of classification quality"
+            },
+            {
+              "description": "Statistical techniques"
+            },
+            {
+              "description": "Deep learning techniques"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "name": "Data Management",
+  "code": "DM",
+  "units": [
+    {
+      "name": "The Role of Data and the Data Life Cycle",
+      "code": "DM-Data",
+      "topics-cs": [
+        {
+          "description": "The Data Life Cycle: Creation-Processing-Review/Reporting-Retention/Retrieval-Destruction (See also: SEP-Context, SEP-Ethical-Analysis, SEP-Professional-Ethics, SEP-Privacy, SEP-Security, SEC-Foundations)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify the five stages of the Data Life Cycle."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": ""
+    },
+    {
+      "name": "Core Database System Concepts",
+      "code": "DM-Core",
+      "topics-cs": [
+        {
+          "description": "Purpose and advantages of database systems"
+        },
+        {
+          "description": "Components of database systems"
+        },
+        {
+          "description": "Design of core DBMS functions (e.g., query mechanisms, transaction management, buffer management, access methods)"
+        },
+        {
+          "description": "Database architecture, data independence, and data abstraction"
+        },
+        {
+          "description": "Transaction management"
+        },
+        {
+          "description": "Normalization"
+        },
+        {
+          "description": "Approaches for managing large volumes of data (e.g., NoSQL database systems, use of MapReduce) (See also: PDC-Algorithms)"
+        },
+        {
+          "description": "How to support CRUD-only applications"
+        },
+        {
+          "description": "Distributed databases/cloud-based systems"
+        },
+        {
+          "description": "Structured, semi-structured, and unstructured data"
+        },
+        {
+          "description": "Use of a declarative query language"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Systems supporting structured and/or stream content"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify at least four advantages that using a database system provides."
+        },
+        {
+          "description": "Enumerate the components of a (relational) database system."
+        },
+        {
+          "description": "Follow a query as it is processed by the components of a (relational) database system."
+        },
+        {
+          "description": "Defend the value of data independence."
+        },
+        {
+          "description": "Compose a simple select-project-join query in SQL."
+        },
+        {
+          "description": "Enumerate the four properties of a correct transaction manager."
+        },
+        {
+          "description": "Describe the advantages for eliminating duplicate repeated data."
+        },
+        {
+          "description": "Outline how MapReduce uses parallelism to process data efficiently."
+        },
+        {
+          "description": "Evaluate the differences between structured and semi/unstructured databases."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Data Modeling",
+      "code": "DM-Modeling",
+      "topics-cs": [
+        {
+          "description": "Data modeling (See also: SE-Requirements)"
+        },
+        {
+          "description": "Relational data model (See also: MSF-Discrete)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Conceptual models (e.g., entity-relationship, UML diagrams)"
+        },
+        {
+          "description": "Semi-structured data models (expressed using DTD, XML, or JSON Schema, for example)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Spreadsheet models"
+        },
+        {
+          "description": "Object-oriented models (See also: FPL-OOP)",
+          "topics": [
+            {
+              "description": "GraphQL"
+            }
+          ]
+        },
+        {
+          "description": "New features in SQL"
+        },
+        {
+          "description": "Specialized Data Modeling topics",
+          "topics": [
+            {
+              "description": "Time series data (aggregation, join)"
+            },
+            {
+              "description": "Graph data (link traversal)"
+            },
+            {
+              "description": "Techniques for avoiding inefficient raw data access (e.g., “avg daily price”): materialized views and special data structures (e.g., Hyperloglog, bitmap)"
+            },
+            {
+              "description": "Geo-Spatial data (e.g., GIS databases) (See also: SPD-Interactive)"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Describe the components of the relational data model."
+        },
+        {
+          "description": "Model 1:1, 1:n, and n:m relationships using the relational data model."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the components of the E-R (or some other non-relational) data model."
+        },
+        {
+          "description": "Model a given environment using a conceptual data model."
+        },
+        {
+          "description": "Model a given environment using the document-based or key-value store-based data model."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Relational Databases",
+      "code": "DM-Relational",
+      "topics-cs": [
+        {
+          "description": "Entity and referential integrity: Candidate key, superkeys"
+        },
+        {
+          "description": "Relational database design"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Mapping conceptual schema to a relational schema"
+        },
+        {
+          "description": "Physical database design: file and storage structures (See also: OS-Files)"
+        },
+        {
+          "description": "Introduction to Functional dependency theory"
+        },
+        {
+          "description": "Normalization Theory",
+          "topics": [
+            {
+              "description": "Decomposition of a schema; lossless-join, and dependency-preservation properties of a decomposition"
+            },
+            {
+              "description": "Normal forms (BCNF)"
+            },
+            {
+              "description": "Denormalization (for efficiency)"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Functional dependency theory",
+          "topics": [
+            {
+              "description": "Closure of a set of attributes"
+            },
+            {
+              "description": "Canonical Cover"
+            }
+          ]
+        },
+        {
+          "description": "Normalization theory",
+          "topics": [
+            {
+              "description": "Multi-valued dependency (4NF)"
+            },
+            {
+              "description": "Join dependency (PJNF, 5NF)"
+            },
+            {
+              "description": "Representation theory"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Describe the defining characteristics behind the relational data model."
+        },
+        {
+          "description": "Comment on the difference between a foreign key and a superkey."
+        },
+        {
+          "description": "Enumerate the different types of integrity constraints."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Compose a relational schema from a conceptual schema which contains 1:1, 1:n, and n:m relationships."
+        },
+        {
+          "description": "Map appropriate file structure to relations and indices."
+        },
+        {
+          "description": "Describe how functional dependency theory generalizes the notion of key."
+        },
+        {
+          "description": "Defend a given decomposition as lossless and or dependency preserving."
+        },
+        {
+          "description": "Detect which normal form a given decomposition yields."
+        },
+        {
+          "description": "Comment on reasons for denormalizing a relation."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Query Construction",
+      "code": "DM-Querying",
+      "topics-cs": [
+        {
+          "description": "SQL Query Formation",
+          "topics": [
+            {
+              "description": "Interactive SQL execution"
+            },
+            {
+              "description": "Programmatic execution of an SQL query"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Relational Algebra"
+        },
+        {
+          "description": "SQL",
+          "topics": [
+            {
+              "description": "Data definition including integrity and other constraint specifications"
+            },
+            {
+              "description": "Update sublanguage"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Relational Calculus"
+        },
+        {
+          "description": "QBE and 4th-generation environments"
+        },
+        {
+          "description": "Different ways to invoke non-procedural queries in conventional languages"
+        },
+        {
+          "description": "Introduction to other major query languages (e.g., XPATH, SPARQL)"
+        },
+        {
+          "description": "Stored procedures"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Compose SQL queries that incorporate select, project, join, union, intersection, set difference, and set division."
+        },
+        {
+          "description": "Determine when a nested SQL query is correlated or not."
+        },
+        {
+          "description": "Iterate over data retrieved programmatically from a database via an SQL query."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Define, in SQL, a relation schema, including all integrity constraints and delete/update triggers."
+        },
+        {
+          "description": "Compose an SQL query to update a tuple in a relation."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "4"
+    },
+    {
+      "name": "Query Processing",
+      "code": "DM-Processing",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Page structures"
+        },
+        {
+          "description": "Index structures",
+          "topics": [
+            {
+              "description": "B+ trees (See also: AL-Foundational)"
+            },
+            {
+              "description": "Hash indices: static and dynamic (See also: AL-Foundational, SEC-Foundations)"
+            },
+            {
+              "description": "Index creation in SQL"
+            }
+          ]
+        },
+        {
+          "description": "File structures (See also: OS-Files)",
+          "topics": [
+            {
+              "description": "Heap files"
+            },
+            {
+              "description": "Hash files"
+            }
+          ]
+        },
+        {
+          "description": "Algorithms for query operators",
+          "topics": [
+            {
+              "description": "External Sorting (See also: AL-Foundational)"
+            },
+            {
+              "description": "Selection"
+            },
+            {
+              "description": "Projection; with and without duplicate elimination"
+            },
+            {
+              "description": "Natural Joins: Nested loop, Sort-merge, Hash join"
+            },
+            {
+              "description": "Analysis of algorithm efficiency (See also: AL-Complexity)"
+            }
+          ]
+        },
+        {
+          "description": "Query transformations"
+        },
+        {
+          "description": "Query optimization",
+          "topics": [
+            {
+              "description": "Access paths"
+            },
+            {
+              "description": "Query plan construction"
+            },
+            {
+              "description": "Selectivity estimation"
+            },
+            {
+              "description": "Index-only plans"
+            }
+          ]
+        },
+        {
+          "description": "Parallel Query Processing (e.g., parallel scan, parallel join, parallel aggregation) (See also: PDC-Algorithms)"
+        },
+        {
+          "description": "Database tuning/performance",
+          "topics": [
+            {
+              "description": "Index selection"
+            },
+            {
+              "description": "Impact of indices on query performance (See also: SF-Performance, SEP-Sustainability)"
+            },
+            {
+              "description": "Denormalization"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe the purpose and organization of both B+ tree and hash index structures."
+        },
+        {
+          "description": "Compose an SQL command to create an index (any kind)."
+        },
+        {
+          "description": "Specify the steps for the various query operator algorithms: external sorting, projection with duplicate elimination, sort-merge join, hash-join, block nested-loop join."
+        },
+        {
+          "description": "Derive the run-time (in I/O requests) for each of the above algorithms."
+        },
+        {
+          "description": "Transform a query in relational algebra to its equivalent appropriate for a left-deep, pipelined execution."
+        },
+        {
+          "description": "Compute selectivity estimates for a given selection and/or join operation."
+        },
+        {
+          "description": "Describe how to modify an index structure to facilitate an index-only operation for a given relation."
+        },
+        {
+          "description": "For a given scenario decide on which indices to support for the efficient execution of a set of queries."
+        },
+        {
+          "description": "Describe how DBMSs leverage parallelism to speed up query processing by dividing the work across multiple processors or nodes."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    },
+    {
+      "name": "DBMS Internals",
+      "code": "DM-Internals",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "DB Buffer Management (See also: OS-Memory, SF-Resource)"
+        },
+        {
+          "description": "Transaction Management (See also: PDC-Coordination)",
+          "topics": [
+            {
+              "description": "Isolation Levels"
+            },
+            {
+              "description": "ACID"
+            },
+            {
+              "description": "Serializability"
+            },
+            {
+              "description": "Distributed Transactions"
+            }
+          ]
+        },
+        {
+          "description": "Concurrency Control: (See also: OS-Concurrency)",
+          "topics": [
+            {
+              "description": "2-Phase Locking"
+            },
+            {
+              "description": "Deadlocks handling strategies"
+            },
+            {
+              "description": "Quorum-based consistency models"
+            }
+          ]
+        },
+        {
+          "description": "Recovery Manager",
+          "topics": [
+            {
+              "description": "Relation with Buffer Manager"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Concurrency Control:",
+          "topics": [
+            {
+              "description": "Optimistic concurrency control"
+            },
+            {
+              "description": "Timestamp concurrency control"
+            }
+          ]
+        },
+        {
+          "description": "Recovery Manager",
+          "topics": [
+            {
+              "description": "Write-Ahead logging"
+            },
+            {
+              "description": "ARIES recovery system (Analysis, REDO, UNDO)"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe how a DBMS manages its Buffer Pool."
+        },
+        {
+          "description": "Describe the four properties for a correct transaction manager."
+        },
+        {
+          "description": "Outline the principle of serializability."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    },
+    {
+      "name": "NoSQL Systems",
+      "code": "DM-NoSQL",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Why NoSQL? (e.g., Impedance mismatch between Application [CRUD] and RDBMS)"
+        },
+        {
+          "description": "Key-Value and Document data model"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Storage systems (e.g., Key-Value systems, Data Lakes)"
+        },
+        {
+          "description": "Distribution Models (Sharding and Replication) (See also: PDC-Communication)"
+        },
+        {
+          "description": "Graph Databases"
+        },
+        {
+          "description": "Consistency Models (Update and Read, Quorum consistency, CAP theorem) (See also: PDC-Communication)"
+        },
+        {
+          "description": "Processing model (e.g., Map-Reduce, multi-stage map-reduce, incremental map-reduce) (See also: PDC-Communication)"
+        },
+        {
+          "description": "Case Studies: Cloud storage system (e.g., S3); Graph databases; “When not to use NoSQL” (See also: SPD-Web)"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Develop a use case for the use of NoSQL over RDBMS."
+        },
+        {
+          "description": "Describe the defining characteristics behind Key-Value and Document-based data models."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Data Security and Privacy",
+      "code": "DM-Security",
+      "topics-cs": [
+        {
+          "description": "Differences between data security and data privacy (See also: SEC-Foundations)"
+        },
+        {
+          "description": "Protecting data and database systems from attacks, including injection attacks such as SQL injection (See also: SEC-Foundations)"
+        },
+        {
+          "description": "Personally identifying information (PII) and its protection (See also: SEC-Foundations, SEP-Security, SEP-Privacy)"
+        },
+        {
+          "description": "Ethical considerations in ensuring the security and privacy of data (See also: SEC-SEP, SEP-Ethical-Analysis, SEP-Security, SEP-Privacy)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Need for, and different approaches to securing data at rest, in transit, and during processing (See also: SEC-Foundations, SEC-Crypto)"
+        },
+        {
+          "description": "Database auditing and its role in digital forensics (See also: SEC-Forensics)"
+        },
+        {
+          "description": "Data inferencing and preventing attacks (See also: SEC-Crypto)"
+        },
+        {
+          "description": "Laws and regulations governing data security and data privacy (See also: SEP-Security, SEP-Privacy, SEC-Foundations, SEC-Governance)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Typical risk factors and prevention measures for ensuring data integrity (See also: SEC-Governance)"
+        },
+        {
+          "description": "Ransomware and prevention of data loss and destruction (See also: SEC-Coding, SEC-Forensics)"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Describe the differences in the goals for data security and data privacy."
+        },
+        {
+          "description": "Identify and mitigate risks associated with different approaches to protecting data."
+        },
+        {
+          "description": "Describe legal and ethical considerations of end-to-end data security and privacy."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Develop a database auditing system given risk considerations."
+        },
+        {
+          "description": "Apply several data exploration approaches to understanding unfamiliar datasets."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Data Analytics",
+      "code": "DM-Analytics",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Exploratory data techniques (motivation, representation, descriptive statistics, visualizations)"
+        },
+        {
+          "description": "Data science lifecycle: business understanding, data understanding, data preparation, modeling, evaluation, deployment, and user acceptance (See also: AI-ML)"
+        },
+        {
+          "description": "Data mining and machine learning algorithms: e.g., classification, clustering, association, regression (See also: AI-ML)"
+        },
+        {
+          "description": "Data acquisition and governance (See also: SEC-Governance)"
+        },
+        {
+          "description": "Data security and privacy considerations (See also: SEP-Security, SEP-Privacy, SEC-Foundations)"
+        },
+        {
+          "description": "Data fairness and bias (See also: SEP-Security, AI-SEP)"
+        },
+        {
+          "description": "Data visualization techniques and their use in data analytics (See also: GIT-Visualization)"
+        },
+        {
+          "description": "Entity Resolution"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe several data exploration approaches, including visualization, to understanding unfamiliar datasets."
+        },
+        {
+          "description": "Apply several data exploration approaches to understanding unfamiliar datasets."
+        },
+        {
+          "description": "Describe basic machine learning/data mining algorithms and when they are appropriate for use."
+        },
+        {
+          "description": "Apply several machine learning/data mining algorithms."
+        },
+        {
+          "description": "Describe legal and ethical considerations in acquiring, using, and modifying datasets."
+        },
+        {
+          "description": "Describe issues of fairness and bias in data collection and usage."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Distributed Databases/Cloud Computing",
+      "code": "DM-Distributed",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Distributed DBMS (See also: PDC-Communications)",
+          "topics": [
+            {
+              "description": "Distributed data storage"
+            },
+            {
+              "description": "Distributed query processing"
+            },
+            {
+              "description": "Distributed transaction model"
+            },
+            {
+              "description": "Homogeneous and heterogeneous solutions"
+            },
+            {
+              "description": "Client-server distributed databases (See also: NC-Fundamentals)"
+            }
+          ]
+        },
+        {
+          "description": "Parallel DBMS (See also: PDC-Algorithms)",
+          "topics": [
+            {
+              "description": "Parallel DBMS architectures: shared memory, shared disk, shared nothing;"
+            },
+            {
+              "description": "Speedup and scale-up, e.g., use of the MapReduce processing model (See also: PDC-Programs, SF-Foundations)"
+            },
+            {
+              "description": "Data replication and weak consistency models (See also: PDC-Coordination)"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Semi-structured and Unstructured Databases",
+      "code": "DM-Unstructured",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Vectorized unstructured data (text, video, audio, etc.) and vector storage",
+          "topics": [
+            {
+              "description": "TF-IDF Vectorizer with ngram"
+            },
+            {
+              "description": "Word2Vec"
+            },
+            {
+              "description": "Array database or array data type handling"
+            }
+          ]
+        },
+        {
+          "description": "Semi-structured databases (e.g., JSON)",
+          "topics": [
+            {
+              "description": "Storage",
+              "topics": [
+                {
+                  "description": "Encoding and compression of nested data types"
+                }
+              ]
+            },
+            {
+              "description": "Indexing",
+              "topics": [
+                {
+                  "description": "Btree, skip index, Bloom filter"
+                },
+                {
+                  "description": "Inverted index and bitmap compression"
+                },
+                {
+                  "description": "Space filling curve indexing for semi-structured geo-data"
+                }
+              ]
+            },
+            {
+              "description": "Query processing for OLTP and OLAP use cases",
+              "topics": [
+                {
+                  "description": "Insert, Select, update/delete tradeoffs"
+                },
+                {
+                  "description": "Case studies on Postgres/JSON, MongoDB, and Snowflake/JSON"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "DM-SEP",
+      "topics-cs": [
+        {
+          "description": "Issues related to scale (See also: SEP-Economies)"
+        },
+        {
+          "description": "Data privacy overall (See also: SEP-Privacy, SEP-Ethical-Analysis)",
+          "topics": [
+            {
+              "description": "Privacy compliance by design (See also: SEP-Privacy)"
+            }
+          ]
+        },
+        {
+          "description": "Data anonymity (See also: SEP-Privacy)"
+        },
+        {
+          "description": "Data ownership/custodianship (See also: SEP-Professional-Ethics)"
+        },
+        {
+          "description": "Intended and unintended applications of stored data (See also: SEP-Professional-Ethics, SEC-Foundations)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Reliability of data (See also: SEP-Security)"
+        },
+        {
+          "description": "Provenance, data lineage, and metadata management (See also: SEP-Professional-Ethics)"
+        },
+        {
+          "description": "Data security (See also: DM-Security, SEP-Security)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Enumerate three social and three legal issues related to large data collections."
+        },
+        {
+          "description": "Describe the value of data privacy."
+        },
+        {
+          "description": "Identify the competing stakeholders with respect to data ownership."
+        },
+        {
+          "description": "Enumerate three negative unintended consequences from a given (well known) data-centric application (e.g., Facebook, LastPass, Ashley Madison)."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the meaning of data provenance and lineage."
+        },
+        {
+          "description": "Identify how a database might contribute to data security as well as how it may introduce insecurities."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "Included in SEP hou",
+      "hours-ka": "rs"
+    }
+  ]
+}

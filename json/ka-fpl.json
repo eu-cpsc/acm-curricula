@@ -1,0 +1,1738 @@
+{
+  "name": "Foundations of Programming Languages",
+  "code": "FPL",
+  "units": [
+    {
+      "name": "Object-Oriented Programming",
+      "code": "FPL-OOP",
+      "topics-cs": [
+        {
+          "description": "Imperative programming as a subset of object-oriented programming."
+        },
+        {
+          "description": "Object-oriented design:",
+          "topics": [
+            {
+              "description": "Decomposition into objects carrying state and having behavior."
+            },
+            {
+              "description": "Class-hierarchy design for modeling."
+            }
+          ]
+        },
+        {
+          "description": "Definition of classes: fields, methods, and constructors. (See also: SDF-Fundamentals)"
+        },
+        {
+          "description": "Subclasses, inheritance (including multiple inheritance), and method overriding."
+        },
+        {
+          "description": "Dynamic dispatch: definition of method-call."
+        },
+        {
+          "description": "Exception handling. (See also: SDF-Fundamentals, PDC-Coordination, SE-Construction)"
+        },
+        {
+          "description": "Object-oriented idioms for encapsulation:",
+          "topics": [
+            {
+              "description": "Privacy, data hiding, and visibility of class members."
+            },
+            {
+              "description": "Interfaces revealing only method signatures."
+            },
+            {
+              "description": "Abstract base classes, traits and mixins."
+            }
+          ]
+        },
+        {
+          "description": "Dynamic vs static properties."
+        },
+        {
+          "description": "Composition vs inheritance."
+        },
+        {
+          "description": "Subtyping:",
+          "topics": [
+            {
+              "description": "Subtype polymorphism; implicit upcasts in typed languages."
+            },
+            {
+              "description": "Notion of behavioral replacement: subtypes acting like supertype."
+            },
+            {
+              "description": "Relationship between subtyping and inheritance."
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Collection classes, iterators, and other common library components."
+        },
+        {
+          "description": "Metaprogramming and reflection."
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Enumerate the differences between imperative and object-oriented programming paradigms."
+        },
+        {
+          "description": "Compose a class through design, implementation, and testing to meet behavioral requirements."
+        },
+        {
+          "description": "Build a simple class hierarchy utilizing subclassing that allows code to be reused for distinct subclasses."
+        },
+        {
+          "description": "Predict and validate control flow in a program using dynamic dispatch."
+        },
+        {
+          "description": "Compare and contrast how computational solutions to a problem differ in procedural, functional, and object-oriented approaches."
+        },
+        {
+          "description": "Compare and contrast mechanisms to define and protect data elements within procedural, functional, and object-oriented approaches."
+        },
+        {
+          "description": "Compare and contrast the benefits and costs/impact of using inheritance (subclasses) and composition (specifically, how to base composition on higher order functions)."
+        },
+        {
+          "description": "Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype)."
+        },
+        {
+          "description": "Use object-oriented encapsulation mechanisms such as interfaces and private members."
+        },
+        {
+          "description": "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language. (See also: FPL-Functional)"
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Use collection classes and iterators effectively to solve a problem."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "4 + 1 (SDF)",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Functional Programming",
+      "code": "FPL-Functional",
+      "topics-cs": [
+        {
+          "description": "Lambda expressions and evaluation: (See also: AL-Models, FPL-Formalism)",
+          "topics": [
+            {
+              "description": "Variable binding and scope rules. (See also: SDF-Fundamentals)"
+            },
+            {
+              "description": "Parameter-passing. (See also: SDF-Fundamentals)"
+            },
+            {
+              "description": "Nested lambda expressions and reduction order."
+            }
+          ]
+        },
+        {
+          "description": "Effect-free programming:",
+          "topics": [
+            {
+              "description": "Function calls have no side effects, facilitating compositional reasoning."
+            },
+            {
+              "description": "Immutable variables and data copying vs reduction."
+            },
+            {
+              "description": "Use of recursion vs loops vs pipelining (map/reduce)."
+            }
+          ]
+        },
+        {
+          "description": "Processing structured data (e.g., trees) via functions with cases for each data variant:",
+          "topics": [
+            {
+              "description": "Functions defined over compound data in terms of functions applied to the constituent pieces."
+            },
+            {
+              "description": "Persistent data structures."
+            }
+          ]
+        },
+        {
+          "description": "Using higher-order functions (taking, returning, and storing functions)."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Metaprogramming and reflection."
+        },
+        {
+          "description": "Function closures (functions using variables in the enclosing lexical environment).",
+          "topics": [
+            {
+              "description": "Basic meaning and definition – creating closures at run-time by capturing the environment."
+            },
+            {
+              "description": "Canonical idioms: call-backs, arguments to iterators, reusable code via function arguments."
+            },
+            {
+              "description": "Using a closure to encapsulate data in its environment."
+            },
+            {
+              "description": "Lazy versus eager evaluation."
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Graph reduction machine and call-by-need."
+        },
+        {
+          "description": "Implementing lazy evaluation."
+        },
+        {
+          "description": "Integration with logic programming paradigm using concepts such as equational logic, narrowing, residuation and semantic unification. (See also: FPL-Logic)"
+        },
+        {
+          "description": "Integration with other programming paradigms such as imperative and object-oriented."
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Develop basic algorithms that avoid assigning to mutable states or considering reference equality."
+        },
+        {
+          "description": "Develop useful functions that take and return other functions."
+        },
+        {
+          "description": "Compare and contrast how computational solutions to a problem differ in procedural, functional, and object-oriented approaches."
+        },
+        {
+          "description": "Compare and contrast mechanisms to define and protect data elements within procedural, functional, and object-oriented approaches."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Explain a simple example of lambda expression being implemented using a virtual machine, such as a SECD machine, showing storage and reclaim of the environment."
+        },
+        {
+          "description": "Correctly interpret variables and lexical scope in a program using function closures."
+        },
+        {
+          "description": "Use functional encapsulation mechanisms such as closures and modular interfaces."
+        },
+        {
+          "description": "Compare and contrast stateful vs stateless execution."
+        },
+        {
+          "description": "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language. (See also: FPL-OOP)"
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Illustrate graph reduction using a λ-expression using a shared subexpression."
+        },
+        {
+          "description": "Illustrate the execution of a simple nested λ-expression using an abstract machine, such as an ABC machine."
+        },
+        {
+          "description": "Illustrate narrowing, residuation, and semantic unification using simple illustrative examples."
+        },
+        {
+          "description": "Illustrate the concurrency constructs using simple programming examples of known concepts such as a buffer being read and written concurrently or sequentially. (See also: FPL-OOP)"
+        }
+      ],
+      "hours-cs": "4",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Logic Programming",
+      "code": "FPL-Logic",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Universal vs existential quantifiers. (See also: AI-LRR, MSF-Discrete)"
+        },
+        {
+          "description": "First order predicate logic vs higher order logic. (See also: AI-LRR, MSF-Discrete)"
+        },
+        {
+          "description": "Expressing complex relations using logical connectives and simpler relations."
+        },
+        {
+          "description": "Definitions of Horn clause, facts, goals and subgoals."
+        },
+        {
+          "description": "Unification and unification algorithm; unification vs assertion vs expression evaluation."
+        },
+        {
+          "description": "Mixing relations with functions. (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Cuts, backtracking, and non-determinism."
+        },
+        {
+          "description": "Closed-world vs open-world assumptions."
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Memory overhead of variable copying in handling iterative programs."
+        },
+        {
+          "description": "Programming constructs to store partial computation and pruning search trees."
+        },
+        {
+          "description": "Mixing functional programming and logic programming using concepts such as equational logic, narrowing, residuation, and semantic unification. (See also: FPL-Functional)"
+        },
+        {
+          "description": "Higher-order, constraint, and inductive logic programming. (See also: AI-LRR)"
+        },
+        {
+          "description": "Integration with other programming paradigms such as object-oriented programming."
+        },
+        {
+          "description": "Advance programming constructs such as difference-lists, creating user defined data structures, set of, etc."
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Use a logic language to implement a conventional algorithm."
+        },
+        {
+          "description": "Use a logic language to implement an algorithm employing implicit search using clauses, relations, and cuts."
+        },
+        {
+          "description": "Use a simple illustrative example to show correspondence between First Order Predicate Logic (FOPL) and logic programs using Horn clauses."
+        },
+        {
+          "description": "Use examples to illustrate the unification algorithm and its role of parameter-passing in query reduction."
+        },
+        {
+          "description": "Use simple logic programs interleaving relations, functions, and recursive programming such as factorial and Fibonacci numbers and simple complex relationships between entities and illustrate execution and parameter-passing using unification and backtracking."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Illustrate computation of simple programs such as Fibonacci and show overhead of recomputation, and then show how to improve execution overhead."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "2 + 1 (MSF)"
+    },
+    {
+      "name": "Shell Scripting",
+      "code": "FPL-Scripting",
+      "topics-cs": [
+        {
+          "description": "Error/exception handling"
+        },
+        {
+          "description": "Piping (See also: AR-Organization, SF-Overview, OS-Process)"
+        },
+        {
+          "description": "System commands (See also: SF-Overview)",
+          "topics": [
+            {
+              "description": "Interface with operating systems (See also: SF-Overview, OS-Principles)"
+            }
+          ]
+        },
+        {
+          "description": "Environment variables (See also: SF-Overview)"
+        },
+        {
+          "description": "File abstraction and operators (See also: SDF-Fundamentals, OS-Files, SF-Resource)"
+        },
+        {
+          "description": "Data structures, such as arrays and lists. (See also: AL-Foundational, SDF-Fundamentals, SDF-Data-Structures)"
+        },
+        {
+          "description": "Regular expressions (See also: AL-Models)"
+        },
+        {
+          "description": "Programs and processes (See also: OS-Process)"
+        },
+        {
+          "description": "Workflow"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Create and execute automated scripts to manage various system tasks."
+        },
+        {
+          "description": "Solve various text processing problems through scripting."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": ""
+    },
+    {
+      "name": "Event-Driven and Reactive Programming",
+      "code": "FPL-Event-Driven",
+      "topics-cs": [
+        {
+          "description": "Procedural programming vs reactive programming: advantages of reactive programming in capturing events."
+        },
+        {
+          "description": "Components of reactive programming: event-source, event signals, listeners and dispatchers, event objects, adapters, event-handlers. (See also: GIT-Interaction, SPD-Web, SPD-Mobile, SPD-Robot, SPD-Embedded, SPD-Game, SPD-Interactive)"
+        },
+        {
+          "description": "Stateless and state-transition models of event-based programming."
+        },
+        {
+          "description": "Canonical uses such as GUIs, mobile devices, robots, servers. (See also: GIT-Interaction, GIT-Image, SPD-Web, SPD-Mobile, SPD-Robot, SPD-Embedded, SPD-Game, SPD-Interactive)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Using a reactive framework:",
+          "topics": [
+            {
+              "description": "Defining event handlers/listeners"
+            },
+            {
+              "description": "Parameterization of event senders and event arguments"
+            },
+            {
+              "description": "Externally generated events and program-generated events"
+            }
+          ]
+        },
+        {
+          "description": "Separation of model, view, and controller"
+        },
+        {
+          "description": "Event-driven and reactive programs as state-transition systems"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Implement event handlers for use in reactive systems, such as GUIs."
+        },
+        {
+          "description": "Examine why an event-driven programming style is natural in domains where programs react to external events."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Define and use a reactive framework."
+        },
+        {
+          "description": "Describe an interactive system in terms of a model, a view, and a controller."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Parallel and Distributed Computing",
+      "code": "FPL-Parallel",
+      "topics-cs": [
+        {
+          "description": "Safety and liveness (See also: PDC-Evaluation)",
+          "topics": [
+            {
+              "description": "Race conditions (See also: OS-Concurrency)"
+            },
+            {
+              "description": "Dependencies/preconditions"
+            },
+            {
+              "description": "Fault models (See also: OS-Faults)"
+            },
+            {
+              "description": "Termination (See also: PDC-Coordination)"
+            }
+          ]
+        },
+        {
+          "description": "Programming models (See also: PDC-Programs) One or more of the following:",
+          "topics": [
+            {
+              "description": "Actor models"
+            },
+            {
+              "description": "Procedural and reactive models"
+            },
+            {
+              "description": "Synchronous/asynchronous programming models"
+            },
+            {
+              "description": "Data parallelism"
+            }
+          ]
+        },
+        {
+          "description": "Properties (See also: PDC-Programs, PDC-Coordination)",
+          "topics": [
+            {
+              "description": "Order-based properties",
+              "topics": [
+                {
+                  "description": "Commutativity"
+                },
+                {
+                  "description": "Independence"
+                }
+              ]
+            },
+            {
+              "description": "Consistency-based properties",
+              "topics": [
+                {
+                  "description": "Atomicity"
+                },
+                {
+                  "description": "Consensus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Execution control: (See also: PDC-Coordination, SF-Foundations)",
+          "topics": [
+            {
+              "description": "Async await"
+            },
+            {
+              "description": "Promises"
+            },
+            {
+              "description": "Threads"
+            }
+          ]
+        },
+        {
+          "description": "Communication and coordination (See also: OS-Process, PDC-Communication, PDC-Coordination)",
+          "topics": [
+            {
+              "description": "Mutexes"
+            },
+            {
+              "description": "Message-passing"
+            },
+            {
+              "description": "Shared memory"
+            },
+            {
+              "description": "Cobegin-coend"
+            },
+            {
+              "description": "Monitors"
+            },
+            {
+              "description": "Channels"
+            },
+            {
+              "description": "Threads"
+            },
+            {
+              "description": "Guards"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Futures"
+        },
+        {
+          "description": "Language support for data parallelism such as forall, loop unrolling, map/reduce"
+        },
+        {
+          "description": "Effect of memory-consistency models on language semantics and correct code generation"
+        },
+        {
+          "description": "Representational State Transfer Application Programming Interfaces (REST APIs)"
+        },
+        {
+          "description": "Technologies and approaches: cloud computing, high performance computing, quantum computing, ubiquitous computing"
+        },
+        {
+          "description": "Overheads of message-passing"
+        },
+        {
+          "description": "Granularity of program for efficient exploitation of concurrency"
+        },
+        {
+          "description": "Concurrency and other programming paradigms (e.g., functional)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain why programming languages do not guarantee sequential consistency in the presence of data races and what programmers must do as a result."
+        },
+        {
+          "description": "Implement correct concurrent programs using multiple programming models, such as shared memory, actors, futures, synchronization constructs, and data-parallelism primitives."
+        },
+        {
+          "description": "Use a message-passing model to analyze a communication protocol."
+        },
+        {
+          "description": "Use synchronization constructions such as monitor/synchronized methods in a simple program."
+        },
+        {
+          "description": "Modeling data dependency using simple programming constructs involving variables, read and write."
+        },
+        {
+          "description": "Modeling control dependency using simple constructs such as selection and iteration."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Explain how REST API's integrate applications and automate processes."
+        },
+        {
+          "description": "Explain benefits, constraints and challenges related to distributed and parallel computing."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2 + 1 (PDC)",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Aspect-Oriented Programming",
+      "code": "FPL-Aspect",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Aspects"
+        },
+        {
+          "description": "Join points"
+        },
+        {
+          "description": "Advice",
+          "topics": [
+            {
+              "description": "Before"
+            },
+            {
+              "description": "After (as finally, returning or throwing)"
+            },
+            {
+              "description": "Around"
+            }
+          ]
+        },
+        {
+          "description": "Point cuts",
+          "topics": [
+            {
+              "description": "Designators"
+            }
+          ]
+        },
+        {
+          "description": "Weaving – static and dynamic"
+        },
+        {
+          "description": "Alternatives including annotations and IDEs"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Type Systems",
+      "code": "FPL-Types",
+      "topics-cs": [
+        {
+          "description": "A type as a set of values together with a set of operations",
+          "topics": [
+            {
+              "description": "Primitive types (e.g., numbers, Booleans) (See also: SDF-Fundamentals)"
+            },
+            {
+              "description": "Compound types built from other types (e.g., records/structs, unions, arrays, lists, functions, references using set operations) (See also: SDF-Data-Structures)"
+            }
+          ]
+        },
+        {
+          "description": "Association of types to variables, arguments, results, and fields"
+        },
+        {
+          "description": "Type safety as an aspect of program correctness (See also: FPL-Formalism)"
+        },
+        {
+          "description": "Type safety and errors caused by using values inconsistently given their intended types"
+        },
+        {
+          "description": "Goals and limitations of static and dynamic typing: detecting and eliminating errors as early as possible."
+        },
+        {
+          "description": "Generic types (parametric polymorphism)",
+          "topics": [
+            {
+              "description": "Definition and advantages of polymorphism: parametric, subtyping, overloading, and coercion"
+            },
+            {
+              "description": "Comparison of monomorphic and polymorphic types"
+            },
+            {
+              "description": "Comparison with ad-hoc polymorphism (overloading) and subtype polymorphism"
+            },
+            {
+              "description": "Generic parameters and typing"
+            },
+            {
+              "description": "Use of generic libraries such as collections"
+            },
+            {
+              "description": "Comparison with ad hoc polymorphism (overloading) and subtype polymorphism"
+            },
+            {
+              "description": "Prescriptive vs descriptive polymorphism"
+            },
+            {
+              "description": "Implementation models of polymorphic types"
+            },
+            {
+              "description": "Subtyping"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Type equivalence: structural vs name equivalence"
+        },
+        {
+          "description": "Complementary benefits of static and dynamic typing:",
+          "topics": [
+            {
+              "description": "Errors early vs errors late/avoided"
+            },
+            {
+              "description": "Enforce invariants during code development and code maintenance vs postpone typing decisions while prototyping and conveniently allow flexible coding patterns such as heterogeneous collections."
+            },
+            {
+              "description": "Typing rules for function, product, and sum types"
+            },
+            {
+              "description": "Avoiding misuse of code vs allowing more code reuse"
+            },
+            {
+              "description": "Detect incomplete programs vs allow incomplete programs to run"
+            },
+            {
+              "description": "Relationship to static analysis"
+            },
+            {
+              "description": "Decidability"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Compositional type constructors, such as product types (for aggregates), sum types (for unions), function types, quantified types, and recursive types"
+        },
+        {
+          "description": "Type checking"
+        },
+        {
+          "description": "Subtyping: (See also: FPL-OOP)",
+          "topics": [
+            {
+              "description": "Subtype polymorphism; implicit upcasts in typed languages"
+            },
+            {
+              "description": "Notion of behavioral replacement: subtypes acting like supertype"
+            },
+            {
+              "description": "Relationship between subtyping and inheritance"
+            }
+          ]
+        },
+        {
+          "description": "Type safety as preservation plus progress"
+        },
+        {
+          "description": "Type inference"
+        },
+        {
+          "description": "Static overloading"
+        },
+        {
+          "description": "Propositions as types (implication as a function, conjunction as a product, disjunction as a sum) (See also: FPL-Formalism)"
+        },
+        {
+          "description": "Dependent types (universal quantification as dependent function, existential quantification as dependent product). (See also: FPL-Formalism)"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Describe, for both a primitive and a compound type, the values that have that type."
+        },
+        {
+          "description": "Describe, for a language with a static type system, the operations that are forbidden statically, such as passing the wrong type of value to a function or method."
+        },
+        {
+          "description": "Describe examples of program errors detected by a type system."
+        },
+        {
+          "description": "Identify program properties, for multiple programming languages, that are checked statically and program properties that are checked dynamically."
+        },
+        {
+          "description": "Describe an example program that does not type-check in a particular language and yet would have no error if run."
+        },
+        {
+          "description": "Use types and type-error messages to write and debug programs."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Explain how typing rules define the set of operations that are legal for a type."
+        },
+        {
+          "description": "List the type rules governing the use of a particular compound type."
+        },
+        {
+          "description": "Explain why undecidability requires type systems to conservatively approximate program behavior."
+        },
+        {
+          "description": "Define and use program pieces (such as functions, classes, methods) that use generic types, including for collections."
+        },
+        {
+          "description": "Discuss the differences among generics, subtyping, and overloading."
+        },
+        {
+          "description": "Explain multiple benefits and limitations of static typing in writing, maintaining, and debugging software."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Define a type system precisely and compositionally."
+        },
+        {
+          "description": "For various foundational type constructors, identify the values they describe and the invariants they enforce."
+        },
+        {
+          "description": "Precisely describe the invariants preserved by a sound type system."
+        },
+        {
+          "description": "Prove type safety for a simple language in terms of preservation and progress theorems."
+        },
+        {
+          "description": "Implement a unification-based type-inference algorithm for a simple language."
+        },
+        {
+          "description": "Explain how static overloading and associated resolution algorithms influence the dynamic behavior of programs."
+        }
+      ],
+      "hours-cs": "3",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Systems Execution and Memory Model",
+      "code": "FPL-Systems",
+      "topics-cs": [
+        {
+          "description": "Data structures for translation, execution, translation, and code mobility such as stack, heap, aliasing (sharing using pointers), indexed sequence and string"
+        },
+        {
+          "description": "Direct, indirect, and indexed access to memory location"
+        },
+        {
+          "description": "Run-time representation of data abstractions such as variables, arrays, vectors, records, pointer-based data elements such as linked-lists and trees, and objects"
+        },
+        {
+          "description": "Abstract low-level machine with simple instruction, stack, and heap to explain translation and execution"
+        },
+        {
+          "description": "Run-time layout of memory: activation record (with various pointers), static data, call-stack, heap (See also: AR-Memory, OS-Memory)",
+          "topics": [
+            {
+              "description": "Translating selection and iterative constructs to control-flow diagrams"
+            },
+            {
+              "description": "Translating control-flow diagrams to low level abstract code"
+            },
+            {
+              "description": "Implementing loops, recursion, and tail calls"
+            },
+            {
+              "description": "Translating function/procedure calls and return from calls, including different parameter-passing mechanisms using an abstract machine"
+            }
+          ]
+        },
+        {
+          "description": "Memory management: (See also: AR-Memory, OS-Memory)",
+          "topics": [
+            {
+              "description": "Low level allocation and accessing of high-level data structures such as basic data types, n-dimensional array, vector, record, and objects"
+            },
+            {
+              "description": "Return from procedure as automatic deallocation mechanism for local data elements in the stack"
+            },
+            {
+              "description": "Manual memory management: allocating, de-allocating, and reusing heap memory"
+            },
+            {
+              "description": "Automated memory management: garbage collection as an automated technique using the notion of reachability"
+            }
+          ]
+        },
+        {
+          "description": "Green computing. (See also: SEP-Sustainability)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain how a core language construct, such as data abstractions and control abstractions, is executed."
+        },
+        {
+          "description": "Explain how programming language implementations typically organize memory into global data, text, heap, and stack sections and how features such as recursion and memory management map to this memory model."
+        },
+        {
+          "description": "Explain why memory leaks and dangling pointer problems occur, and what can be done by a programmer to avoid/fix them."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2 + 1 (AR and",
+      "hours-ka": "OS)"
+    },
+    {
+      "name": "Language Translation and Execution",
+      "code": "FPL-Translation",
+      "topics-cs": [
+        {
+          "description": "Execution models for JIT (Just-In-Time), compiler, interpreter"
+        },
+        {
+          "description": "Use of intermediate code, e.g., bytecode"
+        },
+        {
+          "description": "Limitations and benefits of JIT, compiler, and interpreter"
+        },
+        {
+          "description": "Cross compilers/transpilers"
+        },
+        {
+          "description": "BNF and extended BNF representation of context-free grammar"
+        },
+        {
+          "description": "Parse tree using a simple sentence such as arithmetic expression or if-then-else statement"
+        },
+        {
+          "description": "Execution as native code or within a virtual machine"
+        },
+        {
+          "description": "Language translation pipeline: syntax analysis, parsing, optional type-checking, translation/code generation and optimization, linking, loading, execution"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Run-time representation of core language constructs such as objects (method tables) and first-class functions (closures)"
+        },
+        {
+          "description": "Secure compiler development (See also: SEC-Foundations, SEC-Coding)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain and understand the differences between compiled, JIT, and interpreted language implementations, including the benefits and limitations of each."
+        },
+        {
+          "description": "Differentiate syntax and parsing from semantics and evaluation."
+        },
+        {
+          "description": "Use BNF and extended BNF to specify the syntax of simple constructs such as if-then-else, type declaration and iterative constructs for known languages such as C++ or Python."
+        },
+        {
+          "description": "Illustrate the parse tree using a simple sentence/arithmetic expression."
+        },
+        {
+          "description": "Illustrate translation of syntax diagrams to BNF/extended BNF for simple constructs such as if-then-else, type declaration, iterative constructs, etc."
+        },
+        {
+          "description": "Illustrate ambiguity in parsing using nested if-then-else/arithmetic expression and show resolution using precedence order."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Discuss the benefits and limitations of garbage collection, including the notion of reachability."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Program Abstraction and Representation",
+      "code": "FPL-Abstraction",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "BNF and regular expressions"
+        },
+        {
+          "description": "Programs that take (other) programs as input such as interpreters, compilers, type-checkers, documentation generators"
+        },
+        {
+          "description": "Components of a language:",
+          "topics": [
+            {
+              "description": "Definitions of alphabets, delimiters, sentences, syntax, and semantics"
+            },
+            {
+              "description": "Syntax vs semantics"
+            }
+          ]
+        },
+        {
+          "description": "Program as a set of non-ambiguous meaningful sentences"
+        },
+        {
+          "description": "Basic programming abstractions: constants, variables, declarations (including nested declarations), command, expression, assignment, selection, definite and indefinite iteration, iterators, function, procedure, modules, exception handling (See also: SDF-Fundamentals)"
+        },
+        {
+          "description": "Mutable vs immutable variables: advantages and disadvantages of reusing existing memory location vs advantages of copying and keeping old values; storing partial computation vs recomputation"
+        },
+        {
+          "description": "Types of variables: static, local, nonlocal, global; need and issues with nonlocal and global variables."
+        },
+        {
+          "description": "Scope rules: static vs dynamic; visibility of variables; side-effects."
+        },
+        {
+          "description": "Side-effects induced by nonlocal variables, global variables and aliased variables."
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "L-values and R-values: mapping mutable variable-name to L-values; mapping immutable variable-names to R-values"
+        },
+        {
+          "description": "Environment vs store and their properties"
+        },
+        {
+          "description": "Data and control abstraction"
+        },
+        {
+          "description": "Mechanisms for information exchange between program units such as procedures, functions, and modules: nonlocal variables, global variables, parameter-passing, import-export between modules"
+        },
+        {
+          "description": "Data structures to represent code for execution, translation, or transmission."
+        },
+        {
+          "description": "Low level instruction representation such as virtual machine instructions, assembly language, and binary representation (See also: AR-Representation, AR-Assembly)"
+        },
+        {
+          "description": "Lambda calculus, variable binding, and variable renaming. (See also: AL-Models, FPL-Formalism)"
+        },
+        {
+          "description": "Types of semantics: operational, axiomatic, denotational, behavioral; define and use abstract syntax trees; contrast with concrete syntax."
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Illustrate the scope of variables and visibility using simple programs."
+        },
+        {
+          "description": "Illustrate different types of parameter-passing using simple pseudo programming language."
+        },
+        {
+          "description": "Explain side-effect using global and nonlocal variables and how to fix such programs."
+        },
+        {
+          "description": "Explain how programs that process other programs treat the other programs as their input data."
+        },
+        {
+          "description": "Describe a grammar and an abstract syntax tree for a small language."
+        },
+        {
+          "description": "Describe the benefits of having program representations other than strings of source code."
+        },
+        {
+          "description": "Implement a program to process some representation of code for some purpose, such as an interpreter, an expression optimizer, or a documentation generator."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Syntax Analysis",
+      "code": "FPL-Syntax",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Regular grammars vs context-free grammars (See also: AL-Models)"
+        },
+        {
+          "description": "Scanning and parsing based on language specifications"
+        },
+        {
+          "description": "Lexical analysis using regular expressions"
+        },
+        {
+          "description": "Tokens and their use"
+        },
+        {
+          "description": "Parsing strategies including top-down (e.g., recursive descent, or LL) and bottom-up (e.g., LR or GLR) techniques",
+          "topics": [
+            {
+              "description": "Lookahead tables and their application to parsing"
+            }
+          ]
+        },
+        {
+          "description": "Language theory:",
+          "topics": [
+            {
+              "description": "Chomsky hierarchy (See also: AL-Models)"
+            },
+            {
+              "description": "Left-most/right-most derivation and ambiguity"
+            },
+            {
+              "description": "Grammar transformation"
+            }
+          ]
+        },
+        {
+          "description": "Parser error recovery mechanisms"
+        },
+        {
+          "description": "Generating scanners and parsers from declarative specifications"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Use formal grammars to specify the syntax of languages."
+        },
+        {
+          "description": "Illustrate the role of lookahead tables in parsing."
+        },
+        {
+          "description": "Use declarative tools to generate parsers and scanners."
+        },
+        {
+          "description": "Recognize key issues in syntax definitions: ambiguity, associativity, precedence."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Compiler Semantic Analysis",
+      "code": "FPL-Semantics",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Abstract syntax trees; contrast with concrete syntax"
+        },
+        {
+          "description": "Defining, traversing, and modifying high-level program representations"
+        },
+        {
+          "description": "Scope and binding resolution"
+        },
+        {
+          "description": "Static semantics",
+          "topics": [
+            {
+              "description": "Type checking."
+            },
+            {
+              "description": "Define before use"
+            },
+            {
+              "description": "Annotation and extended static checking frameworks."
+            }
+          ]
+        },
+        {
+          "description": "L-values/R-values (See also: SDF-Fundamentals)"
+        },
+        {
+          "description": "Call semantics"
+        },
+        {
+          "description": "Types of parameter-passing with simple illustrations and comparison: call by value, call by reference, call by value-result, call by name, call by need and their variations"
+        },
+        {
+          "description": "Declarative specifications such as attribute grammars and their applications in handling limited context-base grammar"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Draw the abstract syntax tree for a small language."
+        },
+        {
+          "description": "Implement context-sensitive, source-level static analyses such as type-checkers or resolving identifiers to identify their binding occurrences."
+        },
+        {
+          "description": "Describe semantic analyses using an attribute grammar."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Program Analysis and Analyzers",
+      "code": "FPL-Analysis",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Relevant program representations, such as basic blocks, control-flow graphs, def-use chains, and static single assignment"
+        },
+        {
+          "description": "Undecidability and consequences for program analysis"
+        },
+        {
+          "description": "Flow-insensitive analysis, such as type-checking and scalable pointer and alias analysis"
+        },
+        {
+          "description": "Flow-sensitive analysis, such as forward and backward dataflow analyses"
+        },
+        {
+          "description": "Path-sensitive analysis, such as software model checking and software verification"
+        },
+        {
+          "description": "Tools and frameworks for implementing analyzers"
+        },
+        {
+          "description": "Role of static analysis in program optimization and data dependency analysis during exploitation of concurrency (See also: FPL-Code)"
+        },
+        {
+          "description": "Role of program analysis in (partial) verification and bug-finding (See also: FPL-Code)"
+        },
+        {
+          "description": "Parallelization:",
+          "topics": [
+            {
+              "description": "Analysis for auto-parallelization"
+            },
+            {
+              "description": "Analysis for detecting concurrency bugs"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Explain the difference between dataflow graph and control flow graph."
+        },
+        {
+          "description": "Explain why non-trivial sound program analyses must be approximate."
+        },
+        {
+          "description": "Argue why an analysis is correct (sound and terminating)."
+        },
+        {
+          "description": "Explain why potential aliasing limits sound program analysis and how alias analysis can help."
+        },
+        {
+          "description": "Use the results of a program analysis for program optimization and/or partial program correctness."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Code Generation",
+      "code": "FPL-Code",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Instruction sets (See also: AR-Assembly)"
+        },
+        {
+          "description": "Control flow"
+        },
+        {
+          "description": "Memory management (See also: AR-Memory, OS-Memory)"
+        },
+        {
+          "description": "Procedure calls and method dispatching"
+        },
+        {
+          "description": "Separate compilation; linking"
+        },
+        {
+          "description": "Instruction selection"
+        },
+        {
+          "description": "Instruction scheduling (e.g., pipelining)"
+        },
+        {
+          "description": "Register allocation"
+        },
+        {
+          "description": "Code optimization as a form of program analysis (See also: FPL-Analysis)"
+        },
+        {
+          "description": "Program generation through generative AI"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Identify all essential steps for automatically converting source code into assembly or other low-level languages."
+        },
+        {
+          "description": "Explain the low-level code necessary for calling functions/methods in modern languages."
+        },
+        {
+          "description": "Discuss why separate compilation requires uniform calling conventions."
+        },
+        {
+          "description": "Discuss why separate compilation limits optimization because of unknown effects of calls."
+        },
+        {
+          "description": "Discuss opportunities for optimization introduced by naive translation and approaches for achieving. optimization, such as instruction selection, instruction scheduling, register allocation, and peephole optimization."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Run-time Behavior and Systems",
+      "code": "FPL-Run-Time",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Process models using stacks and heaps to allocate and deallocate activation records and recovering environments using frame pointers and return addresses during a procedure call including parameter-passing examples"
+        },
+        {
+          "description": "Schematics of code lookup using hash tables for methods in implementations of object-oriented programs"
+        },
+        {
+          "description": "Data layout for objects and activation records"
+        },
+        {
+          "description": "Object allocation in heap"
+        },
+        {
+          "description": "Implementing virtual entities and virtual methods; virtual method tables and their application"
+        },
+        {
+          "description": "Run-time behavior of object-oriented programs"
+        },
+        {
+          "description": "Compare and contrast allocation of memory during information exchange using parameter-passing and non-local variables (using chain of static links)."
+        },
+        {
+          "description": "Dynamic memory management approaches and techniques: malloc/free, garbage collection (mark-sweep, copying, reference counting), regions (also known as arenas or zones)"
+        },
+        {
+          "description": "Just-in-time compilation and dynamic recompilation"
+        },
+        {
+          "description": "Interface to operating system (e.g., for program initialization)"
+        },
+        {
+          "description": "Interoperability between programming languages including parameter-passing mechanisms and data representation (See also: AR-Representation)",
+          "topics": [
+            {
+              "description": "Big endian, little endian"
+            },
+            {
+              "description": "Data layout of composite data types such as arrays"
+            }
+          ]
+        },
+        {
+          "description": "Other common features of virtual machines, such as class loading, threads, and security checking"
+        },
+        {
+          "description": "Sandboxing"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Discuss benefits and limitations of automatic memory management."
+        },
+        {
+          "description": "Explain the use of metadata in run-time representations of objects and activation records, such as class pointers, array lengths, return addresses, and frame pointers."
+        },
+        {
+          "description": "Compare and contrast static allocation vs stack-based allocation vs heap-based allocation of data elements."
+        },
+        {
+          "description": "Explain why some data elements cannot be automatically deallocated at the end of a procedure/method call (need for garbage collection)."
+        },
+        {
+          "description": "Discuss advantages, disadvantages, and difficulties of just-in-time and dynamic recompilation."
+        },
+        {
+          "description": "Discuss the use of sandboxing in mobile code."
+        },
+        {
+          "description": "Identify the services provided by modern language run-time systems."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Advanced Programming Constructs",
+      "code": "FPL-Constructs",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Encapsulation mechanisms"
+        },
+        {
+          "description": "Lazy evaluation and infinite streams"
+        },
+        {
+          "description": "Compare and contrast lazy evaluation vs eager evaluation"
+        },
+        {
+          "description": "Unification vs assertion vs expression evaluation"
+        },
+        {
+          "description": "Control abstractions: exception handling, continuations, monads."
+        },
+        {
+          "description": "Object-oriented abstractions: multiple inheritance, mixins, traits, multimethods"
+        },
+        {
+          "description": "Metaprogramming: macros, generative programming, model-based development"
+        },
+        {
+          "description": "String manipulation via pattern-matching (regular expressions)"
+        },
+        {
+          "description": "Dynamic code evaluation (\"eval\")"
+        },
+        {
+          "description": "Language support for checking assertions, invariants, and pre/post-conditions"
+        },
+        {
+          "description": "Domain specific languages, such as database languages, data science languages, embedded computing languages, synchronous languages, hardware interface languages"
+        },
+        {
+          "description": "Massive parallel high performance computing models and languages"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Use various advanced programming constructs and idioms correctly."
+        },
+        {
+          "description": "Discuss how various advanced programming constructs aim to improve program structure, software quality, and programmer productivity."
+        },
+        {
+          "description": "Discuss how various advanced programming constructs interact with the definition and implementation of other language features."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Language Pragmatics",
+      "code": "FPL-Pragmatics",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Effect of technology needs and software requirements on programming language development and evolution"
+        },
+        {
+          "description": "Problem domains and programming paradigm"
+        },
+        {
+          "description": "Criteria for good programming language design",
+          "topics": [
+            {
+              "description": "Principles of language design such as orthogonality"
+            },
+            {
+              "description": "Defining control and iteration constructs"
+            },
+            {
+              "description": "Modularization of large software"
+            }
+          ]
+        },
+        {
+          "description": "Evaluation order, precedence, and associativity"
+        },
+        {
+          "description": "Eager vs delayed evaluation"
+        },
+        {
+          "description": "Defining control and iteration constructs"
+        },
+        {
+          "description": "External calls and system libraries"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Discuss the role of concepts such as orthogonality and well-chosen defaults in language design."
+        },
+        {
+          "description": "Objectively evaluate and justify language-design decisions."
+        },
+        {
+          "description": "Implement an example program whose result can differ under different rules for evaluation order, precedence, or associativity."
+        },
+        {
+          "description": "Illustrate uses of delayed evaluation, such as user-defined control abstractions."
+        },
+        {
+          "description": "Discuss the need for allowing calls to external calls and system libraries and the consequences for language implementation."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Formal Semantics",
+      "code": "FPL-Formalism",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Syntax vs semantics"
+        },
+        {
+          "description": "Approaches to semantics: axiomatic, operational, denotational, type-based"
+        },
+        {
+          "description": "Axiomatic semantics of abstract constructs such as assignment, selection, iteration using pre-condition, post-conditions, and loop invariant"
+        },
+        {
+          "description": "Operational semantics analysis of abstract constructs and sequence of such as assignment, expression evaluation, selection, iteration using environment and store",
+          "topics": [
+            {
+              "description": "Symbolic execution"
+            },
+            {
+              "description": "Constraint checkers"
+            }
+          ]
+        },
+        {
+          "description": "Denotational semantics",
+          "topics": [
+            {
+              "description": "Lambda Calculus. (See also: AL-Models, FPL-Functional)"
+            }
+          ]
+        },
+        {
+          "description": "Proofs by induction over language semantics"
+        },
+        {
+          "description": "Formal definitions and proofs for type systems (See also: FPL-Types)",
+          "topics": [
+            {
+              "description": "Propositions as types (implication as a function, conjunction as a product, disjunction as a sum)"
+            },
+            {
+              "description": "Dependent types (universal quantification as dependent function, existential quantification as dependent product)"
+            },
+            {
+              "description": "Parametricity"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Construct formal semantics for a small language."
+        },
+        {
+          "description": "Write a lambda-calculus program and show its evaluation to a normal form."
+        },
+        {
+          "description": "Discuss the different approaches of operational, denotational, and axiomatic semantics."
+        },
+        {
+          "description": "Use induction to prove properties of all programs in a language."
+        },
+        {
+          "description": "Use induction to prove properties of all programs in a language that is well-typed according to a formally defined type system."
+        },
+        {
+          "description": "Use parametricity to establish the behavior of code given only its type."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Formal Development Methodologies",
+      "code": "FPL-Methodologies",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Use formal modeling techniques to develop and validate architectures."
+        },
+        {
+          "description": "Use proof assisted programming languages to develop fully specified and verified software artifacts."
+        },
+        {
+          "description": "Use verifier and specification support in programming languages to formally validate system properties."
+        },
+        {
+          "description": "Integrate symbolic validation tooling into a programming workflow."
+        },
+        {
+          "description": "Discuss when and how formal methods can be effectively used in the development process."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Design Principles of Programming Languages",
+      "code": "FPL-Design",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Language design principles",
+          "topics": [
+            {
+              "description": "Simplicity"
+            },
+            {
+              "description": "Security (See also: SEC-Coding)"
+            },
+            {
+              "description": "Fast translation"
+            },
+            {
+              "description": "Efficient object code"
+            },
+            {
+              "description": "Orthogonality"
+            },
+            {
+              "description": "Readability"
+            },
+            {
+              "description": "Completeness"
+            },
+            {
+              "description": "Implementation strategies"
+            }
+          ]
+        },
+        {
+          "description": "Designing a language to fit a specific domain or problem"
+        },
+        {
+          "description": "Interoperability between programming languages"
+        },
+        {
+          "description": "Language portability"
+        },
+        {
+          "description": "Formal description of a programming language"
+        },
+        {
+          "description": "Green computing principles (See also: SEP-Sustainability)"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Understand what constitutes good language design and apply that knowledge to evaluate a real programming language."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": ""
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "FPL-SEP",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Impact of English-centric programming languages"
+        },
+        {
+          "description": "Enhancing accessibility and inclusivity for people with disabilities – Supporting assistive technologies"
+        },
+        {
+          "description": "Human factors related to programming languages and usability",
+          "topics": [
+            {
+              "description": "Impact of syntax on accessibility"
+            },
+            {
+              "description": "Supporting cultural differences (e.g., currency, decimals, dates)"
+            },
+            {
+              "description": "Neurodiversity"
+            }
+          ]
+        },
+        {
+          "description": "Etymology of terms such as “class,” “master,” and “slave” in programming languages"
+        },
+        {
+          "description": "Increasing accessibility by supporting multiple languages within applications (UTF)"
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Consciously design programming languages to be inclusive and non-offensive."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "Included in SEP h ours"
+    }
+  ]
+}

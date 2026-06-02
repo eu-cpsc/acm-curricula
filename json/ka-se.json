@@ -1,0 +1,1235 @@
+{
+  "name": "Software Engineering",
+  "code": "SE",
+  "units": [
+    {
+      "name": "Teamwork",
+      "code": "SE-Teamwork",
+      "topics-cs": [
+        {
+          "description": "Effective communication, including oral and written, as well as formal (email, docs, comments, presentations) and informal (team chat, meetings). (See also: SEP-Communication)"
+        },
+        {
+          "description": "Common causes of team conflict, and approaches for conflict resolution."
+        },
+        {
+          "description": "Cooperative programming:",
+          "topics": [
+            {
+              "description": "Pair programming or Swarming"
+            },
+            {
+              "description": "Code review"
+            },
+            {
+              "description": "Collaboration through version control"
+            }
+          ]
+        },
+        {
+          "description": "Roles and responsibilities in a software team: (See also: SEP-Professional-Ethics)",
+          "topics": [
+            {
+              "description": "Advantages of teamwork"
+            },
+            {
+              "description": "Risks and complexity of such collaboration"
+            }
+          ]
+        },
+        {
+          "description": "Team processes – responsibilities for tasks, effort estimation, meeting structure, work schedule"
+        },
+        {
+          "description": "Importance of team diversity and inclusivity. (See also: SEP-Communication)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Interfacing with stakeholders, as a team:",
+          "topics": [
+            {
+              "description": "Management & other non-technical teams"
+            },
+            {
+              "description": "Customers"
+            },
+            {
+              "description": "Users"
+            }
+          ]
+        },
+        {
+          "description": "Risks associated with physical, distributed, hybrid, and virtual teams – including communication, perception, structure, points of failure, mitigation, and recovery, etc."
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Follow effective team communication practices."
+        },
+        {
+          "description": "Articulate the sources of, hazards of, and potential benefits of team conflict – especially focusing on the value of disagreeing about ideas or proposals without insulting people."
+        },
+        {
+          "description": "Facilitate a conflict-resolution and problem-solving strategy in a team setting."
+        },
+        {
+          "description": "Collaborate effectively in cooperative development/programming."
+        },
+        {
+          "description": "Propose and delegate necessary roles and responsibilities in a software development team."
+        },
+        {
+          "description": "Compose and follow an agenda for a team meeting."
+        },
+        {
+          "description": "Facilitate through involvement in a team project, the central elements of team building, establishing healthy team culture, and team management including creating and executing a team work plan."
+        },
+        {
+          "description": "Promote the importance of and benefits that diversity and inclusivity brings to a software development team."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Reference, as a team, the importance of, and strategies to interface with stakeholders outside the team on both technical and non-technical levels."
+        },
+        {
+          "description": "Enumerate the risks associated with physical, distributed, hybrid, and virtual teams and possible points of failure and how to mitigate against and recover/learn from failures."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2 + 3 (SEP)",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Tools and Environments",
+      "code": "SE-Tools",
+      "topics-cs": [
+        {
+          "description": "Software configuration management and version control: (See also: SDF-Practices)",
+          "topics": [
+            {
+              "description": "Configuration in version control, reproducible builds/configuration."
+            },
+            {
+              "description": "Version control branching strategies. Development branches vs release branches. Trunk-based development."
+            },
+            {
+              "description": "Merging/rebasing strategies, when relevant."
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Release management."
+        },
+        {
+          "description": "Testing tools including static and dynamic analysis tools. (See also: SDF-Practices, SEC-Coding)"
+        },
+        {
+          "description": "Software process automation:",
+          "topics": [
+            {
+              "description": "Build systems – the value of fast, hermetic, reproducible builds, compare/contrast approaches to building a project."
+            },
+            {
+              "description": "Continuous Integration (CI) – the use of automation and automated tests to do preliminary validation that the current head/trunk revision builds and passes (basic) tests."
+            },
+            {
+              "description": "Dependency management – updating external/upstream dependencies, package management, SemVer."
+            }
+          ]
+        },
+        {
+          "description": "Design and communication tools (docs, diagrams, common forms of design diagrams like UML)."
+        },
+        {
+          "description": "Tool integration concepts and mechanisms. (See also: SDF-Practices)"
+        },
+        {
+          "description": "Use of modern IDE facilities – debugging, refactoring, searching/indexing, ML-powered code assistants, etc. (See also: SDF-Practices)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe the difference between centralized and distributed software configuration management."
+        },
+        {
+          "description": "Describe how version control can be used to help manage software release management."
+        },
+        {
+          "description": "Identify configuration items and use a source code control tool in a small team-based project."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe how available static and dynamic test tools can be integrated into the software development environment."
+        },
+        {
+          "description": "Understand the use of CI systems as a ground-truth for the state of the team’s shared code (build and test success)."
+        },
+        {
+          "description": "Describe the issues that are important in selecting a set of tools for the development of a specific software system, including tools for requirements tracking, design modeling, implementation, build automation, and testing."
+        },
+        {
+          "description": "Demonstrate the capability to use software tools in support of the development of a software product of medium size."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1                   3",
+      "hours-ka": "+ 1 (SDF)"
+    },
+    {
+      "name": "Product Requirements",
+      "code": "SE-Requirements",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Describe functional requirements using, for example, use cases or user stories.",
+          "topics": [
+            {
+              "description": "Using at least one method of documenting and structuring functional requirements."
+            },
+            {
+              "description": "Understanding how the method supports design and implementation."
+            },
+            {
+              "description": "Strengths and weaknesses of using a specific approach."
+            }
+          ]
+        },
+        {
+          "description": "Properties of requirements including consistency, validity, completeness, and feasibility."
+        },
+        {
+          "description": "Requirements elicitation.",
+          "topics": [
+            {
+              "description": "Sources of requirements, for example, users, administrators, or support personnel."
+            },
+            {
+              "description": "Methods of requirement gathering, for example, surveys, interviews, or behavioral analysis."
+            }
+          ]
+        },
+        {
+          "description": "Non-functional requirements, for example, security, usability, or performance, also called as Quality Attributes. (See also: SEP-Sustainability)"
+        },
+        {
+          "description": "Risk identification and management, including ethical considerations surrounding the proposed product. (See also: SEP-Professional-Ethics)"
+        },
+        {
+          "description": "Communicating and/or formalizing requirement specifications."
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Prototyping a tool for both eliciting and validating/confirming requirements."
+        },
+        {
+          "description": "Product evolution: when requirements change, how to understand what effect that has and what changes need to be made."
+        },
+        {
+          "description": "Effort estimation:",
+          "topics": [
+            {
+              "description": "Learning techniques for better estimating the effort required to complete a task;"
+            },
+            {
+              "description": "Practicing estimation and comparing it to how long tasks take;"
+            },
+            {
+              "description": "Effort estimation is quite difficult, so students are likely to be way off in many cases, but seeing the process play out with their own work is valuable."
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Compare different methods of eliciting requirements along multiple axes."
+        },
+        {
+          "description": "Identify differences between two methods of describing functional requirements (e.g., customer interviews, user studies) and the situations where each would be preferred."
+        },
+        {
+          "description": "Identify which behaviors are required, allowed, or barred from a given set of requirements and a list of candidate behaviors."
+        },
+        {
+          "description": "Collect a set of requirements for a simple software system."
+        },
+        {
+          "description": "Identify areas of a software system that need to be changed, given a description of the system and a set of new requirements to be implemented."
+        },
+        {
+          "description": "Identify the functional and non-functional requirements in a set of requirements."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Create a prototype of a software system to validate a set of requirements – building a mock-up, MVP, etc."
+        },
+        {
+          "description": "Estimate the time to complete a set of tasks, then compare estimates to the actual time taken."
+        },
+        {
+          "description": "Determine an implementation sequence for a set of tasks, adhering to dependencies between them, with a goal to retire risk as early as possible."
+        },
+        {
+          "description": "Write a requirement specification for a simple software system."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "0 + 3 (SEP) 2"
+    },
+    {
+      "name": "Software Design",
+      "code": "SE-Design",
+      "topics-cs": [
+        {
+          "description": "System design principles. (See also: SF-Reliability)",
+          "topics": [
+            {
+              "description": "Levels of abstraction (e.g., architectural design and detailed design)"
+            },
+            {
+              "description": "Separation of concerns"
+            },
+            {
+              "description": "Information hiding"
+            },
+            {
+              "description": "Coupling and cohesion"
+            }
+          ]
+        },
+        {
+          "description": "Software architecture. (See also: SF-Reliability)",
+          "topics": [
+            {
+              "description": "Design paradigms",
+              "topics": [
+                {
+                  "description": "Top-down functional decomposition/layered design"
+                },
+                {
+                  "description": "Data-oriented architecture"
+                },
+                {
+                  "description": "Object-oriented analysis and design"
+                },
+                {
+                  "description": "Event-driven design"
+                }
+              ]
+            },
+            {
+              "description": "Standard architectures (e.g., client-server and microservice architectures including REST discussions, n-layer, pipes-and-filters, Model View Controller)"
+            },
+            {
+              "description": "Identifying component boundaries and dependencies"
+            }
+          ]
+        },
+        {
+          "description": "Programming in the large vs programming in the small. (See also: SF-Reliability)"
+        },
+        {
+          "description": "Code smells and other indications of code quality, distinct from correctness. (See also: SEC-Engineering)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "API design principles",
+          "topics": [
+            {
+              "description": "Consistency",
+              "topics": [
+                {
+                  "description": "Consistent APIs are easier to learn and less error-prone"
+                },
+                {
+                  "description": "Consistency is both internal (between different portions of the API) and external (following common API patterns)"
+                }
+              ]
+            },
+            {
+              "description": "Composability"
+            },
+            {
+              "description": "Documenting contracts",
+              "topics": [
+                {
+                  "description": "API operations should describe their effect on the system, but not generally their implementation",
+                  "topics": [
+                    {
+                      "description": "Preconditions, postconditions, and invariants"
+                    }
+                  ]
+                },
+                {
+                  "description": "Expandability"
+                },
+                {
+                  "description": "Error reporting",
+                  "topics": [
+                    {
+                      "description": "Errors should be clear, predictable, and actionable"
+                    },
+                    {
+                      "description": "Input that does not match the contract should produce an error"
+                    },
+                    {
+                      "description": "Errors that can be reliably managed without reporting should be managed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Identifying and codifying data invariants and time invariants"
+        },
+        {
+          "description": "Structural and behavioral models of software designs"
+        },
+        {
+          "description": "Data design (See also: DM-Modeling)",
+          "topics": [
+            {
+              "description": "Data structures"
+            },
+            {
+              "description": "Storage systems"
+            }
+          ]
+        },
+        {
+          "description": "Requirement traceability",
+          "topics": [
+            {
+              "description": "Understanding which requirements are satisfied by a design"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Design modeling, for instance with class diagrams, entity relationship diagrams, or sequence diagrams"
+        },
+        {
+          "description": "Measurement and analysis of design quality"
+        },
+        {
+          "description": "Principles of secure design and coding (See also: SEC-Engineering)",
+          "topics": [
+            {
+              "description": "Principle of least privilege"
+            },
+            {
+              "description": "Principle of fail-safe defaults"
+            },
+            {
+              "description": "Principle of psychological acceptability"
+            }
+          ]
+        },
+        {
+          "description": "Evaluating design tradeoffs (e.g., efficiency vs reliability, security vs usability)"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Identify the standard software architecture of a given high-level design."
+        },
+        {
+          "description": "Select and use an appropriate design paradigm to design a simple software system and explain how system design principles have been applied in this design."
+        },
+        {
+          "description": "Adapt a flawed system design to better follow principles such as separation of concerns or information hiding."
+        },
+        {
+          "description": "Identify the dependencies among a set of software components in an architectural design."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Design an API for a single component of a large software system, including identifying and documenting each operation’s invariants, contract, and error conditions."
+        },
+        {
+          "description": "Evaluate an API description in terms of consistency, composability, and expandability."
+        },
+        {
+          "description": "Expand an existing design to include a new piece of functionality."
+        },
+        {
+          "description": "Design a set of data structures to implement a provided API surface."
+        },
+        {
+          "description": "Identify which requirements are satisfied by a provided software design."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Translate a natural language software design into class diagrams."
+        },
+        {
+          "description": "Adapt a flawed system design to better follow the principles of least privilege and fail-safe defaults."
+        },
+        {
+          "description": "Contrast two software designs across different qualities, such as efficiency or usability."
+        }
+      ],
+      "hours-cs": "1",
+      "hours-ka": "4 + 2 (DM)"
+    },
+    {
+      "name": "Software Construction",
+      "code": "SE-Construction",
+      "topics-cs": [
+        {
+          "description": "Practical small-scale testing (See also: SDF-Practices)",
+          "topics": [
+            {
+              "description": "Unit testing"
+            },
+            {
+              "description": "Test-driven development – This is particularly valuable for students psychologically, as it is far easier to engage constructively with the challenge of identifying challenging inputs for a given API (edge cases, corner cases) a priori. If they implement first, the instinct is often to avoid trying to crash their new creation, while a test-first approach gives them the intellectual satisfaction of spotting the problem cases and then watching as more tests pass during the development process."
+            }
+          ]
+        },
+        {
+          "description": "Documentation (See also: SDF-Practices)",
+          "topics": [
+            {
+              "description": "Interface documentation – describe interface requirements, potentially including (formal or informal) contracts, pre and post conditions, invariants."
+            },
+            {
+              "description": "Implementation documentation should focus on tricky and non-obvious pieces of code, whether because the code is using advanced language features, or the behavior of the code is complex. (Do not add comments that re-state common/obvious operations and simple language features.)",
+              "topics": [
+                {
+                  "description": "Clarify dataflow, computation, etc., focusing on what the code is."
+                },
+                {
+                  "description": "Identify subtle/tricky pieces of code and refactor to be self-explanatory if possible or provide appropriate comments to clarify."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Coding style (See also: SDF-Practices)",
+          "topics": [
+            {
+              "description": "Style guides"
+            },
+            {
+              "description": "Commenting"
+            },
+            {
+              "description": "Naming"
+            }
+          ]
+        },
+        {
+          "description": "“Best Practices” for coding: techniques, idioms/patterns, mechanisms for building quality programs (See also: SEC-Coding, SDF-Practices)",
+          "topics": [
+            {
+              "description": "Defensive coding practices"
+            },
+            {
+              "description": "Secure coding practices and principles"
+            },
+            {
+              "description": "Using exception handling mechanisms to make programs more robust, fault-tolerant"
+            }
+          ]
+        },
+        {
+          "description": "Debugging (See also: SDF-Practices)"
+        },
+        {
+          "description": "Logging"
+        },
+        {
+          "description": "Use of libraries and frameworks developed by others (See also: SDF-Practices)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Larger-scale testing",
+          "topics": [
+            {
+              "description": "Test doubles (stubs, mocks, fakes)"
+            },
+            {
+              "description": "Dependency injection"
+            }
+          ]
+        },
+        {
+          "description": "Work sequencing, including dependency identification, milestones, and risk retirement",
+          "topics": [
+            {
+              "description": "Dependency identification: Identifying the dependencies between different tasks"
+            },
+            {
+              "description": "Milestones: A collection of tasks that serve as a marker of progress when completed. Ideally, the milestone encompasses a useful unit of functionality.",
+              "topics": [
+                {
+                  "description": "Risk retirement: Identifying what elements of a project are risky and prioritizing completing tasks that address those risks."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Potential security problems in programs (See also: SEC-Coding)",
+          "topics": [
+            {
+              "description": "Buffer and other types of overflows"
+            },
+            {
+              "description": "Race conditions"
+            },
+            {
+              "description": "Improper initialization, including choice of privileges"
+            },
+            {
+              "description": "Input validation"
+            }
+          ]
+        },
+        {
+          "description": "Documentation (autogenerated)"
+        },
+        {
+          "description": "Development context: “green field” vs existing code base",
+          "topics": [
+            {
+              "description": "Change impact analysis"
+            },
+            {
+              "description": "Change actualization"
+            }
+          ]
+        },
+        {
+          "description": "Release management"
+        },
+        {
+          "description": "DevOps practices"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Write appropriate unit tests for a small component (several functions, a single type, etc.)."
+        },
+        {
+          "description": "Write appropriate interface and (if needed) implementation comments for a small component."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe techniques, coding idioms and mechanisms for implementing designs to achieve desired properties such as reliability, efficiency, and robustness."
+        },
+        {
+          "description": "Write robust code using exception handling mechanisms."
+        },
+        {
+          "description": "Describe secure coding and defensive coding practices."
+        },
+        {
+          "description": "Select and use a defined coding standard in a small software project."
+        },
+        {
+          "description": "Compare and contrast integration strategies including top-down, bottom-up, and sandwich integration."
+        },
+        {
+          "description": "Describe the process of analyzing and implementing changes to code base developed for a specific project."
+        },
+        {
+          "description": "Describe the process of analyzing and implementing changes to a large existing code base."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Rewrite a simple program to remove common vulnerabilities, such as buffer overflows, integer overflows and race conditions."
+        },
+        {
+          "description": "Write a software component that performs some non-trivial task and is resilient to input and run-time errors."
+        }
+      ],
+      "hours-cs": "1 + 3 (SDF) 3",
+      "hours-ka": "+ 1 (SDF)"
+    },
+    {
+      "name": "Software Verification and Validation",
+      "code": "SE-Validation",
+      "topics-cs": [
+        {
+          "description": "Verification and validation concepts",
+          "topics": [
+            {
+              "description": "Verification: Are we building the thing right?"
+            },
+            {
+              "description": "Validation: Did we build the right thing?"
+            }
+          ]
+        },
+        {
+          "description": "Why testing matters: Does the component remain functional as the code evolves?"
+        },
+        {
+          "description": "Testing objectives",
+          "topics": [
+            {
+              "description": "Usability"
+            },
+            {
+              "description": "Reliability"
+            },
+            {
+              "description": "Conformance to specification"
+            },
+            {
+              "description": "Performance"
+            },
+            {
+              "description": "Security"
+            }
+          ]
+        },
+        {
+          "description": "Test kinds",
+          "topics": [
+            {
+              "description": "Unit"
+            },
+            {
+              "description": "Integration"
+            },
+            {
+              "description": "Validation"
+            },
+            {
+              "description": "System"
+            }
+          ]
+        },
+        {
+          "description": "Stylistic differences between tests and production code: DAMP vs DRY – more duplication is warranted in test code."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Test planning and generation",
+          "topics": [
+            {
+              "description": "Test case generation, from formal models, specifications, etc."
+            },
+            {
+              "description": "Test coverage",
+              "topics": [
+                {
+                  "description": "Test matrices"
+                },
+                {
+                  "description": "Code coverage – how much of the code is tested?"
+                },
+                {
+                  "description": "Environment coverage – how many hardware architectures, operating systems, browsers, etc. are tested?"
+                }
+              ]
+            },
+            {
+              "description": "Test data and inputs"
+            }
+          ]
+        },
+        {
+          "description": "Test development",
+          "topics": [
+            {
+              "description": "Test-driven development"
+            },
+            {
+              "description": "Object oriented testing, mocking, and dependency injection"
+            },
+            {
+              "description": "Opaque-box (previously, black-box) and transparent-box (previously, white-box) testing techniques"
+            },
+            {
+              "description": "Test tooling, including code coverage, static analysis, and fuzzing"
+            }
+          ]
+        },
+        {
+          "description": "Verification and validation in the development cycle",
+          "topics": [
+            {
+              "description": "Code reviews"
+            },
+            {
+              "description": "Test automation, including automation of tooling"
+            },
+            {
+              "description": "Pre-commit and post-commit testing"
+            },
+            {
+              "description": "Tradeoffs between test coverage and throughput/latency of testing"
+            },
+            {
+              "description": "Defect tracking and prioritization: reproducibility of reported defects"
+            }
+          ]
+        },
+        {
+          "description": "Domain specific verification and validation challenges",
+          "topics": [
+            {
+              "description": "Performance testing and benchmarking"
+            },
+            {
+              "description": "Asynchrony, parallelism, and concurrency"
+            },
+            {
+              "description": "Safety-critical"
+            },
+            {
+              "description": "Numeric"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Verification and validation tooling and automation",
+          "topics": [
+            {
+              "description": "Static analysis"
+            },
+            {
+              "description": "Code coverage"
+            },
+            {
+              "description": "Fuzzing"
+            },
+            {
+              "description": "Dynamic analysis and fault containment (sanitizers, etc.)"
+            },
+            {
+              "description": "Fault logging and fault tracking"
+            }
+          ]
+        },
+        {
+          "description": "Test planning and generation",
+          "topics": [
+            {
+              "description": "Fault estimation and testing termination including defect seeding"
+            },
+            {
+              "description": "Use of random and pseudo random numbers in testing"
+            }
+          ]
+        },
+        {
+          "description": "Performance testing and benchmarking",
+          "topics": [
+            {
+              "description": "Throughput and latency"
+            },
+            {
+              "description": "Degradation under load (stress testing, FIFO vs LIFO handling of requests)"
+            },
+            {
+              "description": "Speedup and scaling",
+              "topics": [
+                {
+                  "description": "Amdahl’s law"
+                },
+                {
+                  "description": "Gustafson's law"
+                },
+                {
+                  "description": "Soft and weak scaling"
+                }
+              ]
+            },
+            {
+              "description": "Identifying and measuring figures of merits"
+            },
+            {
+              "description": "Common performance bottlenecks",
+              "topics": [
+                {
+                  "description": "Compute-bound"
+                },
+                {
+                  "description": "Memory-bandwidth bound"
+                },
+                {
+                  "description": "Latency-bound"
+                }
+              ]
+            },
+            {
+              "description": "Statistical methods and best practices for benchmarking",
+              "topics": [
+                {
+                  "description": "Estimation of uncertainty"
+                },
+                {
+                  "description": "Confidence intervals"
+                }
+              ]
+            },
+            {
+              "description": "Analysis and presentation (graphs, etc.)"
+            },
+            {
+              "description": "Timing techniques"
+            }
+          ]
+        },
+        {
+          "description": "Testing asynchronous, parallel, and concurrent systems"
+        },
+        {
+          "description": "Verification and validation of non-code artifacts (documentation, training materials)"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Explain why testing is important."
+        },
+        {
+          "description": "Distinguish between program validation and verification."
+        },
+        {
+          "description": "Describe different objectives of testing."
+        },
+        {
+          "description": "Compare and contrast the different types and levels of testing (regression, unit, integration, systems, and acceptance)."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe techniques for creating a test plan and generating test cases."
+        },
+        {
+          "description": "Create a test plan for a medium-size code segment which includes a test matrix and generation of test data and inputs."
+        },
+        {
+          "description": "Implement a test plan for a medium-size code segment."
+        },
+        {
+          "description": "Identify the fundamental principles of test-driven development methods and explain the role of automated testing in these methods."
+        },
+        {
+          "description": "Discuss issues involving the testing of object-oriented software."
+        },
+        {
+          "description": "Describe mocking and dependency injection and their application."
+        },
+        {
+          "description": "Undertake, as part of a team activity, a code review of a medium-size code segment."
+        },
+        {
+          "description": "Describe the role that tools can play in the validation of software."
+        },
+        {
+          "description": "Automate the testing in a small software project."
+        },
+        {
+          "description": "Explain the roles, pros, and cons of pre-commit and post-commit testing."
+        },
+        {
+          "description": "Discuss the tradeoffs between test coverage and test throughput/latency and how this can impact verification."
+        },
+        {
+          "description": "Use a defect tracking tool to manage software defects in a small software project."
+        },
+        {
+          "description": "Discuss the limitations of testing in certain domains."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Describe and compare different tools for verification and validation."
+        },
+        {
+          "description": "Automate the use of different tools in a small software project."
+        },
+        {
+          "description": "Explain how and when random numbers should be used in testing."
+        },
+        {
+          "description": "Describe approaches for fault estimation."
+        },
+        {
+          "description": "Estimate the number of faults in a small software application based on fault density and fault seeding."
+        },
+        {
+          "description": "Describe throughput and latency and provide examples of each."
+        },
+        {
+          "description": "Explain speedup and the different forms of scaling and how they are computed."
+        },
+        {
+          "description": "Describe common performance bottlenecks."
+        },
+        {
+          "description": "Describe statistical methods and best practices for benchmarking software."
+        },
+        {
+          "description": "Explain techniques for and challenges with measuring time when constructing a benchmark."
+        },
+        {
+          "description": "Identify the figures of merit, construct and run a benchmark, and statistically analyze and visualize the results for a small software project."
+        },
+        {
+          "description": "Describe techniques and issues with testing asynchronous, concurrent, and parallel software."
+        },
+        {
+          "description": "Create a test plan for a medium-size code segment which contains asynchronous, concurrent, and/or parallel code, including a test matrix and generation of test data and inputs."
+        },
+        {
+          "description": "Describe techniques for the verification and validation of non-code artifacts."
+        }
+      ],
+      "hours-cs": "1",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Refactoring and Code Evolution",
+      "code": "SE-Refactoring",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Hyrum’s Law/The Law of Implicit Interfaces"
+        },
+        {
+          "description": "Backward compatibility",
+          "topics": [
+            {
+              "description": "Compatibility is not a property of a single entity, it’s a property of a relationship."
+            },
+            {
+              "description": "Backward compatibility needs to be evaluated in terms of provider + consumer(s) or with a well-specified model of what forms of compatibility a provider aspires to/promises."
+            }
+          ]
+        },
+        {
+          "description": "Refactoring",
+          "topics": [
+            {
+              "description": "Standard refactoring patterns (rename, inline, outline, etc.)"
+            },
+            {
+              "description": "Use of refactoring tools in IDE"
+            },
+            {
+              "description": "Application of static-analysis tools (to identify code in need of refactoring, generate changes, etc.)"
+            },
+            {
+              "description": "Value of refactoring as a remedy for technical debt"
+            }
+          ]
+        },
+        {
+          "description": "Versioning",
+          "topics": [
+            {
+              "description": "Semantic Versioning (SemVer)"
+            },
+            {
+              "description": "Trunk-based development"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "“Large Scale” Refactoring – techniques when a refactoring change is too large to commit safely (large projects), or when it is impossible to synchronize change between provider + all consumers (multiple repositories, consumers with private code).",
+          "topics": [
+            {
+              "description": "Express both old and new APIs so that they can co-exist."
+            },
+            {
+              "description": "Minimize the size of behavior changes."
+            },
+            {
+              "description": "Why these techniques are required, (e.g., “API consumers I can see” vs “consumers I can’t see”)."
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Identify both explicit and implicit behavior of an interface and identify potential risks from Hyrum’s Law."
+        },
+        {
+          "description": "Consider inputs from static analysis tools and/or Software Design principles to identify code in need of refactoring."
+        },
+        {
+          "description": "Identify changes that can be broadly considered “backward compatible,” potentially with explicit statements about what usage is or is not supported."
+        },
+        {
+          "description": "Refactor the implementation of an interface to improve design, clarity, etc. with minimal/zero impact on existing users."
+        },
+        {
+          "description": "Evaluate whether a proposed change is sufficiently safe given the versioning methodology in use for a given project."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Plan a complex multi-step refactoring to change default behavior of an API safely."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Software Reliability",
+      "code": "SE-Reliability",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Concept of reliability as probability of failure or mean time between failures, and faults as cause of failures"
+        },
+        {
+          "description": "Identifying reliability requirements for different kinds of software"
+        },
+        {
+          "description": "Software failures caused by defects/bugs, and so for high reliability the goal is to have minimum defects – by injecting fewer defects (better training, education, planning), and by removing most of the injected defects (testing, code review, etc.)"
+        },
+        {
+          "description": "Software reliability, system reliability and failure behavior"
+        },
+        {
+          "description": "Defect injection and removal cycle, and different approaches for defect removal"
+        },
+        {
+          "description": "Compare the “error budget” approach to reliability with the “error-free” approach and identify domains where each is relevant."
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Software reliability models"
+        },
+        {
+          "description": "Software fault tolerance techniques and models",
+          "topics": [
+            {
+              "description": "Contextual differences in fault tolerance (e.g., crashing a flight critical system is strongly avoided, crashing a data processing system before corrupt data is written to storage is highly valuable)"
+            }
+          ]
+        },
+        {
+          "description": "Software reliability engineering practices – including reviews, testing, practical model checking"
+        },
+        {
+          "description": "Identification of dependent and independent failure domains, and their impact on system reliability"
+        },
+        {
+          "description": "Measurement-based analysis of software reliability – telemetry, monitoring and alerting, dashboards, release qualification metrics, etc."
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe how to determine the level of reliability required by a software system."
+        },
+        {
+          "description": "Explain the problems that exist in achieving very high levels of reliability."
+        },
+        {
+          "description": "Understand approaches to minimizing faults that can be applied at each stage of the software lifecycle."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Demonstrate the ability to apply multiple methods to develop reliability estimates for a software system."
+        },
+        {
+          "description": "Identify methods that will lead to the realization of a software architecture that achieves a specified level of reliability."
+        },
+        {
+          "description": "Identify ways to apply redundancy to achieve fault tolerance."
+        },
+        {
+          "description": "Identify single-point-of-failure (SPF) dependencies in a system design."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Formal Methods",
+      "code": "SE-Formal",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Formal specification of interfaces",
+          "topics": [
+            {
+              "description": "Specification of pre- and post- conditions"
+            },
+            {
+              "description": "Formal languages for writing and analyzing pre- and post-conditions."
+            }
+          ]
+        },
+        {
+          "description": "Problem areas well served by formal methods",
+          "topics": [
+            {
+              "description": "Lock-free programming, data races"
+            },
+            {
+              "description": "Asynchronous and distributed systems, deadlock, livelock, etc."
+            }
+          ]
+        },
+        {
+          "description": "Comparison to other tools and techniques for defect detection",
+          "topics": [
+            {
+              "description": "Testing"
+            },
+            {
+              "description": "Fuzzing"
+            }
+          ]
+        },
+        {
+          "description": "Formal approaches to software modeling and analysis",
+          "topics": [
+            {
+              "description": "Model checkers"
+            },
+            {
+              "description": "Model finders"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": ""
+    }
+  ]
+}

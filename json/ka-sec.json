@@ -1,0 +1,555 @@
+{
+  "name": "Security",
+  "code": "SEC",
+  "units": [
+    {
+      "name": "Foundational Security",
+      "code": "SEC-Foundations",
+      "topics-cs": [
+        {
+          "description": "Developing a security mindset incorporating crosscutting concepts: confidentiality, integrity, availability, risk assessment, systems thinking, adversarial thinking, human-centered thinking"
+        },
+        {
+          "description": "Basic concepts of authentication and authorization/access control"
+        },
+        {
+          "description": "Vulnerabilities, threats, attack surfaces, and attack vectors (See also: OS-Protection)"
+        },
+        {
+          "description": "Denial of Service (DoS) and Distributed Denial of Service (DDoS) (See also: OS-Protection)"
+        },
+        {
+          "description": "Principles and practices of protection, e.g., least privilege, open design, fail-safe defaults, defense in depth, and zero trust; and how they can be implemented (See also: OS-Principles, OS-Protection, SE-Construction, SEP-Security)"
+        },
+        {
+          "description": "Optimization considerations between security, privacy, performance, and other design goals (See also: SDF-Practices, SE-Validation, HCI-Design)"
+        },
+        {
+          "description": "Impact of AI on security and privacy: using AI to bolster defenses as well as address increased adversarial capabilities due to AI (See also: AI-SEP, HCI-Design, HCI-SEP)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Access control models (e.g., discretionary, mandatory, role-based, and attribute-based)"
+        },
+        {
+          "description": "Security controls"
+        },
+        {
+          "description": "Concepts of trust and trustworthiness"
+        },
+        {
+          "description": "Applications of a security mindset: web, cloud, and mobile devices (See also: SF-System Design, SPD-Common)"
+        },
+        {
+          "description": "Protecting embedded and cyber-physical systems (See also: SPD-Embedded)"
+        },
+        {
+          "description": "Principles of usable security and human-centered computing (See also: HCI-Design, SEP-Security)"
+        },
+        {
+          "description": "Security and trust in AI/machine learning systems, e.g., fit for purpose, ethical operating boundaries, authoritative knowledge sources, verified training data, repeatable system evaluation tests, system attestation, independent validation/certification; unintended consequences from: adverse effect (See also: AI-Introduction, AI-ML, AI-SEP, SEP-Security)"
+        },
+        {
+          "description": "Security risks in building and operating AI/machine learning systems (e.g., algorithm bias, knowledge corpus bias, training corpus bias, copyright violation) (See also: AI-Introduction, AI-ML, AI-SEP)"
+        },
+        {
+          "description": "Hardware considerations in security, e.g., principles of secure hardware, secure processor architectures, cryptographic acceleration, compartmentalization, software-hardware interaction (See also: AR-Assembly, AR-Representation, OS-Purpose)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Evaluate a system for possible attacks that can be launched by an adversary."
+        },
+        {
+          "description": "Design and develop approaches to protect a system from a set of identified threats."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe how harm to user privacy can be avoided."
+        },
+        {
+          "description": "Develop a system that incorporates various principles of security and privacy."
+        },
+        {
+          "description": "Compare the different access control models in terms of functionality and performance."
+        },
+        {
+          "description": "Show how an adversary could use machine learning algorithms to reduce the security of a system."
+        },
+        {
+          "description": "Show how a developer could improve the security of a system using machine learning algorithms."
+        },
+        {
+          "description": "Describe hardware (especially CPU) vulnerabilities that can impact software."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1 + 7 (DM, FPL, PDC, SDF, SE, OS)",
+      "hours-ka": "7"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "SEC-SEP",
+      "topics-cs": [
+        {
+          "description": "Principles and practices of privacy (See also: SEP-Security)"
+        },
+        {
+          "description": "Societal impacts on breakdowns in security and privacy (See also: SEP-Context, SEP-Privacy, SEP-Security)"
+        },
+        {
+          "description": "Applicability of laws and regulations on security and privacy (See also: SEP-Security)"
+        },
+        {
+          "description": "Professional ethical considerations when designing secure systems and maintaining privacy; ethical hacking (See also: SEP-Professional-Ethics, SEP-Privacy, SEP-Security)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Security by design (See also: SF-Security, SF-Design)"
+        },
+        {
+          "description": "Privacy by design and privacy engineering (See also: SEP-Privacy, SEP-Security)"
+        },
+        {
+          "description": "Security and privacy implications of malicious AI/machine learning actors, e.g., identifying deep fakes (See also: AI-Introduction, AI-ML, SEP-Privacy, SEP-Security)"
+        },
+        {
+          "description": "Societal impacts of Internet of Things (IoT) devices and other emerging technologies on security and privacy (See also: SEP-Privacy, SEP-Security)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Calculate the impact of a breakdown in security of a given system."
+        },
+        {
+          "description": "Construct a system that conforms to security laws."
+        },
+        {
+          "description": "Apply a set of privacy regulations to design a system that protects privacy."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Evaluate the legal ramifications of a system not corresponding to applicable laws and regulations."
+        },
+        {
+          "description": "Construct a system that is designed to avoid harm to user privacy."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1 + 4 (SEP)",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Secure Coding",
+      "code": "SEC-Coding",
+      "topics-cs": [
+        {
+          "description": "Common vulnerabilities and weaknesses"
+        },
+        {
+          "description": "SQL injection and other injection attacks"
+        },
+        {
+          "description": "Cross-site scripting techniques and mitigations"
+        },
+        {
+          "description": "Input validation and data sanitization (See also: OS-Protection, SDF-Fundamentals, SE-Validation)"
+        },
+        {
+          "description": "Type safety and type-safe languages (See also: FPL-Types, FPL-Systems, OS-Protection, SDF-Fundamentals, SE-Validation)"
+        },
+        {
+          "description": "Buffer overflows, stack smashing, and integer overflows (See also: AR-Assembly, FPL-Systems, OS-Protection)"
+        },
+        {
+          "description": "Security issues due to race conditions (See also: FPL-Parallel, PDC-Evaluation)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Principles of noninterference and nondeducibility"
+        },
+        {
+          "description": "Preventing information flow attacks"
+        },
+        {
+          "description": "Offensive security techniques as a defense"
+        },
+        {
+          "description": "AI-assisted malware detection techniques"
+        },
+        {
+          "description": "Ransomware: creation, prevention, and mitigation"
+        },
+        {
+          "description": "Secure use of third-party components (See also: SE-Construction, SE-Validation)"
+        },
+        {
+          "description": "Malware: varieties, creation, reverse engineering, and defense against them (See also: FPL-Systems, FPL-Translation)"
+        },
+        {
+          "description": "Assurance: testing (including fuzzing and penetration testing), verification, and validation (See also: OS-Protection, SDF-Fundamentals, SE-Construction, SE-Validation)"
+        },
+        {
+          "description": "Static and dynamic analyses (See also: FPL-Analysis, MSF-Protection, PDC-Evaluation, SE-Validation)"
+        },
+        {
+          "description": "Secure compilers and secure code generation (See also: FPL-Runtime, FPL-Translation)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify underlying problems in given examples of an enumeration of common weaknesses and explain how they can be circumvented."
+        },
+        {
+          "description": "Apply input validation and data sanitization techniques to enhance security of a program."
+        },
+        {
+          "description": "Describe how the selection of a programming language can impact the security of the system being constructed."
+        },
+        {
+          "description": "Rewrite a program in a type-safe language (e.g., Java or Rust) originally written in an unsafe programming language (e.g., C/C++)."
+        },
+        {
+          "description": "Evaluate a program for possible buffer overflow attacks and rewrite to prevent such attacks."
+        },
+        {
+          "description": "Evaluate a set of related programs for possible race conditions and prevent an adversary from exploiting them."
+        },
+        {
+          "description": "Evaluate and prevent SQL injections attacks on a database application."
+        },
+        {
+          "description": "Evaluate and prevent cross-site scripting attacks against a website."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe different kinds of malicious software."
+        },
+        {
+          "description": "Construct a program that tests for all input handling errors."
+        },
+        {
+          "description": "Explain the risks of misusing interfaces with third-party code and how to correctly use third-party code."
+        },
+        {
+          "description": "Discuss the need to update software to fix security vulnerabilities and the lifecycle management of the fix."
+        },
+        {
+          "description": "Construct a system that is protected from unauthorized information flows."
+        },
+        {
+          "description": "Apply static and dynamic tools to identify programming faults."
+        },
+        {
+          "description": "Evaluate a system for the existence of malware and remove it."
+        },
+        {
+          "description": "Implement preventive techniques to reduce the occurrence of ransomware."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2 + 6 (FPL, SDF, SE)",
+      "hours-ka": "5"
+    },
+    {
+      "name": "Cryptography",
+      "code": "SEC-Crypto",
+      "topics-cs": [
+        {
+          "description": "Differences between algorithmic, applied, and mathematical views of cryptography"
+        },
+        {
+          "description": "Mathematical preliminaries: modular arithmetic, Euclidean algorithm, probabilistic independence, linear algebra basics, number theory, finite fields, complexity, asymptotic analysis (See also: MSF-Discrete, MSF-Linear)"
+        },
+        {
+          "description": "Basic cryptography: symmetric key and public key cryptography (See also: AL-Foundational, MSF-Discrete)"
+        },
+        {
+          "description": "Basic cryptographic building blocks, including symmetric encryption, asymmetric encryption, hashing, and message authentication (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Classical cryptosystems, such as shift, substitution, transposition ciphers, code books, and machines (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Kerckhoff’s principle and use of vetted libraries (See also: SE-Construction)"
+        },
+        {
+          "description": "Usage of cryptography in real-world applications, e.g., electronic cash, secure channels between clients and servers, secure electronic mail, entity authentication, device pairing, steganography, and voting systems (See also: NC-Security, GIT-Image)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Additional mathematics: primality, factoring, and elliptic curve cryptography (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Private-key cryptosystems: substitution-permutation networks, linear cryptanalysis, differential cryptanalysis, DES, and AES (See also: MSF-Discrete, NC-Security)"
+        },
+        {
+          "description": "Public-key cryptosystems: Diffie-Hellman and RSA (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Data integrity and authentication: hashing, and digital signatures (See also: MSF-Discrete, DM-Security)"
+        },
+        {
+          "description": "Cryptographic protocols: challenge-response authentication, zero-knowledge protocols, commitment, oblivious transfer, secure two- or multi-party computation, hash functions, secret sharing, and applications (See also: MSF-Discrete)"
+        },
+        {
+          "description": "Attacker capabilities: chosen-message attack (for signatures), birthday attacks, side channel attacks, and fault injection attacks (See also: NC-Security)"
+        },
+        {
+          "description": "Quantum cryptography; Post Quantum/Quantum resistant cryptography (See also: AL-Foundational, MSF-Discrete)"
+        },
+        {
+          "description": "Blockchain and cryptocurrencies (See also: MSF-Discrete, PDF-Communication)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain the role of cryptography in supporting security and privacy."
+        },
+        {
+          "description": "Discuss the risks of inventing one’s own cryptographic methods."
+        },
+        {
+          "description": "Discuss the importance of prime numbers in cryptography and explain their use in cryptographic algorithms."
+        },
+        {
+          "description": "Implement and cryptanalyze classical ciphers."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe how crypto keys can be managed securely."
+        },
+        {
+          "description": "Compare the space and time performance of a given set of cryptographic methods."
+        },
+        {
+          "description": "Discuss how modern private-key cryptosystems work and ways to cryptanalyze them."
+        },
+        {
+          "description": "Discuss how modern public-key cryptosystems work and ways to cryptanalyze them."
+        },
+        {
+          "description": "Compare different cryptographic algorithms in terms of security."
+        },
+        {
+          "description": "Explain key exchange protocols and show approaches to reduce their failure."
+        },
+        {
+          "description": "Describe real-world applications of cryptographic primitives and protocols."
+        },
+        {
+          "description": "Discuss how quantum cryptography works and the impact of quantum computing on cryptographic algorithms."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1 + 8 (MSF)",
+      "hours-ka": "4"
+    },
+    {
+      "name": "Security Analysis, Design, and Engineering",
+      "code": "SEC-Engineering",
+      "topics-cs": [
+        {
+          "description": "Security engineering goals: building systems that remain dependable despite errors, accidents, or malicious adversaries (See also: SE-Construction, SE-Validation, SEP-Security)"
+        },
+        {
+          "description": "Privacy engineering goals: building systems that design, implement, and deploy privacy features and controls (See also: SEP-Privacy)"
+        },
+        {
+          "description": "Problem analysis and situational analysis to address system security (See also: SE-Validation)"
+        },
+        {
+          "description": "Engineering tradeoff analysis based on time, cost, risk tolerance, risk acceptance, return on investment, and so on (See also: PDC-Evaluation, SE-Validation)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Security design and engineering, including functional requirements, security subsystems, information protection, security testing, security assessment, and evaluation (See also: PDC-Evaluation, SE-Requirements, SE-Validation)"
+        },
+        {
+          "description": "Security analysis, covering security requirements analysis; security controls analysis; threat analysis; and vulnerability analysis (See also: FPL-Analysis, PDC-Evaluation)"
+        },
+        {
+          "description": "Security attack domains and attack surfaces, e.g., communications and networking, hardware, physical, social engineering, software, and supply chain (See also: NC-Security)"
+        },
+        {
+          "description": "Security attack modes, techniques, and tactics, e.g., authentication abuse; brute force; buffer manipulation; code injection; content insertion; denial of service; eavesdropping; function bypass; impersonation; integrity attack; interception; phishing; protocol analysis; privilege abuse; spoofing; and traffic injection (See also: NC-Security, OS-Protection, SE-Validation)"
+        },
+        {
+          "description": "Attestation of software products with respect to their specification and adaptiveness (See also: SE-Requirements, SE-Validation)"
+        },
+        {
+          "description": "Design and development of cyber-physical systems"
+        },
+        {
+          "description": "Considerations for trustworthy computing, e.g., tamper resistant packaging, trusted boot, trusted kernel, hardware root of trust, software signing and verification, hardware-based cryptography, virtualization, and containers (See also: SE-Construction, SE-Validation)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Create a threat model for a system or system design."
+        },
+        {
+          "description": "Apply situational analysis to develop secure solutions under a specified scenario."
+        },
+        {
+          "description": "Evaluate a given scenario for tradeoff analysis for system performance, risk assessment, and costs."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Design a set of technical security controls, countermeasures, and information protections to meet the security requirements and security objectives for a system."
+        },
+        {
+          "description": "Evaluate the effectiveness of security functions, technical controls, and componentry for a system."
+        },
+        {
+          "description": "Identify and mitigate security vulnerabilities and weaknesses in a system."
+        },
+        {
+          "description": "Evaluate and predict emergent behavior in areas such as Data Science, AI, and Machine Learning."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1 + 4 (MSF, SE)",
+      "hours-ka": "8"
+    },
+    {
+      "name": "Digital Forensics",
+      "code": "SEC-Forensics",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Basic principles and methodologies for digital forensics"
+        },
+        {
+          "description": "System design for forensics"
+        },
+        {
+          "description": "Forensics in different situations: operating systems, file systems, application forensics, web forensics, network forensics, mobile device forensics, use of database auditing (See also: NC-Security)"
+        },
+        {
+          "description": "Attacks on forensics and preventing such attacks"
+        },
+        {
+          "description": "Incident handling processes"
+        },
+        {
+          "description": "Rules of evidence – general concepts and differences between jurisdictions (See also: SEP-Security)"
+        },
+        {
+          "description": "Legal issues: digital evidence protection and management, chains of custody, reporting, serving as an expert witness (See also: SEP-Security)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Explain what a digital investigation is and how it can be implemented (See also: SEP-Security)"
+        },
+        {
+          "description": "Design and implement software to support forensics."
+        },
+        {
+          "description": "Describe legal requirements for using seized data and its usage. (See also: SEP-Security)"
+        },
+        {
+          "description": "Describe and implement an end-to-end chain of custody from initial digital evidence seizure to evidence disposal. (See also: SEP-Privacy, SEP-Security)"
+        },
+        {
+          "description": "Extract data from a hard drive to comply with the law (See also: SEP-Security)"
+        },
+        {
+          "description": "Discuss a person’s professional responsibilities and liabilities when testifying as a forensics expert (See also: SEP-Professional-Ethics)"
+        },
+        {
+          "description": "Recover data based on a given search term from an imaged system"
+        },
+        {
+          "description": "Reconstruct data and events from an application history, or a web artifact, or a cloud database, or a mobile device. (See also: SPD-Mobile, SPD-Web)"
+        },
+        {
+          "description": "Capture and analyze network traffic. (See also: NC-Security)"
+        },
+        {
+          "description": "Develop approaches to address the challenges associated with mobile device forensics."
+        },
+        {
+          "description": "Apply forensics tools to investigate security breaches."
+        },
+        {
+          "description": "Identify and mitigate anti-forensic methods."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "0",
+      "hours-ka": "6"
+    },
+    {
+      "name": "Security Governance",
+      "code": "SEC-Governance",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Protecting critical assets from threats"
+        },
+        {
+          "description": "Security governance: organizational objectives and general risk assessment"
+        },
+        {
+          "description": "Security management: achieve and maintain appropriate levels of confidentiality, integrity, availability, accountability, authenticity, and reliability (See also: SE-Validation)"
+        },
+        {
+          "description": "Security policy: organizational policies, issue-specific policies, system-specific policies"
+        },
+        {
+          "description": "Approaches to identifying and mitigating risks to computing infrastructure"
+        },
+        {
+          "description": "Data lifecycle management policies: data collection, backups, and retention; cloud storage and services; breach disclosure (See also: DM-Security)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe critical assets and how they can be protected."
+        },
+        {
+          "description": "Differentiate between security governance, management, and controls, giving examples of each."
+        },
+        {
+          "description": "Describe a technical control and implement it to mitigate specific threats."
+        },
+        {
+          "description": "Identify and assess risk of programs and database applications causing breaches."
+        },
+        {
+          "description": "Design and implement appropriate backup strategies conforming to a given policy."
+        },
+        {
+          "description": "Discuss a breach disclosure policy based on legal requirements and implement the policy."
+        },
+        {
+          "description": "Identify the risks and benefits of outsourcing to the cloud."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "0",
+      "hours-ka": "3"
+    }
+  ]
+}

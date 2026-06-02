@@ -1,0 +1,801 @@
+{
+  "name": "Mathematical and Statistical Foundations",
+  "code": "MSF",
+  "units": [
+    {
+      "name": "Discrete Mathematics",
+      "code": "MSF-Discrete",
+      "topics-cs": [
+        {
+          "description": "Sets, relations, functions, cardinality"
+        },
+        {
+          "description": "Recursive mathematical definitions"
+        },
+        {
+          "description": "Proof techniques (induction, proof by contradiction)"
+        },
+        {
+          "description": "Permutations, combinations, counting, pigeonhole principle"
+        },
+        {
+          "description": "Modular arithmetic"
+        },
+        {
+          "description": "Logic: truth tables, connectives (operators), inference rules, formulas, normal forms, simple predicate logic"
+        },
+        {
+          "description": "Graphs: basic definitions"
+        },
+        {
+          "description": "Order notation"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Sets, Relations, and Functions, Cardinality",
+          "topics": [
+            {
+              "description": "Explain with examples the basic terminology of functions, relations, and sets."
+            },
+            {
+              "description": "Perform the operations associated with sets, functions, and relations."
+            },
+            {
+              "description": "Relate practical examples to the appropriate set, function, or relation model, and interpret the associated operations and terminology in context."
+            },
+            {
+              "description": "Calculate the size of a finite set, including making use of the sum and product rules and inclusion-exclusion principle."
+            },
+            {
+              "description": "Explain the difference between finite, countable, and uncountable sets."
+            }
+          ]
+        },
+        {
+          "description": "Recursive mathematical definitions",
+          "topics": [
+            {
+              "description": "Apply recursive definitions of sequences or structures (e.g., Fibonacci numbers, linked lists, parse trees, fractals)."
+            },
+            {
+              "description": "Formulate inductive proofs of statements about recursive definitions."
+            },
+            {
+              "description": "Solve a variety of basic recurrence relations."
+            },
+            {
+              "description": "Analyze a problem to determine underlying recurrence relations."
+            },
+            {
+              "description": "Given a recursive/iterative code snippet, describe its underlying recurrence relation, hypothesize a closed form for the recurrence relation, and prove the hypothesis correct (usually, using induction)."
+            }
+          ]
+        },
+        {
+          "description": "Proof Techniques",
+          "topics": [
+            {
+              "description": "Identify the proof technique used in a given proof."
+            },
+            {
+              "description": "Outline the basic structure of each proof technique (direct proof, proof by contradiction, and induction) described in this unit."
+            },
+            {
+              "description": "Apply each of the proof techniques (direct proof, proof by contradiction, and induction) correctly in the construction of a sound argument."
+            },
+            {
+              "description": "Determine which type of proof is best for a given problem."
+            },
+            {
+              "description": "Explain the parallels between ideas of mathematical and/or structural induction to recursion and recursively defined structures.",
+              "topics": [
+                {
+                  "description": "Explain the relationship between weak and strong induction and give examples of the appropriate use of each."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Permutations, combinations, and counting",
+          "topics": [
+            {
+              "description": "Apply counting arguments, including sum and product rules, inclusion-exclusion principle, and arithmetic/geometric progressions."
+            },
+            {
+              "description": "Apply the pigeonhole principle in the context of a formal proof."
+            },
+            {
+              "description": "Compute permutations and combinations of a set, and interpret the meaning in the context of the specific application."
+            },
+            {
+              "description": "Map real-world applications to appropriate counting formalisms, such as determining the number of ways to arrange people around a table, subject to constraints on the seating arrangement, or the number of ways to determine certain hands in cards (e.g., a full house)."
+            }
+          ]
+        },
+        {
+          "description": "Modular arithmetic",
+          "topics": [
+            {
+              "description": "Perform computations involving modular arithmetic."
+            },
+            {
+              "description": "Explain the notion of the greatest common divisor and apply Euclid's algorithm to compute it."
+            }
+          ]
+        },
+        {
+          "description": "Logic",
+          "topics": [
+            {
+              "description": "Convert logical statements from informal language to propositional and predicate logic expressions."
+            },
+            {
+              "description": "Apply formal methods of symbolic propositional and predicate logic, such as calculating validity of formulae, computing normal forms, or negating a logical statement."
+            },
+            {
+              "description": "Use the rules of inference to construct proofs in propositional and predicate logic."
+            },
+            {
+              "description": "Describe how symbolic logic can be used to model real-life situations or applications, including those arising in computing contexts such as software analysis (e.g., program correctness), database queries, and algorithms."
+            },
+            {
+              "description": "Apply formal logic proofs and/or informal, but rigorous, logical reasoning to real problems, such as predicting the behavior of software or solving problems such as puzzles."
+            },
+            {
+              "description": "Describe the strengths and limitations of propositional and predicate logic."
+            },
+            {
+              "description": "Explain what it means for a proof in propositional (or predicate) logic to be valid."
+            }
+          ]
+        },
+        {
+          "description": "Graphs",
+          "topics": [
+            {
+              "description": "Illustrate by example the basic terminology of graph theory, and some of the properties and special cases of types of graphs, including trees."
+            },
+            {
+              "description": "Demonstrate different traversal methods for trees and graphs, including pre-, post-, and in-order traversal of trees, along with breadth-first and depth-first search for graphs."
+            },
+            {
+              "description": "Model a variety of real-world problems in computer science using appropriate forms of graphs and trees, such as representing a network topology, the organization of a hierarchical file system, or a social network."
+            },
+            {
+              "description": "Show how concepts from graphs and trees appear in data structures, algorithms, proof techniques (structural induction), and counting."
+            }
+          ]
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "29",
+      "hours-ka": "11"
+    },
+    {
+      "name": "Probability",
+      "code": "MSF-Probability",
+      "topics-cs": [
+        {
+          "description": "Basic notions: sample spaces, events, probability, conditional probability, Bayes’ rule"
+        },
+        {
+          "description": "Discrete random variables and distributions"
+        },
+        {
+          "description": "Continuous random variables and distributions"
+        },
+        {
+          "description": "Expectation, variance, law of large numbers, central limit theorem"
+        },
+        {
+          "description": "Conditional distributions and expectation"
+        },
+        {
+          "description": "Applications to computing, the difference between probability and statistics (as subjects)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Basic notions: sample spaces, events, probability, conditional probability, Bayes’ rule",
+          "topics": [
+            {
+              "description": "Translate a prose description of a probabilistic process into a formal setting of sample spaces, outcome probabilities, and events."
+            },
+            {
+              "description": "Calculate the probability of simple events."
+            },
+            {
+              "description": "Determine whether two events are independent."
+            },
+            {
+              "description": "Compute conditional probabilities, including through applying (and explaining) Bayes' Rule."
+            }
+          ]
+        },
+        {
+          "description": "Discrete random variables and distributions",
+          "topics": [
+            {
+              "description": "Define the concept of a random variable and indicator random variable."
+            },
+            {
+              "description": "Determine whether two random variables are independent."
+            },
+            {
+              "description": "Identify common discrete distributions (e.g., uniform, Bernoulli, binomial, geometric)."
+            }
+          ]
+        },
+        {
+          "description": "Continuous random variables and distributions",
+          "topics": [
+            {
+              "description": "Identify common continuous distributions (e.g., uniform, normal, exponential)."
+            },
+            {
+              "description": "Calculate probabilities using cumulative density functions."
+            }
+          ]
+        },
+        {
+          "description": "Expectation, variance, law of large numbers, central limit theorem",
+          "topics": [
+            {
+              "description": "Define the concept of expectation and variance of a random variable."
+            },
+            {
+              "description": "Compute the expected value and variance of simple or common discrete/continuous random variables."
+            },
+            {
+              "description": "Explain the relevance of the law of large numbers and central limit theorem to probability calculations."
+            }
+          ]
+        },
+        {
+          "description": "Conditional distributions and expectation",
+          "topics": [
+            {
+              "description": "Explain the distinction between joint, marginal, and conditional distributions."
+            },
+            {
+              "description": "Compute marginal and conditional distributions from a full distribution, for both discrete and continuous random variables."
+            },
+            {
+              "description": "Compute conditional expectations for both discrete and continuous random variables."
+            }
+          ]
+        },
+        {
+          "description": "Applications to computing",
+          "topics": [
+            {
+              "description": "Describe how probability can be used to model real-life situations or applications, such as predictive text, hash tables, and quantum computation."
+            },
+            {
+              "description": "Apply probabilistic processes to solving computational problems, such as through randomized algorithms or in security contexts."
+            }
+          ]
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "11",
+      "hours-ka": "29"
+    },
+    {
+      "name": "Statistics",
+      "code": "MSF-Statistics",
+      "topics-cs": [
+        {
+          "description": "Basic definitions and concepts: populations, samples, measures of central tendency, variance"
+        },
+        {
+          "description": "Univariate data: point estimation, confidence intervals"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Multivariate data: estimation, correlation, regression"
+        },
+        {
+          "description": "Data transformation: dimension reduction, smoothing"
+        },
+        {
+          "description": "Statistical models and algorithms"
+        },
+        {
+          "description": "Hypothesis testing"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Basic definitions and concepts: populations, samples, measures of central tendency, variance",
+          "topics": [
+            {
+              "description": "Create and interpret frequency tables."
+            },
+            {
+              "description": "Display data graphically and interpret graphs (e.g., histograms)."
+            },
+            {
+              "description": "Recognize, describe, and calculate means, medians, quantiles (location of data)."
+            },
+            {
+              "description": "Recognize, describe, and calculate variances, interquartile ranges (spread of data)."
+            }
+          ]
+        },
+        {
+          "description": "Univariate data: point estimation, confidence intervals",
+          "topics": [
+            {
+              "description": "Formulate maximum likelihood estimation (in linear-Gaussian settings) as a least-squares problem."
+            },
+            {
+              "description": "Calculate maximum likelihood estimates."
+            },
+            {
+              "description": "Calculate maximum a posteriori estimates and make a connection with regularized least squares."
+            },
+            {
+              "description": "Compute confidence intervals as a measure of uncertainty."
+            }
+          ]
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Sampling, bias, adequacy of samples, Bayesian vs frequentist interpretations"
+        },
+        {
+          "description": "Multivariate data: estimation, correlation, regression",
+          "topics": [
+            {
+              "description": "Formulate the multivariate maximum likelihood estimation problem as a least-squares problem."
+            },
+            {
+              "description": "Interpret the geometric properties of maximum likelihood estimates."
+            },
+            {
+              "description": "Derive and calculate the maximum likelihood solution for linear regression."
+            },
+            {
+              "description": "Derive and calculate the maximum a posteriori estimates for linear regression."
+            },
+            {
+              "description": "Implement both maximum likelihood and maximum a posteriori estimates in the context of a polynomial regression problem."
+            },
+            {
+              "description": "Formulate and understand the concept of data correlation (e.g., in 2D)"
+            }
+          ]
+        },
+        {
+          "description": "Data transformation: dimension reduction, smoothing",
+          "topics": [
+            {
+              "description": "Formulate and derive Principal Component Analysis (PCA) as a least-squares problem."
+            },
+            {
+              "description": "Geometrically interpret PCA (when solved as a least-squares problem)."
+            },
+            {
+              "description": "Describe when PCA works well (one can relate back to correlated data)."
+            },
+            {
+              "description": "Geometrically interpret the linear regression solution (maximum likelihood)."
+            }
+          ]
+        },
+        {
+          "description": "Statistical models and algorithms",
+          "topics": [
+            {
+              "description": "Apply PCA to dimensionality reduction problems."
+            },
+            {
+              "description": "Describe the tradeoff between compression and reconstruction power."
+            },
+            {
+              "description": "Apply linear regression to curve-fitting problems."
+            },
+            {
+              "description": "Explain the concept of overfitting."
+            },
+            {
+              "description": "Discuss and apply cross-validation in the context of overfitting and model selection (e.g., degree of polynomials in a regression context)."
+            }
+          ]
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "10",
+      "hours-ka": "30"
+    },
+    {
+      "name": "Linear Algebra",
+      "code": "MSF-Linear",
+      "topics-cs": [
+        {
+          "description": "Vectors: definitions, vector operations, geometric interpretation, angles: Matrices: definition, matrix operations, meaning of Ax=b."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Matrices, matrix-vector equation, geometric interpretation, geometric transformations with matrices"
+        },
+        {
+          "description": "Solving equations, row-reduction"
+        },
+        {
+          "description": "Linear independence, span, basis"
+        },
+        {
+          "description": "Orthogonality, projection, least-squares, orthogonal bases"
+        },
+        {
+          "description": "Linear combinations of polynomials, Bezier curves"
+        },
+        {
+          "description": "Eigenvectors and eigenvalues"
+        },
+        {
+          "description": "Applications to computer science: Principal Components Analysis (PCA), Singular Value Decomposition (SVD), page-rank, graphics"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Vectors: definitions, vector operations, geometric interpretation, angles",
+          "topics": [
+            {
+              "description": "Describe algebraic and geometric representations of vectors in Rn and their operations, including addition, scalar multiplication, and dot product."
+            },
+            {
+              "description": "List properties of vectors in Rn."
+            },
+            {
+              "description": "Compute angles between vectors in Rn."
+            }
+          ]
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Matrices, matrix-vector equation, geometric interpretation, geometric transformations with matrices",
+          "topics": [
+            {
+              "description": "Perform common matrix operations, such as addition, scalar multiplication, multiplication, and transposition."
+            },
+            {
+              "description": "Relate a matrix to a homogeneous system of linear equations."
+            },
+            {
+              "description": "Recognize when two matrices can be multiplied."
+            },
+            {
+              "description": "Relate various matrix transformations to geometric illustrations."
+            }
+          ]
+        },
+        {
+          "description": "Solving equations, row-reduction",
+          "topics": [
+            {
+              "description": "Formulate, solve, apply, and interpret properties of linear systems."
+            },
+            {
+              "description": "Perform row operations on a matrix."
+            },
+            {
+              "description": "Relate an augmented matrix to a system of linear equations."
+            },
+            {
+              "description": "Solve linear systems of equations using the language of matrices."
+            },
+            {
+              "description": "Translate word problems into linear equations."
+            },
+            {
+              "description": "Perform Gaussian elimination."
+            }
+          ]
+        },
+        {
+          "description": "Linear independence, span, basis",
+          "topics": [
+            {
+              "description": "Define subspace of a vector space.",
+              "topics": [
+                {
+                  "description": "List examples of subspaces of a vector space."
+                },
+                {
+                  "description": "Recognize and use basic properties of subspaces and vector spaces."
+                },
+                {
+                  "description": "Determine if specific subsets of a vector space are subspaces."
+                },
+                {
+                  "description": "Discuss the existence of a basis of an abstract vector space."
+                },
+                {
+                  "description": "Describe coordinates of a vector relative to a given basis."
+                },
+                {
+                  "description": "Determine a basis for and the dimension of a finite-dimensional space."
+                },
+                {
+                  "description": "Discuss spanning sets for vectors in Rn."
+                },
+                {
+                  "description": "Discuss linear independence for vectors in Rn."
+                },
+                {
+                  "description": "Define the dimension of a vector space."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Orthogonality, projection, least-squares, orthogonal bases",
+          "topics": [
+            {
+              "description": "Explain the Gram-Schmidt orthogonalization process."
+            },
+            {
+              "description": "Define orthogonal projections."
+            },
+            {
+              "description": "Define orthogonal complements."
+            },
+            {
+              "description": "Compute the orthogonal projection of a vector onto a subspace, given a basis for the subspace."
+            },
+            {
+              "description": "Explain how orthogonal projections relate to least square approximations."
+            }
+          ]
+        },
+        {
+          "description": "Linear combinations of polynomials, Bezier curves",
+          "topics": [
+            {
+              "description": "Identify polynomials as generalized vectors."
+            },
+            {
+              "description": "Explain linear combinations of basic polynomials."
+            },
+            {
+              "description": "Describe orthogonality for polynomials."
+            },
+            {
+              "description": "Distinguish between basic polynomials and Bernstein polynomials."
+            },
+            {
+              "description": "Apply Bernstein polynomials to Bezier curves."
+            }
+          ]
+        },
+        {
+          "description": "Eigenvectors and eigenvalues",
+          "topics": [
+            {
+              "description": "Find the eigenvalues and eigenvectors of a matrix."
+            },
+            {
+              "description": "Define eigenvalues and eigenvectors geometrically."
+            },
+            {
+              "description": "Use characteristic polynomials to compute eigenvalues and eigenvectors."
+            },
+            {
+              "description": "Use eigenspaces of matrices, when possible, to diagonalize a matrix."
+            },
+            {
+              "description": "Perform diagonalization of matrices."
+            },
+            {
+              "description": "Explain the significance of eigenvectors and eigenvalues."
+            },
+            {
+              "description": "Find the characteristic polynomial of a matrix."
+            },
+            {
+              "description": "Use eigenvectors to represent a linear transformation with respect to a particularly nice basis."
+            }
+          ]
+        },
+        {
+          "description": "Applications to computer science: PCA, SVD, page-rank, graphics",
+          "topics": [
+            {
+              "description": "Explain the geometric properties of PCA."
+            },
+            {
+              "description": "Relate PCA to dimensionality reduction."
+            },
+            {
+              "description": "Relate PCA to solving least-squares problems."
+            },
+            {
+              "description": "Relate PCA to solving eigenvector problems."
+            },
+            {
+              "description": "Apply PCA to reducing the dimensionality of a high-dimensional dataset (e.g., images)."
+            },
+            {
+              "description": "Explain the page-rank algorithm and understand how it relates to eigenvector problems."
+            },
+            {
+              "description": "Explain the geometric differences between SVD and PCA."
+            },
+            {
+              "description": "Apply SVD to a concrete example (e.g., movie rankings)."
+            }
+          ]
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "5",
+      "hours-ka": "35"
+    },
+    {
+      "name": "Calculus",
+      "code": "MSF-Calculus",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Sequences, series, limits"
+        },
+        {
+          "description": "Single-variable derivatives: definition, computation rules (chain rule etc.), derivatives of important functions, applications"
+        },
+        {
+          "description": "Single-variable integration: definition, computation rules, integrals of important functions, fundamental theorem of calculus, definite vs indefinite, applications (including in probability)"
+        },
+        {
+          "description": "Parametric and polar representations"
+        },
+        {
+          "description": "Taylor series"
+        },
+        {
+          "description": "Multivariate calculus: partial derivatives, gradient, chain-rule, vector valued functions,"
+        },
+        {
+          "description": "Optimization: convexity, global vs local minima, gradient descent, constrained optimization, and Lagrange multipliers."
+        },
+        {
+          "description": "Ordinary Differential Equations (ODEs): definition, Euler method, applications to simulation, Monte Carlo integration"
+        },
+        {
+          "description": "CS applications: gradient descent for machine learning, forward and inverse kinematics, applications of calculus to probability Note: the calculus topics listed above are aligned with computer science goals rather than with traditional calculus courses. For example, multivariate calculus is often a course by itself, but computer science undergraduates only need parts of it for machine learning."
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Sequences, series, limits",
+          "topics": [
+            {
+              "description": "Explain the difference between infinite sets and sequences."
+            },
+            {
+              "description": "Explain the formal definition of a limit."
+            },
+            {
+              "description": "Derive the limit for examples of sequences and series."
+            },
+            {
+              "description": "Explain convergence and divergence."
+            },
+            {
+              "description": "Apply L’Hospital’s rule and other approaches to resolving limits."
+            }
+          ]
+        },
+        {
+          "description": "Single-variable derivatives: definition, computation rules (chain rule etc.), derivatives of important functions, applications",
+          "topics": [
+            {
+              "description": "Explain a derivative in terms of limits."
+            },
+            {
+              "description": "Explain derivatives as functions."
+            },
+            {
+              "description": "Perform elementary derivative calculations from limits."
+            },
+            {
+              "description": "Apply sum, product, and quotient rules."
+            },
+            {
+              "description": "Work through examples with important functions."
+            }
+          ]
+        },
+        {
+          "description": "Single-variable integration: definition, computation rules, integrals of important functions, fundamental theorem of calculus, definite vs indefinite, applications (including in probability)",
+          "topics": [
+            {
+              "description": "Explain the definitions of definite and indefinite integrals."
+            },
+            {
+              "description": "Apply integration rules to examples with important functions."
+            },
+            {
+              "description": "Explore the use of the fundamental theorem of calculus."
+            },
+            {
+              "description": "Apply integration to problems."
+            }
+          ]
+        },
+        {
+          "description": "Parametric and polar representations",
+          "topics": [
+            {
+              "description": "Apply parametric representations of important curves."
+            },
+            {
+              "description": "Apply polar representations."
+            }
+          ]
+        },
+        {
+          "description": "Taylor series",
+          "topics": [
+            {
+              "description": "Derive Taylor series for some important functions."
+            },
+            {
+              "description": "Apply the Taylor series to approximations."
+            }
+          ]
+        },
+        {
+          "description": "Multivariate calculus: partial derivatives, gradient, chain-rule, vector valued functions, applications to optimization, convexity, global vs local minima.",
+          "topics": [
+            {
+              "description": "Compute partial derivatives and gradients."
+            },
+            {
+              "description": "Work through examples with vector-valued functions with gradient notation."
+            },
+            {
+              "description": "Explain applications to optimization."
+            }
+          ]
+        },
+        {
+          "description": "ODEs: definition, Euler method, applications to simulation",
+          "topics": [
+            {
+              "description": "Apply the Euler method to integration."
+            },
+            {
+              "description": "Apply the Euler method to a single-variable differential equation."
+            },
+            {
+              "description": "Apply the Euler method to multiple variables in an ODE."
+            }
+          ]
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "0 40"
+    }
+  ]
+}

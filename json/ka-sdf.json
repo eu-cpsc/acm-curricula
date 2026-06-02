@@ -1,0 +1,250 @@
+{
+  "name": "Software Development Fundamentals",
+  "code": "SDF",
+  "units": [
+    {
+      "name": "Fundamental Programming Concepts and Practices",
+      "code": "SDF-Fundamentals",
+      "topics-cs": [
+        {
+          "description": "Basic concepts such as variables, primitive data types, expressions, and their evaluation"
+        },
+        {
+          "description": "How imperative programs work: state and state transitions on execution of statements, flow of control"
+        },
+        {
+          "description": "Basic constructs such as assignment statements, conditional and iterative statements, basic I/O"
+        },
+        {
+          "description": "Key modularity constructs such as functions (and methods and classes, if supported in the language) and related concepts like parameter passing, scope, abstraction, data encapsulation (See also: FPL-OOP)"
+        },
+        {
+          "description": "Input and output using files and APIs"
+        },
+        {
+          "description": "Structured data types available in the chosen programming language like sequences (e.g., arrays, lists), associative containers (e.g., dictionaries, maps), others (e.g., sets, tuples) and when and how to use them (See also: AL-Foundational)"
+        },
+        {
+          "description": "Libraries and frameworks provided by the language (when/where applicable)"
+        },
+        {
+          "description": "Recursion"
+        },
+        {
+          "description": "Dealing with runtime errors in programs (e.g., exception handling)."
+        },
+        {
+          "description": "Basic concepts of programming errors, testing, and debugging (See also: SE-Construction, SEC-Coding)"
+        },
+        {
+          "description": "Documenting/commenting code at the program and module level.(See also: SE-Construction)"
+        },
+        {
+          "description": "Develop a security mindset. (See also: SEC-Foundations)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Develop programs that use the fundamental programming constructs: assignment and expressions, basic I/O, conditional and iterative statements."
+        },
+        {
+          "description": "Develop programs using functions with parameter passing."
+        },
+        {
+          "description": "Develop programs that effectively use the different structured data types provided in the language like arrays/lists, dictionaries, and sets."
+        },
+        {
+          "description": "Develop programs that use file I/O to provide data persistence across multiple executions."
+        },
+        {
+          "description": "Develop programs that use language-provided libraries and frameworks (where applicable)."
+        },
+        {
+          "description": "Develop programs that use APIs to access or update data (e.g., from the web)."
+        },
+        {
+          "description": "Develop programs that create simple classes and instantiate objects of those classes (if supported by the language)."
+        },
+        {
+          "description": "Explain the concept of recursion and identify when and how to use it effectively."
+        },
+        {
+          "description": "Develop recursive functions."
+        },
+        {
+          "description": "Develop programs that can handle runtime errors."
+        },
+        {
+          "description": "Read a given program and explain what it does."
+        },
+        {
+          "description": "Write comments for a program or a module specifying what it does."
+        },
+        {
+          "description": "Trace the flow of control during the execution of a program."
+        },
+        {
+          "description": "Use appropriate terminology to identify elements of a program (e.g., identifier, operator, operand)."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "20",
+      "hours-ka": ""
+    },
+    {
+      "name": "Fundamental Data Structures",
+      "code": "SDF-Data-Structures",
+      "topics-cs": [
+        {
+          "description": "Standard abstract data types such as lists, stacks, queues, sets, and maps/dictionaries, including operations on them."
+        },
+        {
+          "description": "Selecting and using appropriate data structures."
+        },
+        {
+          "description": "Performance implications of choice of data structure(s)."
+        },
+        {
+          "description": "Strings and string processing."
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Write programs that use each of the key abstract data types provided in the language (e.g., arrays, tuples/records/structs, lists, stacks, queues, and associative data types like sets, dictionaries/maps)."
+        },
+        {
+          "description": "Select the appropriate data structure for a given problem."
+        },
+        {
+          "description": "Explain how the performance of a program may change when using different data structures or operations."
+        },
+        {
+          "description": "Write programs that work with text by using string processing capabilities provided by the language."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "6 + 6 (AL)",
+      "hours-ka": ""
+    },
+    {
+      "name": "Algorithms",
+      "code": "SDF-Algorithms",
+      "topics-cs": [
+        {
+          "description": "Concept of algorithm and notion of algorithm efficiency"
+        },
+        {
+          "description": "Some common algorithms (e.g., sorting, searching, tree traversal, graph traversal)"
+        },
+        {
+          "description": "Impact of algorithms on time-space efficiency of programs"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain the role of algorithms for writing programs."
+        },
+        {
+          "description": "Demonstrate how a problem may be solved by different algorithms, each with different properties."
+        },
+        {
+          "description": "Explain some common algorithms (e.g., sorting, searching, tree traversal, graph traversal)."
+        },
+        {
+          "description": "Explain the impact on space/time performance of some algorithms."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "3 + 3 (AL)",
+      "hours-ka": ""
+    },
+    {
+      "name": "Software Development Practices",
+      "code": "SDF-Practices",
+      "topics-cs": [
+        {
+          "description": "Basic testing, including test case design"
+        },
+        {
+          "description": "Use of a general-purpose IDE, including its debugger"
+        },
+        {
+          "description": "Programming style that improves readability"
+        },
+        {
+          "description": "Specifying functionality of a module in a natural language."
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Develop tests for modules and apply a variety of strategies to design test cases."
+        },
+        {
+          "description": "Explain some limitations of testing programs."
+        },
+        {
+          "description": "Build, execute, and debug programs using a modern IDE and associated tools such as visual debuggers."
+        },
+        {
+          "description": "Apply basic programming style guidelines to aid readability of programs such as comments, indentation, proper naming of variables, etc."
+        },
+        {
+          "description": "Write specifications of a module as module comment describing its functionality."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "5",
+      "hours-ka": ""
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "SDF-SEP",
+      "topics-cs": [
+        {
+          "description": "Intellectual property rights of programmers for programs they develop."
+        },
+        {
+          "description": "Plagiarism and academic integrity."
+        },
+        {
+          "description": "Responsibility and liability of programmers regarding code they develop for solutions. (See also: SEC-Foundations)"
+        },
+        {
+          "description": "Basic professional work ethics of programmers."
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Explain/understand some of the intellectual property issues relating to programs."
+        },
+        {
+          "description": "Explain/understand when code developed by others can be used and proper ways of disclosing their use."
+        },
+        {
+          "description": "Explain/understand the responsibility of programmers when developing code for an overall solution (which may be developed by a team)."
+        },
+        {
+          "description": "Explain/understand one or more codes of conduct applicable to programmers."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "Included in SEP",
+      "hours-ka": "hours"
+    }
+  ]
+}

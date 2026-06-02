@@ -1,0 +1,801 @@
+{
+  "name": "Society, Ethics, and the Profession",
+  "code": "SEP",
+  "units": [
+    {
+      "name": "Social Context",
+      "code": "SEP-Context",
+      "topics-cs": [
+        {
+          "description": "Social implications (e.g., political and cultural ideologies) in a hyper-networked world where the capabilities and impact of social media, artificial intelligence, and computing in general are rapidly evolving."
+        },
+        {
+          "description": "Impact of computing applications (e.g., social media, artificial intelligence applications) on individual well-being, and safety of all kinds (e.g., physical, emotional, economic)."
+        },
+        {
+          "description": "Consequences of involving computing technologies, particularly artificial intelligence, biometric technologies, and algorithmic decision-making systems, in civic life (e.g., facial recognition technology, biometric tags, resource distribution algorithms, policing software) and how human agency and oversight is crucial."
+        },
+        {
+          "description": "How deficits in diversity and accessibility in computing affect society and what steps can be taken to improve equity in computing."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Growth and control of the internet, data, computing, and artificial intelligence"
+        },
+        {
+          "description": "Often referred to as the digital divide, differences in access to digital technology resources and its resulting ramifications for gender, class, ethnicity, geography, and/or developing countries, including consideration of responsibility to those who might be less wealthy, under threat, or who would struggle to have their voices heard."
+        },
+        {
+          "description": "Accessibility issues, including legal requirements such as Web Content Accessibility Guidelines (www.w3.org/TR/WCAG21)"
+        },
+        {
+          "description": "Context-aware computing"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe the different ways that computer technology (networks, mobile computing, artificial intelligence) mediates social interaction at the personal and collective levels."
+        },
+        {
+          "description": "Identify developers’ assumptions and values embedded in hardware and software design, especially as they pertain to usability for diverse populations including under-served and those with disabilities."
+        },
+        {
+          "description": "Interpret the social context of a given design and its implementation."
+        },
+        {
+          "description": "Analyze the efficacy of a given design and implementation using empirical data."
+        },
+        {
+          "description": "Understand the implications of technology use (e.g., social media) for different identities, cultures, and communities."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the internet’s role in facilitating communication between citizens, governments, and each other."
+        },
+        {
+          "description": "Analyze the effects of reliance on computing in the implementation of democracy (e.g., delivery of social services, electronic voting)."
+        },
+        {
+          "description": "Describe the impact of a lack of appropriate representation of people from historically minoritized populations in the computing profession (e.g., industry culture, product diversity)."
+        },
+        {
+          "description": "Discuss the implications of context awareness in ubiquitous computing systems."
+        },
+        {
+          "description": "Express how access to the internet and computing technologies affect different societies."
+        },
+        {
+          "description": "Identify why/how internet access can be viewed as a human right."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "3",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Methods for Ethical Analysis",
+      "code": "SEP-Ethical-Analysis",
+      "topics-cs": [
+        {
+          "description": "Avoiding fallacies and misrepresentation in argumentation"
+        },
+        {
+          "description": "Ethical theories and decision-making (philosophical and social frameworks, e.g. [1])"
+        },
+        {
+          "description": "Recognition of the role culture plays in our understanding, adoption, design, and use of computing technology"
+        },
+        {
+          "description": "Why ethics is important in computing, and how ethics is similar to, and different from, laws and social norms"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Professional checklists"
+        },
+        {
+          "description": "Evaluation rubrics"
+        },
+        {
+          "description": "Stakeholder analysis"
+        },
+        {
+          "description": "Standpoint theory"
+        },
+        {
+          "description": "Introduction to ethical frameworks (e.g., consequentialism such as utilitarianism, non-consequentialism such as duty, rights, or justice, agent-centered such as virtue or feminism, contractarianism, ethics of care) and their use for analyzing an ethical dilemma"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe how a given cultural context impacts decision making."
+        },
+        {
+          "description": "Express the use of example and analogy in ethical argument."
+        },
+        {
+          "description": "Analyze (and avoid) basic logical fallacies in an argument."
+        },
+        {
+          "description": "Analyze an argument to identify premises and conclusion."
+        },
+        {
+          "description": "Evaluate how and why ethics is so important in computing and how it relates to cultural norms, values, and law."
+        },
+        {
+          "description": "Justify a decision made on ethical grounds."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Distinguish all stakeholder positions in relation to their cultural context in a given situation."
+        },
+        {
+          "description": "Analyze the potential for introducing or perpetuating ethical debt (deferred consideration of ethical impacts or implications) in technical decisions."
+        },
+        {
+          "description": "Discuss the advantages and disadvantages of traditional ethical frameworks."
+        },
+        {
+          "description": "Analyze ethical dilemmas related to the creation and use of technology from multiple perspectives using ethical frameworks."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Professional Ethics",
+      "code": "SEP-Professional-Ethics",
+      "topics-cs": [
+        {
+          "description": "Community values and the laws by which we live"
+        },
+        {
+          "description": "The nature of being a professional including care, attention, discipline, fiduciary responsibility, and mentoring"
+        },
+        {
+          "description": "Keeping up to date as a computing professional in terms of familiarity, tools, skills, legal and professional frameworks as well as the ability and responsibility to self-assess and progress in the computing field"
+        },
+        {
+          "description": "Professional certification, codes of ethics, conduct, and practice, such as the ACM, IEEE, AAAI, and other international societies"
+        },
+        {
+          "description": "Accountability, responsibility, and liability (e.g., software correctness, reliability and safety, warranty, negligence, strict liability, ethical approaches to security vulnerability disclosures) including whether a product/service should be built, not just doing so because it is technically possible."
+        },
+        {
+          "description": "Introduction to theories describing the human creation and use of technology including instrumentalism, sociology of technological systems, disability justice, neutrality thesis, pragmatism, and decolonial models, including developing and using technology to right wrongs and do good"
+        },
+        {
+          "description": "Strategies for recognizing and reporting designs, systems, software, and professional conduct (or their outcomes) that may violate law or professional codes of ethics"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "The role of the computing professional and professional societies in public policy"
+        },
+        {
+          "description": "Maintaining awareness of consequences"
+        },
+        {
+          "description": "Ethical dissent and whistleblowing"
+        },
+        {
+          "description": "The relationship between regional culture and ethical dilemmas"
+        },
+        {
+          "description": "Dealing with harassment and discrimination"
+        },
+        {
+          "description": "Forms of professional credentialing"
+        },
+        {
+          "description": "Ergonomics and healthy computing environments"
+        },
+        {
+          "description": "Time-to-market and cost considerations versus quality professional standards"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify ethical issues that arise in software design, development practices, and software deployment."
+        },
+        {
+          "description": "Discuss how to address ethical issues in specific situations."
+        },
+        {
+          "description": "Express the ethical responsibility of ensuring software correctness, reliability and safety including from where this responsibility arises (e.g., ACM/IEEE/AAAI Codes of Ethics, laws and regulations, organizational policies)."
+        },
+        {
+          "description": "Describe the mechanisms that typically exist for a professional to keep up to date in ethical matters."
+        },
+        {
+          "description": "Describe the strengths and weaknesses of relevant professional codes as expressions of being a professional and guides to decision-making."
+        },
+        {
+          "description": "Analyze a global computing issue, observing the role of professionals and government officials in managing this problem."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe ways in which professionals and professional organizations may contribute to public policy."
+        },
+        {
+          "description": "Describe the consequences of inappropriate professional behavior."
+        },
+        {
+          "description": "Be familiar with whistleblowing and have access to knowledge to guide one through an incident."
+        },
+        {
+          "description": "Identify examples of how regional culture interplays with ethical dilemmas."
+        },
+        {
+          "description": "Describe forms of harassment and discrimination and avenues of assistance."
+        },
+        {
+          "description": "Assess various forms of professional credentialing."
+        },
+        {
+          "description": "State the relationship between ergonomics in computing environments and people’s health."
+        },
+        {
+          "description": "Describe issues associated with industries’ push to focus on time-to-market versus enforcing quality professional standards."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Intellectual Property",
+      "code": "SEP-IP",
+      "topics-cs": [
+        {
+          "description": "Intellectual property rights"
+        },
+        {
+          "description": "Intangible digital intellectual property (IDIP)"
+        },
+        {
+          "description": "Legal foundations for intellectual property protection"
+        },
+        {
+          "description": "Common software licenses (e.g., MIT, GPL and its variants, Apache, Mozilla, Creative Commons)"
+        },
+        {
+          "description": "Plagiarism and authorship"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Philosophical foundations of intellectual property"
+        },
+        {
+          "description": "Forms of intellectual property (e.g., copyrights, patents, trade secrets, trademarks) and the rights they protect"
+        },
+        {
+          "description": "Limitations on copyright protections, including fair use and the first sale doctrine"
+        },
+        {
+          "description": "Intellectual property laws and treaties that impact the enforcement of copyrights"
+        },
+        {
+          "description": "Software piracy and technical methods for enforcing intellectual property rights, such as digital rights management and closed source software as a trade secret"
+        },
+        {
+          "description": "Moral and legal foundations of the open-source movement"
+        },
+        {
+          "description": "Systems that use others’ data (e.g., large language models)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Describe and critique legislation and precedent aimed at digital copyright infringements."
+        },
+        {
+          "description": "Identify contemporary examples of intangible digital intellectual property."
+        },
+        {
+          "description": "Select an appropriate software license for a given project."
+        },
+        {
+          "description": "Defend legal and ethical uses of copyrighted materials."
+        },
+        {
+          "description": "Interpret the intent and implementation of software licensing."
+        },
+        {
+          "description": "Discuss whether a use of copyrighted material is likely to be fair use."
+        },
+        {
+          "description": "Analyze the ethical issues inherent in various plagiarism detection mechanisms."
+        },
+        {
+          "description": "Identify multiple forms of plagiarism beyond verbatim copying of text or software (e.g., intentional paraphrasing, authorship misrepresentation, and improper attribution)."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Discuss the philosophical bases of intellectual property in an appropriate context (e.g., country)."
+        },
+        {
+          "description": "Distinguish the conflicting issues involved in securing software patents."
+        },
+        {
+          "description": "Contrast the protections and obligations of copyright, patent, trade secret, and trademarks."
+        },
+        {
+          "description": "Describe the rationale for the legal protection of intellectual property in the appropriate context (e.g., country)."
+        },
+        {
+          "description": "Analyze the use of copyrighted work under the concepts of fair use and the first sale doctrine."
+        },
+        {
+          "description": "Identify the goals of the open-source movement and its impact on fields beyond computing, such as the right-to-repair movement."
+        },
+        {
+          "description": "Summarize the global nature of software piracy."
+        },
+        {
+          "description": "Criticize the use of technical measures of digital rights management (e.g., encryption, watermarking, copy restrictions, and region lockouts) from multiple stakeholder perspectives."
+        },
+        {
+          "description": "Discuss the nature of anti-circumvention laws in the context of copyright protection."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Privacy and Civil Liberties",
+      "code": "SEP-Privacy",
+      "topics-cs": [
+        {
+          "description": "Privacy implications of widespread data collection including but not limited to transactional databases, data warehouses, surveillance systems, cloud computing, and artificial intelligence"
+        },
+        {
+          "description": "Conceptions of anonymity, pseudonymity, and identity"
+        },
+        {
+          "description": "Technology-based solutions for privacy protection (e.g., end-to-end encryption and differential privacy)"
+        },
+        {
+          "description": "Civil liberties, privacy rights, and cultural differences"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Philosophical and legal conceptions of the nature of privacy including the right to privacy"
+        },
+        {
+          "description": "Legal foundations of privacy protection in relevant jurisdictions (e.g., GDPR in the EU)"
+        },
+        {
+          "description": "Privacy legislation in areas of practice (e.g., HIPAA in the US, AI Act in the EU)"
+        },
+        {
+          "description": "Basic Principles of human-subjects research and principles beyond what the law requires (e.g., Belmont Report, UN Universal Declaration on Human Rights and how this relates to technology)"
+        },
+        {
+          "description": "Freedom of expression and its limitations"
+        },
+        {
+          "description": "User-generated content, content moderation, and liability"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Evaluate solutions to privacy threats in transactional databases and data warehouses."
+        },
+        {
+          "description": "Describe the role of data collection in the implementation of pervasive surveillance systems (e.g., RFID, face recognition, toll collection, mobile computing)."
+        },
+        {
+          "description": "Distinguish the concepts and goals of anonymity and pseudonymity."
+        },
+        {
+          "description": "Describe the ramifications of technology-based privacy protections, including differential privacy and end-to-end encryption."
+        },
+        {
+          "description": "Identify cultural differences regarding the nature and necessity of privacy and other civil liberties."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Discuss the philosophical basis for the legal protection of personal privacy in an appropriate context (e.g., country)."
+        },
+        {
+          "description": "Critique the intent, potential value, and implementation of various forms of privacy legislation and principles beyond what the law requires."
+        },
+        {
+          "description": "Identify strategies to enable appropriate freedom of expression."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Communication",
+      "code": "SEP-Communication",
+      "topics-cs": [
+        {
+          "description": "Oral, written, and electronic team and group communication"
+        },
+        {
+          "description": "Technical communication materials (e.g., source code, and documentation, tutorials, reference materials, API documentation)"
+        },
+        {
+          "description": "Communicating with different stakeholders such as customers, leadership, or the public"
+        },
+        {
+          "description": "Team collaboration (including tools) and conflict resolution"
+        },
+        {
+          "description": "Accessibility and inclusivity requirements for addressing professional audiences"
+        },
+        {
+          "description": "Cultural competence in communication including considering the impact of difference in natural language"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Tradeoffs in competing factors that affect communication channels and choices"
+        },
+        {
+          "description": "Communicating to solve problems or make recommendations in the workplace, such as raising ethical concerns or addressing accessibility issues"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Understand the importance of writing concise and accurate technical documents following well-defined standards for format and for including appropriate tables, figures, and references."
+        },
+        {
+          "description": "Analyze written technical documentation for technical accuracy, concision, lack of ambiguity, and awareness of audience."
+        },
+        {
+          "description": "Compose and deliver an audience-aware, accessible, and organized formal presentation."
+        },
+        {
+          "description": "Plan interactions (e.g., virtual, face-to-face, shared documents) with others in ways that invite inclusive participation, model respectful consideration of others’ contributions, and explicitly value diversity of ideas."
+        },
+        {
+          "description": "Identify and describe qualities of effective communication (e.g., virtual, face-to-face, intragroup, shared documents)."
+        },
+        {
+          "description": "Understand how to communicate effectively and appropriately as a member of a team including conflict resolution techniques."
+        },
+        {
+          "description": "Discuss ways to influence performance and results in diverse and cross-cultural teams."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Assess personal strengths and weaknesses to work remotely as part of a team drawing from diverse backgrounds and experiences."
+        },
+        {
+          "description": "Choose an appropriate way to communicate delicate ethical concerns."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Sustainability",
+      "code": "SEP-Sustainability",
+      "topics-cs": [
+        {
+          "description": "Environmental, social, and cultural impacts of implementation decisions (e.g., sustainability goals, algorithmic bias/outcomes, economic viability, and resource consumption)"
+        },
+        {
+          "description": "Local/regional/global social and environmental impacts of computing systems and their use (e.g., carbon footprints, resource usage, e-waste) due to hardware (e.g., e-waste, data centers, rare element and resource utilization, recycling) and software (e.g., cloud-based services, blockchain, AI model training and use). This includes everyday use of hardware (cheap hardware replaced frequently) and software (web-browsing, email, and other services with hidden/remote computational demands)."
+        },
+        {
+          "description": "Guidelines for sustainable design standards."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Systemic effects of complex computing technologies and phenomena (e.g., generative AI, data centers, social media, offshoring, remote work)."
+        },
+        {
+          "description": "Pervasive computing: Information processing that has been integrated into everyday objects and activities, such as smart energy systems, social networking, and feedback systems to promote sustainable behavior, transportation, environmental monitoring, citizen science and activism."
+        },
+        {
+          "description": "How the sustainability of software systems is interdependent with social systems, including the knowledge and skills of its users, organizational processes and policies, and its societal context (e.g., market forces, government policies)."
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify ways to be a sustainable practitioner in a specific area or with a specific project."
+        },
+        {
+          "description": "Assess the environmental impacts of a given project’s deployment (e.g., energy consumption, contribution to e-waste, impact of manufacturing)."
+        },
+        {
+          "description": "Describe global social and environmental impacts of computer use and disposal."
+        },
+        {
+          "description": "List the sustainable effects of modern practices and activities (e.g., remote work, e-commerce, cryptocurrencies, AI models, data centers)."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Describe the environmental impacts of design choices within the field of computing that relate to algorithm design, operating system design, networking design, database design, etc."
+        },
+        {
+          "description": "Analyze the social and environmental impacts of new system designs."
+        },
+        {
+          "description": "Design guidelines for sustainable IT design or deployment in areas such as smart energy systems, social networking, transportation, agriculture, supply-chain systems, environmental monitoring, and citizen activism."
+        },
+        {
+          "description": "Assess computing applications in respect to environmental issues (e.g., energy, pollution, resource usage, recycling and reuse, food management and production)."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Computing History",
+      "code": "SEP-History",
+      "topics-cs": [
+        {
+          "description": "The history of computing: hardware, software, and human/organizational."
+        },
+        {
+          "description": "The role of history in the present including within different social contexts, and the relevance of this history on the future."
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Age I (Pre-digital): Ancient analog computing (Stonehenge, Antikythera mechanism, Salisbury Cathedral clock, etc.), human-calculated number tables, Euclid, Lovelace, Babbage, Gödel, Church, Turing, pre-electronic (electro-mechanical and mechanical) hardware"
+        },
+        {
+          "description": "Age II (Early modern computing): ENIAC, UNIVAC, Bombes (Bletchley Park and codebreakers), computer companies (e.g., IBM), mainframes, etc."
+        },
+        {
+          "description": "Age III (PC era): PCs, modern computer hardware and software, Moore’s Law"
+        },
+        {
+          "description": "Age IV (Internet): Networking, internet architecture, browsers and their evolution, standards, born-on-the-internet companies, and services (e.g., Google, Amazon, Microsoft, etc.), distributed computing"
+        },
+        {
+          "description": "Age V (Mobile & Cloud): Mobile computing and smartphones, cloud computing and models thereof (e.g., SaaS), remote servers, security and privacy, social media"
+        },
+        {
+          "description": "Age VI (AI): Decision making systems, recommender systems, generative AI and other machine learning driven tools and technologies"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Understand the relevance and impact of computing history on recent events, present context, and possible future outcomes, from more than one cultural perspective."
+        },
+        {
+          "description": "Discuss how perspectives held today have been shaped by history, and that alternative perspectives exist (e.g., fears of AI replacing human workers vs AI augmenting human work, various views on Moore’s Law)."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Identify formative and consequential trends in the history of the computing field."
+        },
+        {
+          "description": "Identify the contributions of pioneering individuals or organizations (research labs, computer companies, government offices) in the computing field."
+        },
+        {
+          "description": "Discuss the historical context for important moments in history of computing, such as the move from vacuum tubes to transistors (TRADIC), early seminal operating systems (e.g., OS 360), Xerox PARC and the first Apple computer with a GUI, the creation of specific programming language paradigms, the first computer virus, the creation of the internet, the creation of the WWW, the dot com bubble, Y2K, the introduction of smartphones, etc."
+        },
+        {
+          "description": "Compare daily life before and after the advent of milestone developments (e.g., personal computers or the internet)."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Economies of Computing",
+      "code": "SEP-Economies",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Economic models: regulated and unregulated, monopolies, network effects, and open market; knowledge and attention economies"
+        },
+        {
+          "description": "Pricing and deployment strategies: planned obsolescence, subscriptions, freemium, software licensing, open-source, free software, adware"
+        },
+        {
+          "description": "Impacts of differences in access to computing resources, and the effect of skilled labor supply and demand on the quality of computing products"
+        },
+        {
+          "description": "Automation, AI, and their effects on job markets, developers, and users"
+        },
+        {
+          "description": "Ethical concerns surrounding the attention economy and other economies of computing (e.g. informed consent, data collection, use of verbose legalese in user agreements)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Summarize the social effects of economic models (e.g., the knowledge and attention economies)."
+        },
+        {
+          "description": "Describe the differences and similarities of competing strategies (e.g., subscription vs freemium vs free)."
+        },
+        {
+          "description": "Discuss examples of digital divides."
+        },
+        {
+          "description": "Understand the effects of automation and AI on society."
+        },
+        {
+          "description": "Understand the ethical implications of computing economies that rely on attention and data."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "0 1"
+    },
+    {
+      "name": "Security Policies, Laws and Computer Crimes",
+      "code": "SEP-Security",
+      "topics-cs": [
+        {
+          "description": "Computer crimes, legal redress for computer criminals and impact on victims and society"
+        },
+        {
+          "description": "Social engineering, computing-enabled fraud, identity theft and recovery from these"
+        },
+        {
+          "description": "Cyber terrorism, criminal hacking, and hacktivism"
+        },
+        {
+          "description": "Malware, viruses, worms"
+        },
+        {
+          "description": "Attacks on critical infrastructure such as electrical grids and pipelines"
+        },
+        {
+          "description": "Non-technical fundamentals of security (e.g., human engineering, policy, confidentiality)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Benefits and challenges of existing and proposed computer crime laws"
+        },
+        {
+          "description": "Security policies and the challenges of change and compliance"
+        },
+        {
+          "description": "Responsibility for security throughout the computing life cycle"
+        },
+        {
+          "description": "International and local laws and how they intersect"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "List classic examples of computer crimes and social engineering incidents with societal impact."
+        },
+        {
+          "description": "Identify issues with laws that apply to computer crimes."
+        },
+        {
+          "description": "Describe the motivation and ramifications of cyber terrorism, data theft, hacktivism, ransomware, and other attacks."
+        },
+        {
+          "description": "Examine the ethical and legal issues surrounding the misuse of access and various breaches of security."
+        },
+        {
+          "description": "Discuss the professional's role in security and the tradeoffs and challenges involved."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Investigate measures that can be taken by both individuals and organizations including governments to prevent or mitigate the undesirable effects of computer crimes."
+        },
+        {
+          "description": "Design a company-wide security policy, which includes procedures for managing passwords and employee monitoring."
+        },
+        {
+          "description": "Understand how legislation from one region may affect activities in another (e.g., how EU GDPR applies globally, when EU persons are involved)."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "1"
+    },
+    {
+      "name": "Diversity, Equity, Inclusion, and Accessibility",
+      "code": "SEP-DEIA",
+      "topics-cs": [
+        {
+          "description": "How identity impacts and is impacted by computing technologies and environments (academic and professional)"
+        },
+        {
+          "description": "The benefits of diverse development teams and the impacts of teams that are not diverse"
+        },
+        {
+          "description": "Inclusive language and charged terminology, and why their use matters"
+        },
+        {
+          "description": "Inclusive behaviors and why they matter"
+        },
+        {
+          "description": "Designing and developing technology with accessibility in mind"
+        },
+        {
+          "description": "How computing professionals can influence and impact diversity, equity, inclusion and accessibility, including but not only through the software they create"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Experts and their practices that reflect the identities of the classroom and the world through practical DEIA principles"
+        },
+        {
+          "description": "Historic marginalization due to systemic social mechanisms, technological supremacy and global infrastructure challenges to diversity, equity, inclusion, and accessibility"
+        },
+        {
+          "description": "Cross-cultural differences in, and needs for, diversity, equity, inclusion, and accessibility"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Define and distinguish equity, equality, diversity, inclusion, and accessibility."
+        },
+        {
+          "description": "Identify language, practices, and behaviors that may make someone feel included in a workplace and/or a team, and why is it relevant. Avoid charged terminology - see Words Matter (www.acm.org/diversity-inclusion/words-matter) – this includes identifying and accommodating users who are often excluded without thought and not considered at all."
+        },
+        {
+          "description": "Evaluate the accessibility of your classroom or lab. Evaluate the accessibility of your webpage. (See www.w3.org/WAI and www.w3.org/TR/WCAG21)."
+        },
+        {
+          "description": "Demonstrate collegiality and respect when working with team members who do not share your identity. It is not enough to merely assign team projects. Faculty should prepare students for teamwork and monitor, mentor, and assess the effectiveness of their student teams throughout a project."
+        },
+        {
+          "description": "Compare the demographics of your institution’s computer science and STEM majors to the overall institutional demographics. If they differ, identify factors that contribute to inequitable access, engagement, and achievement in computer science among marginalized groups. If they do not, assess why not."
+        },
+        {
+          "description": "Identify developers’ assumptions and values embedded in hardware and software design, especially as they pertain to usability by diverse populations."
+        },
+        {
+          "description": "Identify examples of the benefits that diverse teams can bring to software products, and how a lack of diversity has costs."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Analyze the work of experts who reflect the identities of the classroom and the world."
+        },
+        {
+          "description": "Assess the impact of power and privilege in the computing profession as it relates to culture, industry, products, and society."
+        },
+        {
+          "description": "Develop examples of systemic changes that could positively address diversity, equity, inclusion, and accessibility in a familiar context (i.e., in an introductory computing course) and an unfamiliar context and when these might be different, or the same."
+        },
+        {
+          "description": "Compare the demographics of your institution to the overall community demographics. If they differ, identify factors that contribute to inequitable access, engagement, and achievement among marginalized groups. If they do not, assess why not."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    }
+  ]
+}

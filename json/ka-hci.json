@@ -1,0 +1,850 @@
+{
+  "name": "Human-Computer Interaction",
+  "code": "HCI",
+  "units": [
+    {
+      "name": "Understanding the User: Individual goals and interactions with others",
+      "code": "HCI-User",
+      "topics-cs": [
+        {
+          "description": "User-centered design and evaluation methods. (See also: SEP-Context, SEP-Ethical-Analysis, SEP-Professional-Ethics)",
+          "topics": [
+            {
+              "description": "“You are not the users”"
+            },
+            {
+              "description": "User needs-finding"
+            },
+            {
+              "description": "Formative studies"
+            },
+            {
+              "description": "Interviews"
+            },
+            {
+              "description": "Surveys"
+            },
+            {
+              "description": "Usability tests"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "User-centered design methodology. (See also: SE-Tools)",
+          "topics": [
+            {
+              "description": "Personas/persona spectrum"
+            },
+            {
+              "description": "User stories/storytelling and techniques for gathering stories"
+            },
+            {
+              "description": "Empathy maps"
+            },
+            {
+              "description": "Needs assessment (techniques for uncovering needs and gathering requirements - e.g., interviews, surveys, ethnographic and contextual enquiry) (See also: SE-Requirements)"
+            },
+            {
+              "description": "Journey maps"
+            },
+            {
+              "description": "Evaluating the design (See also: HCI-Evaluation)"
+            },
+            {
+              "description": "Interfacing with stakeholders, as a team"
+            },
+            {
+              "description": "Risks associated with physical, distributed, hybrid and virtual teams"
+            }
+          ]
+        },
+        {
+          "description": "Physical and cognitive characteristics of the user",
+          "topics": [
+            {
+              "description": "Physical capabilities that inform interaction design (e.g., color perception, ergonomics)",
+              "topics": [
+                {
+                  "description": "Cognitive models that inform interaction design (e.g., attention, perception and recognition, movement, memory)"
+                },
+                {
+                  "description": "Topics in social/behavioral psychology (e.g., cognitive biases, change blindness)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Designing for diverse user populations. (See also: SEP-DEIA, HCI-Accessibility)",
+          "topics": [
+            {
+              "description": "How differences (e.g., in race, ability, age, gender, culture, experience, and education) impact user experiences and needs"
+            },
+            {
+              "description": "Internationalization"
+            },
+            {
+              "description": "Designing for users from other cultures"
+            },
+            {
+              "description": "Cross-cultural design"
+            },
+            {
+              "description": "Challenges to effective design evaluation. (e.g., sampling, generalization; disability and disabled experiences)"
+            },
+            {
+              "description": "Universal design"
+            }
+          ]
+        },
+        {
+          "description": "Collaboration and communication (See also: AI-SEP, SE-Teamwork, SEP-Communication, SPD-Game)",
+          "topics": [
+            {
+              "description": "Understanding the user in a multi-user context"
+            },
+            {
+              "description": "Synchronous group communication (e.g., chat rooms, conferencing, online games)"
+            },
+            {
+              "description": "Asynchronous group communication (e.g., email, forums, social networks)"
+            },
+            {
+              "description": "Social media, social computing, and social network analysis"
+            },
+            {
+              "description": "Online collaboration"
+            },
+            {
+              "description": "Social coordination and online communities"
+            },
+            {
+              "description": "Avatars, characters, and virtual worlds"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Multi-user systems"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Conduct a user-centered design process that is integrated into a project."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Compare and contrast the needs of users with those of designers."
+        },
+        {
+          "description": "Identify the representative users of a design and discuss who else could be impacted by it."
+        },
+        {
+          "description": "Describe empathy and evaluation as elements of the design process."
+        },
+        {
+          "description": "Carry out and document an analysis of users and their needs."
+        },
+        {
+          "description": "Construct a user story from a needs assessment."
+        },
+        {
+          "description": "Redesign an existing solution to a population whose needs differ from those of the initial target population."
+        },
+        {
+          "description": "Contrast the different needs-finding methods for a given design problem."
+        },
+        {
+          "description": "Reflect on whether your design would benefit from low-tech or no-tech components."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Recognize the implications of designing for a multi-user system/context."
+        }
+      ],
+      "hours-cs": "2",
+      "hours-ka": "5"
+    },
+    {
+      "name": "Accountability and Responsibility in Design",
+      "code": "HCI-Accountability",
+      "topics-cs": [
+        {
+          "description": "Design impact",
+          "topics": [
+            {
+              "description": "Sustainability (See also: SEP-Sustainability)"
+            },
+            {
+              "description": "Inclusivity (See also: SEP-DEIA)"
+            },
+            {
+              "description": "Safety, security and privacy (See also: SEP-Security, SEC-Foundations)"
+            },
+            {
+              "description": "Harm and disparate impact (See also: SEP-DEIA)"
+            }
+          ]
+        },
+        {
+          "description": "Ethics in design methods and solutions (See also: SEP-Ethical-Analysis, SEP-Context, SEP-Intellectual Property)",
+          "topics": [
+            {
+              "description": "The role of artificial intelligence (See also: AI-SEP)"
+            },
+            {
+              "description": "Responsibilities for considering stakeholder impact and human factors (See also: SEP-Professional-Ethics)"
+            },
+            {
+              "description": "Role of design to meet user needs"
+            }
+          ]
+        },
+        {
+          "description": "Requirements in design (See also: SEP-Professional-Ethics)",
+          "topics": [
+            {
+              "description": "Ownership responsibility"
+            },
+            {
+              "description": "Legal frameworks, compliance requirements"
+            },
+            {
+              "description": "Consideration beyond immediate user needs, including via iterative reconstruction of problem analysis and “digital well-being” features"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Value-sensitive design (See also: SEP-Ethical-Analysis, SEP-Context, SEP-Communication)",
+          "topics": [
+            {
+              "description": "Identify direct and indirect stakeholders"
+            },
+            {
+              "description": "Determine and include diverse stakeholder values and value systems."
+            }
+          ]
+        },
+        {
+          "description": "Persuasion through design (See also: SEP-Communication)",
+          "topics": [
+            {
+              "description": "Assess the persuasive content of a design"
+            },
+            {
+              "description": "Employ persuasion as a design goal"
+            },
+            {
+              "description": "Distinguish persuasive interfaces from manipulative interfaces"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Identify and critique the potential impacts of a design on society and relevant communities to address such concerns as sustainability, inclusivity, safety, security, privacy, harm, and disparate impact."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Identify the potential human factor elements in a design."
+        },
+        {
+          "description": "Identify and understand direct and indirect stakeholders."
+        },
+        {
+          "description": "Develop scenarios that consider the entire lifespan of a design, beyond the immediately planned uses that anticipate direct and indirect stakeholders."
+        },
+        {
+          "description": "Identify and critique the potential factors in a design that impact direct and indirect stakeholders and broader society (e.g., transparency, sustainability of the system, trust, artificial intelligence)."
+        },
+        {
+          "description": "Assess the persuasive content of a design and its intent relative to user interests."
+        },
+        {
+          "description": "Critique the outcomes of a design given its intent."
+        },
+        {
+          "description": "Understand the impact of design decisions."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Accessibility and Inclusive Design",
+      "code": "HCI-Accessibility",
+      "topics-cs": [
+        {
+          "description": "Background (See also: SEP-DEIA, SEP-Security)",
+          "topics": [
+            {
+              "description": "Societal and legal support for and obligations to people with disabilities"
+            },
+            {
+              "description": "Accessible design benefits everyone"
+            }
+          ]
+        },
+        {
+          "description": "Techniques",
+          "topics": [
+            {
+              "description": "Accessibility standards (e.g., Web Content Accessibility Guidelines) (See also: SPD-Web)"
+            }
+          ]
+        },
+        {
+          "description": "Technologies (See also: SE-Tools)",
+          "topics": [
+            {
+              "description": "Features and products that enable accessibility and support inclusive development by designers and engineers"
+            }
+          ]
+        },
+        {
+          "description": "IDFs (Inclusive Design Frameworks) (See also: SEP-DEIA)",
+          "topics": [
+            {
+              "description": "Recognizing differences"
+            }
+          ]
+        },
+        {
+          "description": "Universal design"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Background",
+          "topics": [
+            {
+              "description": "Demographics and populations (permanent, temporary, and situational disability)"
+            },
+            {
+              "description": "International perspectives on disability (See also: SEP-DEIA)"
+            },
+            {
+              "description": "Attitudes towards people with disabilities (See also: SEP-DEIA)"
+            }
+          ]
+        },
+        {
+          "description": "Techniques",
+          "topics": [
+            {
+              "description": "UX (user experience) design and research"
+            },
+            {
+              "description": "Software engineering practices that enable inclusion and accessibility. (See also: SEP-DEIA)"
+            }
+          ]
+        },
+        {
+          "description": "Technologies",
+          "topics": [
+            {
+              "description": "Examples of accessibility-enabling features, such as conformance to screen readers"
+            }
+          ]
+        },
+        {
+          "description": "Inclusive Design Frameworks",
+          "topics": [
+            {
+              "description": "Creating inclusive processes such as participatory design"
+            },
+            {
+              "description": "Designing for larger impact"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Background (See also: SEP-DEIA)",
+          "topics": [
+            {
+              "description": "Unlearning and questioning"
+            },
+            {
+              "description": "Disability studies"
+            }
+          ]
+        },
+        {
+          "description": "Technologies: the Return On Investment (ROI) of inclusion"
+        },
+        {
+          "description": "Inclusive Design Frameworks: user-sensitive inclusive design (See also: SEP-DEIA)"
+        },
+        {
+          "description": "Critical approaches to HCI (e.g., inclusivity) (See also: SEP-DEIA)"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Identify accessibility challenges faced by people with different disabilities and specify the associated accessible and assistive technologies that address them. (See also: AI-Agents, AI-Robotics)"
+        },
+        {
+          "description": "Identify appropriate inclusive design approaches, such as universal design and ability-based design."
+        },
+        {
+          "description": "Identify and demonstrate understanding of software accessibility guidelines."
+        },
+        {
+          "description": "Demonstrate recognition of laws and regulations applicable to accessible design."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Apply inclusive frameworks to design, such as universal design and usability and ability-based design, and demonstrate accessible design of visual, voice-based, and touch-based UIs."
+        },
+        {
+          "description": "Demonstrate understanding of laws and regulations applicable to accessible design."
+        },
+        {
+          "description": "Demonstrate understanding of what is appropriate and inappropriate high level of skill during interaction with individuals from diverse populations."
+        },
+        {
+          "description": "Analyze web pages and mobile apps for current standards of accessibility."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Biases towards disability, race, and gender have historically, either intentionally or unintentionally, informed technology design.",
+          "topics": [
+            {
+              "description": "Find examples."
+            },
+            {
+              "description": "Consider how those experiences (learnings?) might inform design."
+            }
+          ]
+        },
+        {
+          "description": "Conceptualize user experience research to identify user needs and generate design insights."
+        }
+      ],
+      "hours-cs": "2",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Evaluating the Design",
+      "code": "HCI-Evaluation",
+      "topics-cs": [
+        {
+          "description": "Methods for evaluation with users",
+          "topics": [
+            {
+              "description": "Formative (e.g., needs-finding, exploratory analysis) and summative assessment (e.g., functionality and usability testing)"
+            },
+            {
+              "description": "Elements to evaluate (e.g., utility, efficiency, learnability, user satisfaction, affective elements such as pleasure and engagement)"
+            },
+            {
+              "description": "Understanding ethical approval requirements before engaging in user research (See also: SE-Tools, SEP-Ethical-Analysis, SEP-Security, SEP-Privacy, SEP-Professional-Ethics)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Methods for evaluation with users (See also: SE-Validation)",
+          "topics": [
+            {
+              "description": "Qualitative methods (qualitative coding and thematic analysis)"
+            },
+            {
+              "description": "Quantitative methods (statistical tests)"
+            },
+            {
+              "description": "Mixed methods (e.g., observation, think-aloud, interview, survey, experiment)"
+            },
+            {
+              "description": "Presentation requirements (e.g., reports, personas)"
+            },
+            {
+              "description": "User-centered testing"
+            },
+            {
+              "description": "Heuristic evaluation"
+            },
+            {
+              "description": "Challenges and shortcomings to effective evaluation (e.g., sampling, generalization)"
+            }
+          ]
+        },
+        {
+          "description": "Study planning",
+          "topics": [
+            {
+              "description": "How to set study goals"
+            },
+            {
+              "description": "Hypothesis design"
+            },
+            {
+              "description": "Approvals from Institutional Research Boards and ethics committees (See also: SEP-Ethical-Analysis, SEP-Security, SEP-Privacy)"
+            },
+            {
+              "description": "How to pre-register a study"
+            },
+            {
+              "description": "Within-subjects vs between-subjects design"
+            }
+          ]
+        },
+        {
+          "description": "Implications and impacts of design with respect to the environment, material, society, security, privacy, ethics, and broader impacts. (See also: SEC-Foundations)",
+          "topics": [
+            {
+              "description": "The environment"
+            },
+            {
+              "description": "Material"
+            },
+            {
+              "description": "Society"
+            },
+            {
+              "description": "Security"
+            },
+            {
+              "description": "Privacy"
+            },
+            {
+              "description": "Ethics"
+            },
+            {
+              "description": "Broader impacts"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Techniques and tools for quantitative analysis",
+          "topics": [
+            {
+              "description": "Statistical packages"
+            },
+            {
+              "description": "Visualization tools"
+            },
+            {
+              "description": "Statistical tests (e.g., ANOVA, t-tests, post-hoc analysis, parametric vs non-parametric tests)"
+            },
+            {
+              "description": "Data exploration and visual analytics; how to calculate effect size."
+            }
+          ]
+        },
+        {
+          "description": "Data management",
+          "topics": [
+            {
+              "description": "Data storage and data sharing (open science)"
+            },
+            {
+              "description": "Sensitivity and identifiability."
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Discuss the differences between formative and summative assessment and their role in evaluating design"
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Select appropriate formative or summative evaluation methods at different points throughout the development of a design."
+        },
+        {
+          "description": "Discuss the benefits of using both qualitative and quantitative methods for evaluation."
+        },
+        {
+          "description": "Evaluate the implications and broader impacts of a given design."
+        },
+        {
+          "description": "Plan a usability evaluation for a given user interface, and justify its study goals, hypothesis design, and study design."
+        },
+        {
+          "description": "Conduct a usability evaluation of a given user interface and draw defensible conclusions given the study design."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Select and run appropriate statistical tests on provided study data to test for significance in the results."
+        },
+        {
+          "description": "Pre-register a study design, with planned statistical tests."
+        }
+      ],
+      "hours-cs": "1",
+      "hours-ka": "2"
+    },
+    {
+      "name": "System Design",
+      "code": "HCI-Design",
+      "topics-cs": [
+        {
+          "description": "Prototyping techniques and tools",
+          "topics": [
+            {
+              "description": "Low-fidelity prototyping"
+            },
+            {
+              "description": "Rapid prototyping"
+            },
+            {
+              "description": "Throw-away prototyping"
+            },
+            {
+              "description": "Granularity of prototyping"
+            }
+          ]
+        },
+        {
+          "description": "Design patterns",
+          "topics": [
+            {
+              "description": "Iterative design"
+            },
+            {
+              "description": "Universal design (See also: SEP-DEIA)"
+            },
+            {
+              "description": "Interaction design (e.g., data-driven design, event-driven design)"
+            }
+          ]
+        },
+        {
+          "description": "Design constraints",
+          "topics": [
+            {
+              "description": "Platforms (See also: SPD-Game)"
+            },
+            {
+              "description": "Devices"
+            },
+            {
+              "description": "Resources"
+            },
+            {
+              "description": "Balance among usability, security and privacy (See also: SEC-Foundations)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Design patterns and guidelines",
+          "topics": [
+            {
+              "description": "Software architecture patterns"
+            },
+            {
+              "description": "Cross-platform design"
+            },
+            {
+              "description": "Synchronization considerations"
+            }
+          ]
+        },
+        {
+          "description": "Design processes (See also: SEP-Communication)",
+          "topics": [
+            {
+              "description": "Participatory design"
+            },
+            {
+              "description": "Co-design"
+            },
+            {
+              "description": "Double-diamond"
+            },
+            {
+              "description": "Convergence and divergence"
+            }
+          ]
+        },
+        {
+          "description": "Interaction techniques (See also: GIT-Interaction)",
+          "topics": [
+            {
+              "description": "Input and output vectors (e.g., gesture, pose, touch, voice, force)"
+            },
+            {
+              "description": "Graphical user interfaces"
+            },
+            {
+              "description": "Controllers"
+            },
+            {
+              "description": "Haptics"
+            },
+            {
+              "description": "Hardware design"
+            },
+            {
+              "description": "Error handling"
+            }
+          ]
+        },
+        {
+          "description": "Visual UI design (See also: GIT-Visualization)",
+          "topics": [
+            {
+              "description": "Color"
+            },
+            {
+              "description": "Layout"
+            },
+            {
+              "description": "Gestalt principles"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Immersive environments (See also: GIT-Immersion)",
+          "topics": [
+            {
+              "description": "XR (encompasses virtual reality, augmented reality, and mixed reality)"
+            },
+            {
+              "description": "Spatial audio"
+            }
+          ]
+        },
+        {
+          "description": "3D printing and fabrication"
+        },
+        {
+          "description": "Asynchronous interaction models"
+        },
+        {
+          "description": "Creativity support tools"
+        },
+        {
+          "description": "Voice UI designs"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Propose system designs tailored to a specified appropriate mode of interaction."
+        },
+        {
+          "description": "Follow an iterative design and development process that incorporates the following:",
+          "topics": [
+            {
+              "description": "Understanding the user"
+            },
+            {
+              "description": "Developing an increment"
+            },
+            {
+              "description": "Evaluating the increment"
+            },
+            {
+              "description": "Feeding those results into a subsequent iteration"
+            }
+          ]
+        },
+        {
+          "description": "Explain the impact of changing constraints and design tradeoffs (e.g., hardware, user, security.) on system design."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Evaluate architectural design approaches in the context of project goals."
+        },
+        {
+          "description": "Identify synchronization challenges as part of the user experience in distributed environments."
+        },
+        {
+          "description": "Evaluate and compare the privacy implications behind different input techniques for a given scenario."
+        },
+        {
+          "description": "Explain the rationale behind a UI design based on visual design principles."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Evaluate the privacy implications within a VR/AR/MR scenario"
+        }
+      ],
+      "hours-cs": "1",
+      "hours-ka": "5"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "HCI-SEP",
+      "topics-cs": [
+        {
+          "description": "Universal and user-centered design (See also: HCI-User, SEP-DEIA)"
+        },
+        {
+          "description": "Accountability (See also: HCI-Accountability)"
+        },
+        {
+          "description": "Accessibility and inclusive design (See also: SEP-DEIA, SEP-Security)"
+        },
+        {
+          "description": "Evaluating the design (See also: HCI-Evaluation)"
+        },
+        {
+          "description": "System design (See also: HCI-Design)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Participatory and inclusive design processes"
+        },
+        {
+          "description": "Evaluating the design: Implications and impacts of design: with respect to the environment, material, society, security, privacy, ethics, and broader impacts (See also: SEC-Foundations, SEP-Privacy)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "VR/AR/MR scenarios"
+        }
+      ],
+      "outcomes-cs": [
+        {
+          "description": "Conduct a user-centered design process that is integrated into a project."
+        },
+        {
+          "description": "Identify and critique the potential impacts of a design on society and relevant communities to address such concerns as sustainability, inclusivity, safety, security, privacy, harm, and disparate impact."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Critique a recent example of a non-inclusive design choice, its societal implications, and propose potential design improvements."
+        },
+        {
+          "description": "Evaluating the design: Identify the implications and broader impacts of a given design."
+        }
+      ],
+      "outcomes-non": [
+        {
+          "description": "Evaluate the privacy implications within a VR/AR/MR scenario."
+        }
+      ],
+      "hours-cs": "Included in SEP",
+      "hours-ka": "hours"
+    }
+  ]
+}

@@ -1,0 +1,1305 @@
+{
+  "name": "Specialized Platform Development",
+  "code": "SPD",
+  "units": [
+    {
+      "name": "Common Aspects/Shared Concerns",
+      "code": "SPD-Common",
+      "topics-cs": [
+        {
+          "description": "Overview of development platforms (i.e., web, mobile, game, robotics, embedded, and interactive).",
+          "topics": [
+            {
+              "description": "Input/sensors/control devices/haptic devices"
+            },
+            {
+              "description": "Resource constraints",
+              "topics": [
+                {
+                  "description": "Computational"
+                },
+                {
+                  "description": "Data storage"
+                },
+                {
+                  "description": "Memory"
+                },
+                {
+                  "description": "Communication"
+                }
+              ]
+            },
+            {
+              "description": "Requirements – security, uptime availability, fault tolerance (See also: SE-Reliability, SEC-Engineering)"
+            },
+            {
+              "description": "Output/actuators/haptic devices"
+            }
+          ]
+        },
+        {
+          "description": "Programming via platform-specific Application Programming Interface (API) vs traditional application construction"
+        },
+        {
+          "description": "Overview of platform Languages (e.g., Python, Swift, Lua, Kotlin)"
+        },
+        {
+          "description": "Programming under platform constraints and requirements (e.g., available development tools, development, security considerations) (See also: SEC-Foundations)"
+        },
+        {
+          "description": "Techniques for learning and mastering a platform-specific programming language"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "List the constraints of mobile programming."
+        },
+        {
+          "description": "List the characteristics of scripting languages."
+        },
+        {
+          "description": "Describe the three-tier model of web programming."
+        },
+        {
+          "description": "Describe how the state is maintained in web programming."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "3 + (1 SE)",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Web Platforms",
+      "code": "SPD-Web",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Web programming languages (e.g., HTML5, JavaScript, PHP, CSS)"
+        },
+        {
+          "description": "Web platforms, frameworks, or meta-frameworks",
+          "topics": [
+            {
+              "description": "Cloud services"
+            },
+            {
+              "description": "API, Web Components"
+            }
+          ]
+        },
+        {
+          "description": "Software as a Service (SaaS)"
+        },
+        {
+          "description": "Web standards such as document object model, accessibility (See also: HCI-Accessibility)"
+        },
+        {
+          "description": "Security and Privacy Considerations (See also: SEP-Security)"
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Analyzing requirements for web applications"
+        },
+        {
+          "description": "Computing services (See also: DM-NoSQL)",
+          "topics": [
+            {
+              "description": "Cloud Hosting"
+            },
+            {
+              "description": "Scalability (e.g., Autoscaling, Clusters)"
+            },
+            {
+              "description": "Cost estimation for services"
+            }
+          ]
+        },
+        {
+          "description": "Data management (See also: DM-Core)",
+          "topics": [
+            {
+              "description": "Data residency: where the data is located and what paths can be taken to access it"
+            },
+            {
+              "description": "Data integrity: guaranteeing data is accessible and that data is deleted when required"
+            }
+          ]
+        },
+        {
+          "description": "Architecture",
+          "topics": [
+            {
+              "description": "Monoliths vs Microservices"
+            },
+            {
+              "description": "Micro-frontends"
+            },
+            {
+              "description": "Event-Driven vs RESTful architectures: advantages and disadvantages"
+            },
+            {
+              "description": "Serverless, cloud computing on demand"
+            }
+          ]
+        },
+        {
+          "description": "Storage solutions (See also: DM-Relational, DM-NoSQL)",
+          "topics": [
+            {
+              "description": "Relational Databases"
+            },
+            {
+              "description": "NoSQL databases"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Design and implement a web-based application using a microservice architecture design."
+        },
+        {
+          "description": "Describe the constraints, such as hosting, services, and scalability, related to web platforms."
+        },
+        {
+          "description": "Compare and contrast web programming with general-purpose programming."
+        },
+        {
+          "description": "Describe the differences between Software-as-a-Service (SaaS) and traditional software products."
+        },
+        {
+          "description": "Discuss how web standards impact software development."
+        },
+        {
+          "description": "Evaluate an existing web application against current web standards."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "5 + (1 HCI)"
+    },
+    {
+      "name": "Mobile Platforms",
+      "code": "SPD-Mobile",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Development with",
+          "topics": [
+            {
+              "description": "Mobile programming languages"
+            },
+            {
+              "description": "Mobile programming environments"
+            }
+          ]
+        },
+        {
+          "description": "Mobile platform constraints",
+          "topics": [
+            {
+              "description": "User interface design (See also: HCI-User)"
+            },
+            {
+              "description": "Security"
+            }
+          ]
+        },
+        {
+          "description": "Access",
+          "topics": [
+            {
+              "description": "Accessing data through APIs (See also: DM-Querying)"
+            },
+            {
+              "description": "Designing API endpoints for mobile apps: pitfalls and design considerations"
+            },
+            {
+              "description": "Network and web interfaces (See also: NC-Fundamentals, DM-Modeling)"
+            }
+          ]
+        }
+      ],
+      "topics-non": [
+        {
+          "description": "Development",
+          "topics": [
+            {
+              "description": "Native versus cross-platform development"
+            },
+            {
+              "description": "Software design/architecture patterns for mobile applications (See also: SE-Design)"
+            }
+          ]
+        },
+        {
+          "description": "Mobile platform constraints",
+          "topics": [
+            {
+              "description": "Responsive user interface design (See also: HCI-Accessibility)"
+            },
+            {
+              "description": "Heterogeneity and mobility of devices"
+            },
+            {
+              "description": "Differences in user experiences (e.g., between mobile and web-based applications)"
+            },
+            {
+              "description": "Power and performance tradeoff"
+            }
+          ]
+        },
+        {
+          "description": "Mobile computing affordances",
+          "topics": [
+            {
+              "description": "Location-aware applications"
+            },
+            {
+              "description": "Sensor-driven computing (e.g., gyroscope, accelerometer, health data from a watch)"
+            },
+            {
+              "description": "Telephony and instant messaging"
+            },
+            {
+              "description": "Augmented reality (See also: GIT-Immersion)"
+            }
+          ]
+        },
+        {
+          "description": "Specification and testing (See also: SDF-Practices, SE-Validation)"
+        },
+        {
+          "description": "Asynchronous computing (See also: PDC-Algorithms)",
+          "topics": [
+            {
+              "description": "Difference from traditional synchronous programming"
+            },
+            {
+              "description": "Handling success via callbacks"
+            },
+            {
+              "description": "Handling errors asynchronously"
+            },
+            {
+              "description": "Testing asynchronous code and typical problems in testing"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Compare mobile programming with general-purpose programming."
+        },
+        {
+          "description": "Develop a location-aware mobile application with data API integration."
+        },
+        {
+          "description": "Build a sensor-driven mobile application capable of logging data on a remote server."
+        },
+        {
+          "description": "Create a communication app incorporating telephony and instant messaging."
+        },
+        {
+          "description": "Evaluate the pros and cons of native and cross-platform mobile application development."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "3 + (2 DM) + (1 GIT) + (1 HCI) + (1 NC)"
+    },
+    {
+      "name": "Robot Platforms",
+      "code": "SPD-Robot",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Types of robotic platforms and devices (See also: AI-Robotics)"
+        },
+        {
+          "description": "Sensors, embedded computation, and effectors (actuators) (See also: GIT-Physical)"
+        },
+        {
+          "description": "Robot-specific languages and libraries (See also: AI-Robotics)"
+        },
+        {
+          "description": "Robotic software architecture (e.g., using the Robot Operating System (ROS))"
+        },
+        {
+          "description": "Robotic platform constraints and design considerations (See also: AI-Robotics)"
+        },
+        {
+          "description": "Interconnections with physical or simulated systems (See also: GIT-Physical, GIT-Simulation)"
+        },
+        {
+          "description": "Robotic Algorithms (See also: AI-Robotics, GIT-Animation)",
+          "topics": [
+            {
+              "description": "Forward kinematics"
+            },
+            {
+              "description": "Inverse kinematics"
+            },
+            {
+              "description": "Dynamics"
+            },
+            {
+              "description": "Navigation and path planning"
+            },
+            {
+              "description": "Grasping and manipulation"
+            }
+          ]
+        },
+        {
+          "description": "Safety and interaction considerations (See also: SEP-Professional-Ethics, SEP-Context)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Design and implement an application on a given robotic platform."
+        },
+        {
+          "description": "Integrate an Arduino-based robot kit and program it to navigate a maze."
+        },
+        {
+          "description": "Compare robot-specific languages and techniques with those used for general-purpose software development."
+        },
+        {
+          "description": "Explain the rationale behind the design of the robotic platform and its interconnections with physical or simulated systems."
+        },
+        {
+          "description": "Given a high-level application, design a robot software architecture using ROS specifying all components and interconnections (ROS topics) to accomplish that application."
+        },
+        {
+          "description": "Discuss the constraints a given robotic platform imposes on developers."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4 + (3 GIT) + (3 AI)"
+    },
+    {
+      "name": "Embedded Platforms",
+      "code": "SPD-Embedded",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Introduction to the unique characteristics of embedded systems",
+          "topics": [
+            {
+              "description": "Real-time vs soft real-time and non-real-time systems"
+            },
+            {
+              "description": "Resource constraints, such as memory profiles and deadlines (See also: AR-Memory)"
+            }
+          ]
+        },
+        {
+          "description": "API for custom architectures",
+          "topics": [
+            {
+              "description": "GPU technology (See also: AR-Heterogeneity, GIT-Shading)"
+            },
+            {
+              "description": "Field Programmable Gate Arrays (FPGA) (See also: AR-Logic)"
+            },
+            {
+              "description": "Cross-platform systems"
+            }
+          ]
+        },
+        {
+          "description": "Embedded Systems",
+          "topics": [
+            {
+              "description": "Microcontrollers"
+            },
+            {
+              "description": "Interrupts and feedback"
+            },
+            {
+              "description": "Interrupt handlers in high-level languages (See also: SF-Overview)"
+            },
+            {
+              "description": "Hard and soft interrupts and trap-exits (See also: OS-Principles)"
+            },
+            {
+              "description": "Interacting with hardware, actuators, and sensors"
+            },
+            {
+              "description": "Energy efficiency"
+            },
+            {
+              "description": "Loosely timed coding and synchronization"
+            },
+            {
+              "description": "Software adapters"
+            }
+          ]
+        },
+        {
+          "description": "Embedded programming"
+        },
+        {
+          "description": "Hard real-time systems vs soft real-time systems (See also: OS-Real-time)",
+          "topics": [
+            {
+              "description": "Timeliness"
+            },
+            {
+              "description": "Time synchronization/scheduling"
+            },
+            {
+              "description": "Prioritization"
+            },
+            {
+              "description": "Latency"
+            },
+            {
+              "description": "Compute jitter"
+            }
+          ]
+        },
+        {
+          "description": "Real-time resource management"
+        },
+        {
+          "description": "Memory management",
+          "topics": [
+            {
+              "description": "Mapping programming construct (variable) to a memory location (See also: AR-Memory)"
+            },
+            {
+              "description": "Shared memory (See also: OS-Memory)"
+            },
+            {
+              "description": "Manual memory management."
+            },
+            {
+              "description": "Garbage collection (See also: FPL-Translation)"
+            }
+          ]
+        },
+        {
+          "description": "Safety considerations and safety analysis (See also: SEP-Context, SEP-Professional-Ethics)"
+        },
+        {
+          "description": "Sensors and actuators"
+        },
+        {
+          "description": "Analysis and verification"
+        },
+        {
+          "description": "Application design"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Design and implement a small embedded system for a given platform (e.g., a smart alarm clock or a drone)."
+        },
+        {
+          "description": "Describe the unique characteristics of embedded systems versus other systems."
+        },
+        {
+          "description": "Interface with sensors/actuators."
+        },
+        {
+          "description": "Debug a problem with an existing embedded platform."
+        },
+        {
+          "description": "Identify different types of embedded architectures."
+        },
+        {
+          "description": "Evaluate which architecture is best for a given set of requirements."
+        },
+        {
+          "description": "Design and develop software to interact with and control hardware."
+        },
+        {
+          "description": "Design methods for real-time systems."
+        },
+        {
+          "description": "Evaluate real-time scheduling and schedulability analysis."
+        },
+        {
+          "description": "Evaluate formal specification and verification of timing constraints and properties."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4 + (4 AR) + (1 FPL) + (1 GIT) + (3 OS) + (1 SF)"
+    },
+    {
+      "name": "Game Platforms",
+      "code": "SPD-Game",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Historical and contemporary platforms for games (See also: AR-Logic)",
+          "topics": [
+            {
+              "description": "Evolution of Game Platforms (e.g., Brown Box to Metaverse and beyond; Improvement in Computing Architectures (CPU and GPU); Platform Convergence and Mobility)"
+            },
+            {
+              "description": "Typical Game Platforms (e.g., Personal Computer; Home Console; Handheld Console; Arcade Machine; Interactive Television; Mobile Phone; Tablet; Integrated Head-Mounted Display; Immersive Installations and Simulators; Internet of Things enabled Devices; CAVE Systems; Web Browsers; Cloud-based Streaming Systems)"
+            },
+            {
+              "description": "Characteristics and Constraints of Different Game Platforms (e.g., Features (local storage, internetworking, peripherals); Run-time performance (GPU/CPU frequency, number of cores); Chipsets (physics processing units, vector co-processors); Expansion Bandwidth (PCIe); Network throughput (Ethernet); Memory types and capacities (DDR/GDDR); Maximum stack depth; Power consumption; Thermal design; Endian)",
+              "topics": [
+                {
+                  "description": "Typical Sensors, Controllers, and Actuators (e.g., distinctive control system designs – peripherals (mouse, keypad, joystick), game controllers, wearables, interactive surfaces; electronics and bespoke hardware; computer vision, inside-out tracking, and outside-in tracking; IoT-enabled electronics and I/O (See also: GIT-Interaction)"
+                },
+                {
+                  "description": "eSports Ecosystems (e.g., evolution of gameplay across platforms; games and eSports; game events such as LAN/arcade tournaments and international events such as the Olympic eSports Series; streamed media and spectatorship; multimedia technologies and broadcast management; professional play; data and machine learning for coaching and training)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Real-time Simulation and Rendering Systems",
+          "topics": [
+            {
+              "description": "CPU and GPU architectures (e.g., Flynn’s taxonomy; parallelization; instruction sets; standard components – graphics compute array, graphics memory controller, video graphics array basic input/output system; bus interface; power management unit; video processing unit; display interface) (See also: AR-Heterogeneity)"
+            },
+            {
+              "description": "Pipelines for physical simulations and graphical rendering: (e.g., tile-based, immediate-mode). (See also: GIT-Rendering)"
+            },
+            {
+              "description": "Common Contexts for Algorithms, Data Structures, and Mathematical Functions (e.g., game loops; spatial partitioning, viewport culling, and level of detail; collision detection and resolution; physical simulation; behavior for intelligent agents; procedural content generation) (See also: MSF-Discrete, AL-Foundational)"
+            },
+            {
+              "description": "Media representations (e.g., I/O, and computation techniques for virtual worlds: audio; music; sprites; models and textures; text; dialogue; multimedia (e.g., olfaction, tactile) (See also: GIT-Fundamentals)"
+            }
+          ]
+        },
+        {
+          "description": "Game Development Tools and Techniques",
+          "topics": [
+            {
+              "description": "Programming Languages (e.g., C++; C#; Lua; Python; JavaScript)"
+            },
+            {
+              "description": "Shader Languages (e.g., HLSL, GLSL; Shader Graph)"
+            },
+            {
+              "description": "Graphics Libraries and APIs (e.g., DirectX; SDL; OpenGL; Metal; Vulkan; WebGL). (See also: GIT-Rendering, HCI-Design)"
+            },
+            {
+              "description": "Common Development Tools and Environments (e.g., IDEs; Debuggers; Profilers; Version Control Systems including those handling binary assets; Development Kits and Production/Consumer Kits; Emulators) (See also: SDF-Practices, SE-Tools)"
+            }
+          ]
+        },
+        {
+          "description": "Game Engines",
+          "topics": [
+            {
+              "description": "Open Game Engines (e.g., Unreal; Unity; Godot; CryEngine; Phyre; Source 2; Pygame and Ren’Py; Phaser; Twine; Spring RTS)"
+            },
+            {
+              "description": "Techniques (e.g., Ideation, Prototyping, Iterative Design and Implementation, Compiling Executable Builds, Development Operations and Quality Assurance – Play Testing and Technical Testing, Profiling; Optimization, Porting; Internationalization and Localization, Networking) (See also: AR-Performance-Energy, SE-Requirements)"
+            }
+          ]
+        },
+        {
+          "description": "Game Design",
+          "topics": [
+            {
+              "description": "Vocabulary (e.g., game definitions; mechanics-dynamics-aesthetics model; industry terminology; experience design; models of experience and emotion)"
+            },
+            {
+              "description": "Design Thinking and User-Centered Experience Design (e.g., methods of designing games; iteration, incrementing, and the double-diamond; phases of pre- and post-production; quality assurance, including alpha and beta testing; stakeholder and customer involvement; community management) (See also: SE-Design)"
+            },
+            {
+              "description": "Genres (e.g., adventure; walking simulator; first-person shooter; real-time strategy; multiplayer online battle arena (MOBA); role-playing game (rpg))"
+            },
+            {
+              "description": "Audiences and Player Taxonomies (e.g., people who play games; diversity and broadening participation; pleasures, player types, and preferences; Bartle, yee) (See also: HCI-User)"
+            },
+            {
+              "description": "Proliferation of digital game technologies to domains beyond entertainment (e.g., Education and Training; Serious Games; Virtual Production; eSports; Gamification; Immersive Experience Design; Creative Industry Practice; Artistic Practice; Procedural Rhetoric) (See also: AI-SEP)"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Recall the characteristics of common general-purpose graphics processing architectures."
+        },
+        {
+          "description": "Identify the key stages of the immediate-mode rendering pipeline."
+        },
+        {
+          "description": "Describe the key constraints a specific game platform will likely impose on developers."
+        },
+        {
+          "description": "Explain how eSports are streamed to large audiences over the internet."
+        },
+        {
+          "description": "Translate complex mathematical functions into performant source code."
+        },
+        {
+          "description": "Use an industry-standard graphics API to render a 3D model in a virtual scene."
+        },
+        {
+          "description": "Modify a shader to change a visual effect according to stated requirements."
+        },
+        {
+          "description": "Implement a game for a particular platform according to the specification."
+        },
+        {
+          "description": "Optimize a function for processing collision detection in a simulated environment."
+        },
+        {
+          "description": "Assess a game's run-time and memory performance using an industry-standard tool and development environment."
+        },
+        {
+          "description": "Compare the interfaces of different game platforms, highlighting their respective implications for human-computer interaction."
+        },
+        {
+          "description": "Recommend an appropriate set of development tools and techniques for implementing a game of a particular genre for a given platform."
+        },
+        {
+          "description": "Discuss the key challenges in making a digital game that is cross-platform compatible."
+        },
+        {
+          "description": "Express how game developers can enhance the accessibility of a game interface."
+        },
+        {
+          "description": "Create novel forms of gameplay using frontier game platforms."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4 + (1 AL) + (1 AI) + (4 AR) + (5 GIT) + (2 HCI) + (1 SDF) + (1 SE) + (1 MSF)"
+    },
+    {
+      "name": "Interactive Computing Platforms",
+      "code": "SPD-Interactive",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Data Analysis Platforms",
+          "topics": [
+            {
+              "description": "Jupyter notebooks; Google Colab; R; SPSS; Observable."
+            },
+            {
+              "description": "Cloud SQL/data analysis platforms (e.g., BigQuery) (See also: DM-Querying)",
+              "topics": [
+                {
+                  "description": "Apache Spark"
+                },
+                {
+                  "description": "Data Visualizations (See also: GIT-Visualization)"
+                }
+              ]
+            },
+            {
+              "description": "Interactive presentations backed by data"
+            },
+            {
+              "description": "Design tools requiring low-latency feedback loops",
+              "topics": [
+                {
+                  "description": "Rendering tools"
+                },
+                {
+                  "description": "Graphic design tools"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Prompt programming",
+          "topics": [
+            {
+              "description": "Generative AI (e.g., OpenAI’s ChatGPT, OpenAI’s Codex, GitHub’s Copilot) and LLMs are accessed/interacted"
+            }
+          ]
+        },
+        {
+          "description": "Quantum Platforms (See also: AR-Quantum)",
+          "topics": [
+            {
+              "description": "Program quantum logic operators in quantum machines."
+            },
+            {
+              "description": "Use API for available quantum services"
+            },
+            {
+              "description": "Signal analysis/Fourier analysis/Signal processing (for music composition, audio/RF analysis) (See also: GIT-Image)"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Analyze large datasets interactively."
+        },
+        {
+          "description": "Create a backing track for a musical performance, such as live coding."
+        },
+        {
+          "description": "Create compelling computational notebooks that construct a narrative for a given journalistic goal/story."
+        },
+        {
+          "description": "Implement interactive code that uses a dataset and generates exploratory graphics."
+        },
+        {
+          "description": "Create a program that performs a task using LLM systems."
+        },
+        {
+          "description": "Contrast a program developed by an AI platform and by a human."
+        },
+        {
+          "description": "Implement a system that interacts with a human without using a screen."
+        },
+        {
+          "description": "Contextualize the attributes of different data analysis styles, such as interactive vs engineered pipeline."
+        },
+        {
+          "description": "Write a program using a notebook computing platform (e.g., searching, sorting, or graph manipulation)."
+        },
+        {
+          "description": "Demonstrate a quantum gate outcome using a quantum platform. SPD-SEP/Mobile"
+        },
+        {
+          "description": "Privacy and data protection"
+        },
+        {
+          "description": "Accessibility in mobile design"
+        },
+        {
+          "description": "Security and cybersecurity"
+        },
+        {
+          "description": "Social impacts of mobile technology"
+        },
+        {
+          "description": "Ethical use of AI and algorithms"
+        },
+        {
+          "description": "Understand and uphold ethical responsibilities for safeguarding user privacy and data protection in mobile applications."
+        },
+        {
+          "description": "Design mobile applications with accessibility in mind, ensuring effective use by people with disabilities."
+        },
+        {
+          "description": "Demonstrate proficiency in secure coding practices to mitigate risks associated with various security threats in mobile development."
+        },
+        {
+          "description": "Analyze the broader social impacts of mobile technology, including its influence on communication patterns, relationships, and mental health."
+        },
+        {
+          "description": "Comprehend the ethical considerations of using AI in mobile applications, ensuring unbiased and fair algorithms. SPD-SEP/Web"
+        },
+        {
+          "description": "Privacy concerns with mobile apps"
+        },
+        {
+          "description": "Designing for inclusivity and accessibility"
+        },
+        {
+          "description": "Ethical use of AI in mobile apps"
+        },
+        {
+          "description": "Sustainable app development and server hosting"
+        },
+        {
+          "description": "Avoiding spam or intrusive notifications"
+        },
+        {
+          "description": "Addressing cyberbullying and harassment"
+        },
+        {
+          "description": "Promoting positive online communities"
+        },
+        {
+          "description": "Monetization and advertising"
+        },
+        {
+          "description": "Ethical use of gamification"
+        },
+        {
+          "description": "Understand how mobile computing impacts communications and the flow of information within society."
+        },
+        {
+          "description": "Design mobile apps that have made daily tasks easier/faster."
+        },
+        {
+          "description": "Recognize how the ubiquity of mobile computing has affected work-life balance."
+        },
+        {
+          "description": "Understand how mobile computing impacts health monitoring and healthcare services."
+        },
+        {
+          "description": "Define how mobile apps are used to educate about and help achieve UN sustainability goals. SPD-SEP/Game"
+        },
+        {
+          "description": "Intellectual Property Rights in Creative Industries",
+          "topics": [
+            {
+              "description": "Intellectual Property Ownership: copyright, trademark; design right, patent, trade secret, civil versus criminal law; international agreements; procedural content generation and the implications of generative artificial intelligence"
+            },
+            {
+              "description": "Licensing: Usage and fair usage exceptions; open-source license agreements; proprietary and bespoke licensing; enforcement"
+            }
+          ]
+        },
+        {
+          "description": "Fair Access to Play",
+          "topics": [
+            {
+              "description": "Game Interface Usability: user requirements, affordances, ergonomic design, user research, experience measurement, and heuristic evaluation methods for games"
+            },
+            {
+              "description": "Game Interface Accessibility: forms of impairment and disability; means to facilitate game access; universal design; legislated requirements for game platforms; compliance evaluation; challenging game mechanics and access"
+            }
+          ]
+        },
+        {
+          "description": "Game-Related Health and Safety",
+          "topics": [
+            {
+              "description": "Injuries in Play: ways of mitigating common upper body injuries, such as repetitive strain injury; exercise psychology and physiotherapy in eSports"
+            },
+            {
+              "description": "Risk Assessment for Events and Manufacturing: control of substances hazardous to health (COSHH); fire safety; electrical and electronics safety; risk assessment for games and game events; risk assessment for manufacturing"
+            },
+            {
+              "description": "Mental Health: motivation to play; gamification and gameful design; game psychology – internet gaming disorder"
+            }
+          ]
+        },
+        {
+          "description": "Platform Hardware Supply Chain and Sustainability",
+          "topics": [
+            {
+              "description": "Platform Lifecycle: platform composition – materials, assembly; mineral excavation and processing; power usage; recycling; planned obsolescence."
+            },
+            {
+              "description": "Modern Slavery: supply chains; forced labor and civil rights; working conditions; detection and remission; certification bodies and charitable endeavors."
+            }
+          ]
+        },
+        {
+          "description": "Representation in the Media and Industry",
+          "topics": [
+            {
+              "description": "Inclusion: identity and identification; inclusion of a broad range of characters for diverse audiences; media representation and its effects; media literacy; content analysis; stereotyping; sexualization"
+            },
+            {
+              "description": "Equality: histories and controversies, such as gamergate, quality of life in the industry, professional discourse and conduct in business contexts, pathways to game development careers, social mobility, the experience of developers from different backgrounds and identities, gender, and technology"
+            }
+          ]
+        },
+        {
+          "description": "Discuss how creators can protect their intellectual property."
+        },
+        {
+          "description": "Identify common pitfalls in game interfaces that exclude players with impaired or non-functional vision."
+        },
+        {
+          "description": "Describe how heuristic evaluation can be used to identify usability problems in game interfaces."
+        },
+        {
+          "description": "Explain why upper body injuries are common in eSports."
+        },
+        {
+          "description": "Discuss how to reform characters and dialogues in a scene to reduce stereotype threat."
+        },
+        {
+          "description": "Illustrate how the portrayal of race in a game can influence the risk of social exclusion in the associated online community around the game."
+        },
+        {
+          "description": "Modify a policy for a LAN party event to include mitigations that lower the risk of fire."
+        },
+        {
+          "description": "Design a gamification strategy to motivate serious play for an awareness-raising game."
+        },
+        {
+          "description": "Analyze the role of company hiring policies and advocacy on social mobility."
+        },
+        {
+          "description": "Assess the appropriateness of two manufacturers for producing a new game console."
+        },
+        {
+          "description": "Compare options for open-source licensing of a game development tool."
+        },
+        {
+          "description": "Recommend changes to a specific game interface to improve access to players who are deaf or whose hearing is otherwise impaired."
+        },
+        {
+          "description": "Discuss whether games are addictive."
+        },
+        {
+          "description": "Suggest how the portrayal of women in video games influences how players perceive members of those groups."
+        },
+        {
+          "description": "Create a video game that successfully advocates for climate science. SPD-SEP/Robotics"
+        },
+        {
+          "description": "Fairness, transparency, and accountability in robotic algorithms"
+        },
+        {
+          "description": "Mitigating biases in robot decision-making"
+        },
+        {
+          "description": "Public safety in shared spaces with robots"
+        },
+        {
+          "description": "Compliance with data protection laws"
+        },
+        {
+          "description": "Patient consent and trust in medical robots"
+        },
+        {
+          "description": "Identify instances of bias in robotic algorithms and propose strategies to mitigate them."
+        },
+        {
+          "description": "Evaluate and critique robotic systems for ethical and fairness considerations, suggesting improvements where necessary."
+        },
+        {
+          "description": "Analyze real-world examples of biases in robot decision-making and develop strategies to reduce bias in robotic systems."
+        },
+        {
+          "description": "Assess the potential risks associated with robots in public spaces and propose safety measures to mitigate those risks."
+        },
+        {
+          "description": "Evaluate the impact of patient consent and trust on the effectiveness of medical robot deployments in healthcare contexts. SPD-SEP/Interactive"
+        },
+        {
+          "description": "Ethical guidelines when using AI models to assist in journalism and content creation"
+        },
+        {
+          "description": "Accountability for AI-generated outputs"
+        },
+        {
+          "description": "Behavior among prompt programmers and AI developers"
+        },
+        {
+          "description": "Trust with the public when using AI models"
+        },
+        {
+          "description": "Indicate a framework for accountability in AI model deployment, including clear documentation and attribution."
+        },
+        {
+          "description": "Discuss ethical codes of conduct and professional standards relevant to prompt programming and AI development."
+        },
+        {
+          "description": "Create communication plans and materials to educate the public about AI capabilities, limitations, and ethical safeguards."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "3 + (1 DM) + (2 GIT) + (1 AR) + (1 FPL)"
+    },
+    {
+      "name": "Society, Ethics, and the Profession",
+      "code": "SPD-SEP",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Mobile",
+          "topics": [
+            {
+              "description": "Privacy and data protection"
+            },
+            {
+              "description": "Accessibility in mobile design"
+            },
+            {
+              "description": "Security and cybersecurity"
+            },
+            {
+              "description": "Social impacts of mobile technology"
+            },
+            {
+              "description": "Ethical use of AI and algorithms"
+            }
+          ]
+        },
+        {
+          "description": "Web",
+          "topics": [
+            {
+              "description": "Privacy concerns with mobile apps"
+            },
+            {
+              "description": "Designing for inclusivity and accessibility"
+            },
+            {
+              "description": "Ethical use of AI in mobile apps"
+            },
+            {
+              "description": "Sustainable app development and server hosting"
+            },
+            {
+              "description": "Avoiding spam or intrusive notifications"
+            },
+            {
+              "description": "Addressing cyberbullying and harassment"
+            },
+            {
+              "description": "Promoting positive online communities"
+            },
+            {
+              "description": "Monetization and advertising"
+            },
+            {
+              "description": "Ethical use of gamification"
+            }
+          ]
+        },
+        {
+          "description": "Game",
+          "topics": [
+            {
+              "description": "Intellectual Property Rights in Creative Industries",
+              "topics": [
+                {
+                  "description": "Intellectual Property Ownership: copyright, trademark; design right, patent, trade secret, civil versus criminal law; international agreements; procedural content generation and the implications of generative artificial intelligence"
+                },
+                {
+                  "description": "Licensing: Usage and fair usage exceptions; open-source license agreements; proprietary and bespoke licensing; enforcement"
+                }
+              ]
+            },
+            {
+              "description": "Fair Access to Play",
+              "topics": [
+                {
+                  "description": "Game Interface Usability: user requirements, affordances, ergonomic design, user research, experience measurement, and heuristic evaluation methods for games"
+                },
+                {
+                  "description": "Game Interface Accessibility: forms of impairment and disability; means to facilitate game access; universal design; legislated requirements for game platforms; compliance evaluation; challenging game mechanics and access"
+                }
+              ]
+            },
+            {
+              "description": "Game-Related Health and Safety",
+              "topics": [
+                {
+                  "description": "Injuries in Play: ways of mitigating common upper body injuries, such as repetitive strain injury; exercise psychology and physiotherapy in eSports"
+                },
+                {
+                  "description": "Risk Assessment for Events and Manufacturing: control of substances hazardous to health (COSHH); fire safety; electrical and electronics safety; risk assessment for games and game events; risk assessment for manufacturing"
+                },
+                {
+                  "description": "Mental Health: motivation to play; gamification and gameful design; game psychology – internet gaming disorder"
+                }
+              ]
+            },
+            {
+              "description": "Platform Hardware Supply Chain and Sustainability",
+              "topics": [
+                {
+                  "description": "Platform Lifecycle: platform composition – materials, assembly; mineral excavation and processing; power usage; recycling; planned obsolescence."
+                },
+                {
+                  "description": "Modern Slavery: supply chains; forced labor and civil rights; working conditions; detection and remission; certification bodies and charitable endeavors."
+                }
+              ]
+            },
+            {
+              "description": "Representation in the Media and Industry",
+              "topics": [
+                {
+                  "description": "Inclusion: identity and identification; inclusion of a broad range of characters for diverse audiences; media representation and its effects; media literacy; content analysis; stereotyping; sexualization"
+                },
+                {
+                  "description": "Equality: histories and controversies, such as gamergate, quality of life in the industry, professional discourse and conduct in business contexts, pathways to game development careers, social mobility, the experience of developers from different backgrounds and identities, gender, and technology"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Robotics",
+          "topics": [
+            {
+              "description": "Fairness, transparency, and accountability in robotic algorithms"
+            },
+            {
+              "description": "Mitigating biases in robot decision-making"
+            },
+            {
+              "description": "Public safety in shared spaces with robots"
+            },
+            {
+              "description": "Compliance with data protection laws"
+            },
+            {
+              "description": "Patient consent and trust in medical robots"
+            }
+          ]
+        },
+        {
+          "description": "Interactive",
+          "topics": [
+            {
+              "description": "Ethical guidelines when using AI models to assist in journalism and content creation"
+            },
+            {
+              "description": "Accountability for AI-generated outputs"
+            },
+            {
+              "description": "Behavior among prompt programmers and AI developers"
+            },
+            {
+              "description": "Trust with the public when using AI models"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Mobile",
+          "topics": [
+            {
+              "description": "Understand and uphold ethical responsibilities for safeguarding user privacy and data protection in mobile applications."
+            },
+            {
+              "description": "Design mobile applications with accessibility in mind, ensuring effective use by people with disabilities."
+            },
+            {
+              "description": "Demonstrate proficiency in secure coding practices to mitigate risks associated with various security threats in mobile development."
+            },
+            {
+              "description": "Analyze the broader social impacts of mobile technology, including its influence on communication patterns, relationships, and mental health."
+            },
+            {
+              "description": "Comprehend the ethical considerations of using AI in mobile applications, ensuring unbiased and fair algorithms."
+            }
+          ]
+        },
+        {
+          "description": "Web",
+          "topics": [
+            {
+              "description": "Understand how mobile computing impacts communications and the flow of information within society."
+            },
+            {
+              "description": "Design mobile apps that have made daily tasks easier/faster."
+            },
+            {
+              "description": "Recognize how the ubiquity of mobile computing has affected work-life balance."
+            },
+            {
+              "description": "Understand how mobile computing impacts health monitoring and healthcare services."
+            },
+            {
+              "description": "Define how mobile apps are used to educate about and help achieve UN sustainability goals."
+            }
+          ]
+        },
+        {
+          "description": "Game",
+          "topics": [
+            {
+              "description": "Discuss how creators can protect their intellectual property."
+            },
+            {
+              "description": "Identify common pitfalls in game interfaces that exclude players with impaired or non-functional vision."
+            },
+            {
+              "description": "Describe how heuristic evaluation can be used to identify usability problems in game interfaces."
+            },
+            {
+              "description": "Explain why upper body injuries are common in eSports."
+            },
+            {
+              "description": "Discuss how to reform characters and dialogues in a scene to reduce stereotype threat."
+            },
+            {
+              "description": "Illustrate how the portrayal of race in a game can influence the risk of social exclusion in the associated online community around the game."
+            },
+            {
+              "description": "Modify a policy for a LAN party event to include mitigations that lower the risk of fire."
+            },
+            {
+              "description": "Design a gamification strategy to motivate serious play for an awareness-raising game."
+            },
+            {
+              "description": "Analyze the role of company hiring policies and advocacy on social mobility."
+            },
+            {
+              "description": "Assess the appropriateness of two manufacturers for producing a new game console."
+            },
+            {
+              "description": "Compare options for open-source licensing of a game development tool."
+            },
+            {
+              "description": "Recommend changes to a specific game interface to improve access to players who are deaf or whose hearing is otherwise impaired."
+            },
+            {
+              "description": "Discuss whether games are addictive."
+            },
+            {
+              "description": "Suggest how the portrayal of women in video games influences how players perceive members of those groups."
+            },
+            {
+              "description": "Create a video game that successfully advocates for climate science."
+            }
+          ]
+        },
+        {
+          "description": "Robotics",
+          "topics": [
+            {
+              "description": "Identify instances of bias in robotic algorithms and propose strategies to mitigate them."
+            },
+            {
+              "description": "Evaluate and critique robotic systems for ethical and fairness considerations, suggesting improvements where necessary."
+            },
+            {
+              "description": "Analyze real-world examples of biases in robot decision-making and develop strategies to reduce bias in robotic systems."
+            },
+            {
+              "description": "Assess the potential risks associated with robots in public spaces and propose safety measures to mitigate those risks."
+            },
+            {
+              "description": "Evaluate the impact of patient consent and trust on the effectiveness of medical robot deployments in healthcare contexts."
+            }
+          ]
+        },
+        {
+          "description": "Interactive",
+          "topics": [
+            {
+              "description": "Indicate a framework for accountability in AI model deployment, including clear documentation and attribution."
+            },
+            {
+              "description": "Discuss ethical codes of conduct and professional standards relevant to prompt programming and AI development."
+            },
+            {
+              "description": "Create communication plans and materials to educate the public about AI capabilities, limitations, and ethical safeguards."
+            }
+          ]
+        }
+      ],
+      "hours-cs": "Included in SEP hours",
+      "hours-ka": ""
+    }
+  ]
+}

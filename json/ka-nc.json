@@ -1,0 +1,336 @@
+{
+  "name": "Networking and Communication",
+  "code": "NC",
+  "units": [
+    {
+      "name": "Fundamentals",
+      "code": "NC-Fundamentals",
+      "topics-cs": [
+        {
+          "description": "Importance of networking in contemporary computing, and associated challenges. (See also: SEP-Context, SEP-Privacy)"
+        },
+        {
+          "description": "Organization of the internet (e.g., users, Internet Service Providers, autonomous systems, content providers, content delivery networks)"
+        },
+        {
+          "description": "Switching techniques (e.g., circuit and packet)"
+        },
+        {
+          "description": "Layers and their roles (application, transport, network, datalink, and physical)"
+        },
+        {
+          "description": "Layering principles (e.g., encapsulation and hourglass model) (See also: SF-Foundations)"
+        },
+        {
+          "description": "Network elements (e.g., routers, switches, hubs, access points, and hosts)"
+        },
+        {
+          "description": "Basic queueing concepts (e.g., relationship with latency, congestion, service levels, etc.)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Articulate the organization of the internet."
+        },
+        {
+          "description": "List and define the appropriate network terminology."
+        },
+        {
+          "description": "Describe the layered structure of a typical networked architecture."
+        },
+        {
+          "description": "Identify the different types of complexity in a network (edges, core, etc.)."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "2.5 + 0.25 (SEP) + 0.25 (SF)",
+      "hours-ka": ""
+    },
+    {
+      "name": "Networked Applications",
+      "code": "NC-Applications",
+      "topics-cs": [
+        {
+          "description": "Naming and address schemes (e.g., DNS, and Uniform Resource Identifiers)"
+        },
+        {
+          "description": "Distributed application paradigms (e.g., client/server, peer-to-peer, cloud, edge, and fog) (See also: PDC-Communication, PDC-Coordination)"
+        },
+        {
+          "description": "Diversity of networked application demands (e.g., latency, bandwidth, and loss tolerance) (See also: PDC-Communication, SEP-Sustainability, SEP-Context)"
+        },
+        {
+          "description": "Coverage of application-layer protocols (e.g., HTTP)"
+        },
+        {
+          "description": "Interactions with TCP, UDP, and Socket APIs (See also: PDC-Programs)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Define the principles of naming, addressing, resource location."
+        },
+        {
+          "description": "Analyze the needs of specific networked application demands."
+        },
+        {
+          "description": "Describe the details of one application layer protocol."
+        },
+        {
+          "description": "Implement a simple client-server socket-based application."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "3.5 + 0.25 (SEP) + 0.25",
+      "hours-ka": "(PDC)"
+    },
+    {
+      "name": "Reliability Support",
+      "code": "NC-Reliability",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Unreliable delivery (e.g., UDP)"
+        },
+        {
+          "description": "Principles of reliability (e.g., delivery without loss, duplication, or out of order) (See also: SF-Reliability)"
+        },
+        {
+          "description": "Error control (e.g., retransmission, error correction)"
+        },
+        {
+          "description": "Flow control (e.g., stop and wait, window based)"
+        },
+        {
+          "description": "Congestion control (e.g., implicit and explicit congestion notification)"
+        },
+        {
+          "description": "TCP and performance issues (e.g., Tahoe, Reno, Vegas, Cubic)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe the operation of reliable delivery protocols."
+        },
+        {
+          "description": "List the factors that affect the performance of reliable delivery protocols."
+        },
+        {
+          "description": "Describe some TCP reliability design issues."
+        },
+        {
+          "description": "Design and implement a simple reliable protocol."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "5.7 5 + 0.25 (SF)"
+    },
+    {
+      "name": "Routing and Forwarding",
+      "code": "NC-Routing",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Routing paradigms and hierarchy (e.g., intra/inter domain, centralized and decentralized, source routing, virtual circuits, QoS)"
+        },
+        {
+          "description": "Forwarding methods (e.g., forwarding tables and matching algorithms)"
+        },
+        {
+          "description": "IP and Scalability issues (e.g., NAT, CIDR, BGP, different versions of IP)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe various routing paradigms and hierarchies."
+        },
+        {
+          "description": "Describe how packets are forwarded in an IP network."
+        },
+        {
+          "description": "Describe how the Internet tackles scalability challenges. ."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    },
+    {
+      "name": "Single Hop Communication",
+      "code": "NC-SingleHop",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Introduction to modulation, bandwidth, and communication media"
+        },
+        {
+          "description": "Encoding and Framing"
+        },
+        {
+          "description": "Medium Access Control (MAC) (e.g., random access and scheduled access)"
+        },
+        {
+          "description": "Ethernet and WiFi"
+        },
+        {
+          "description": "Switching (e.g., spanning trees, VLANS)."
+        },
+        {
+          "description": "Local Area Network Topologies (e.g., data center, campus networks)."
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe some basic aspects of modulation, bandwidth, and communication media."
+        },
+        {
+          "description": "Describe in detail a MAC protocol."
+        },
+        {
+          "description": "Demonstrate understanding of encoding and framing solution tradeoffs."
+        },
+        {
+          "description": "Describe details of the implementation of Ethernet."
+        },
+        {
+          "description": "Describe how switching works."
+        },
+        {
+          "description": "Describe one kind of a LAN topology."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Network Security",
+      "code": "NC-Security",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "General intro about security (Threats, vulnerabilities, and countermeasures) (See also: SEP-Security, SEC-Foundations, SEC-Engineering)"
+        },
+        {
+          "description": "Network specific threats and attack types (e.g., denial of service, spoofing, sniffing and traffic redirection, attacker-in-the-middle, message integrity attacks, routing attacks, ransomware, and traffic analysis) (See also: SEC-Foundations, SEC-Engineering)"
+        },
+        {
+          "description": "Countermeasures (: SEC-Foundations, SEC-Crypto, SEC-Engineering)",
+          "topics": [
+            {
+              "description": "Cryptography (e.g. SSL, TLS, symmetric/asymmetric)"
+            },
+            {
+              "description": "Architectures for secure networks (e.g., secure channels, secure routing protocols, secure DNS, VPNs, DMZ, Zero Trust Network Access, hyper network security, anonymous communication protocols, isolation)"
+            },
+            {
+              "description": "Network monitoring, intrusion detection, firewalls, spoofing and DoS protection, honeypots, tracebacks, BGP Sec, RPKI"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe some of the threat models of network security."
+        },
+        {
+          "description": "Describe specific network-based countermeasures."
+        },
+        {
+          "description": "Analyze various aspects of network security from a case study."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2.25 + 0. 5 (SEC) + 0.25 (SEP)"
+    },
+    {
+      "name": "Mobility",
+      "code": "NC-Mobility",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Principles of cellular communication (e.g., 4G, 5G)"
+        },
+        {
+          "description": "Principles of Wireless LANs (mainly 802.11)"
+        },
+        {
+          "description": "Device to device communication (e.g., IoT communication)"
+        },
+        {
+          "description": "Multi-hop wireless networks (e.g., ad hoc networks, opportunistic, delay tolerant)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe some aspects of cellular communication such as registration"
+        },
+        {
+          "description": "Describe how 802.11 supports mobile users"
+        },
+        {
+          "description": "Describe practical uses of device-to-device communication, as well as multihop"
+        },
+        {
+          "description": "Describe one type of mobile network such as ad hoc"
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    },
+    {
+      "name": "Emerging Topics",
+      "code": "NC-Emerging",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Middleboxes (e.g., advances in usage of AI, intent-based networking, filtering, deep packet inspection, load balancing, NAT, CDN)"
+        },
+        {
+          "description": "Network Virtualization (e.g., SDN, Data Center Networks)"
+        },
+        {
+          "description": "Quantum Networking (e.g., Intro to the domain, teleportation, security, Quantum Internet)"
+        },
+        {
+          "description": "Satellite, mmWave, Visible Light"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Describe the value of advances in middleboxes in networks."
+        },
+        {
+          "description": "Describe the importance of Software Defined Networks."
+        },
+        {
+          "description": "Describe some of the added value achieved by using Quantum Networking."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "4"
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+{
+  "name": "Architecture and Organization",
+  "code": "AR",
+  "units": [
+    {
+      "name": "Digital Logic and Digital Systems",
+      "code": "AR-Logic",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Combinational vs sequential logic/field programmable gate arrays (FPGAs) (See also: SF-",
+          "topics": [
+            {
+              "description": "Fundamental combinational"
+            },
+            {
+              "description": "Sequential logic building block"
+            }
+          ]
+        },
+        {
+          "description": "Computer-aided design tools that process hardware and architectural representations"
+        },
+        {
+          "description": "High-level synthesis",
+          "topics": [
+            {
+              "description": "Register transfer notation"
+            },
+            {
+              "description": "Hardware description language (e.g., Verilog/VHDL/Chisel)"
+            }
+          ]
+        },
+        {
+          "description": "System-on-chip (SoC) design flow"
+        },
+        {
+          "description": "Physical constraints",
+          "topics": [
+            {
+              "description": "Gate delays"
+            },
+            {
+              "description": "Fan-in and fan-out"
+            },
+            {
+              "description": "Energy/power"
+            },
+            {
+              "description": "Speed of light"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Discuss the progression of computer technology components from vacuum tubes to VLSI, from mainframe computer architectures to the organization of warehouse-scale computers."
+        },
+        {
+          "description": "Describe parallelism and data dependencies between and within components in a modern heterogeneous computer architecture."
+        },
+        {
+          "description": "Explain the relationship between parallelism and power consumption."
+        },
+        {
+          "description": "Construct the design of basic building blocks for a computer: arithmetic-logic unit (gate-level), registers (gate-level), central processing unit (register transfer-level), and memory (register transfer-level)."
+        },
+        {
+          "description": "Evaluate simple building blocks (e.g., arithmetic-logic unit, registers, movement between registers) of a simple computer design."
+        },
+        {
+          "description": "Analyze the timing behavior of a pipelined processor, identifying data dependency issues."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2 + 1 (SF)"
+    },
+    {
+      "name": "Machine-Level Data Representation",
+      "code": "AR-Representation",
+      "topics-cs": [
+        {
+          "description": "Overview and history of computer architecture (See also: SPD-Game)"
+        },
+        {
+          "description": "Bits, bytes, and words"
+        },
+        {
+          "description": "Unsigned, signed and two’s complement representations"
+        },
+        {
+          "description": "Numeric data representation and number bases",
+          "topics": [
+            {
+              "description": "Fixed-point"
+            },
+            {
+              "description": "Floating-point"
+            }
+          ]
+        },
+        {
+          "description": "Representation of non-numeric data"
+        },
+        {
+          "description": "Representation of records, arrays and UTF data types (See also: AL-Foundational)"
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Discuss why everything in computers are data, including instructions."
+        },
+        {
+          "description": "Explain how fixed-length number representations can affect accuracy and precision."
+        },
+        {
+          "description": "Describe how negative integers are stored in sign-magnitude and two’s-complement representations."
+        },
+        {
+          "description": "Discuss how different formats can represent numerical data."
+        },
+        {
+          "description": "Explain the bit-level representation of non-numeric data, such as characters, strings, records, and arrays."
+        },
+        {
+          "description": "Translate numerical data from one format to another."
+        },
+        {
+          "description": "Describe how a single adder (without overflow detection) can handle both signed (two’s complement) and unsigned (binary) input without “knowing” which format a given input is using."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": ""
+    },
+    {
+      "name": "Assembly Level Machine Organization",
+      "code": "AR-Assembly",
+      "topics-cs": [
+        {
+          "description": "von Neumann machine architecture"
+        },
+        {
+          "description": "Control unit: instruction fetch, decode, and execution (See also: OS-Principles)"
+        },
+        {
+          "description": "Introduction to SIMD vs MIMD and the Flynn taxonomy (See also: PDC-Programs, OS-Scheduling, OS-Process)"
+        },
+        {
+          "description": "Shared memory multiprocessors/multicore organization (See also: PDC-Programs, OS-Scheduling)"
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Instruction set architecture (ISA) (e.g., x86, ARM and RISC-V)",
+          "topics": [
+            {
+              "description": "Fixed vs variable-width instruction sets"
+            },
+            {
+              "description": "Instruction formats"
+            },
+            {
+              "description": "Data manipulation, control, I/O"
+            },
+            {
+              "description": "Addressing modes"
+            },
+            {
+              "description": "Machine language programming"
+            },
+            {
+              "description": "Assembly language programming"
+            }
+          ]
+        },
+        {
+          "description": "Subroutine call and return mechanisms (See also: FPL-Translation, OS-Principles)"
+        },
+        {
+          "description": "I/O and interrupts (See also: OS-Principles)"
+        },
+        {
+          "description": "Heap, static, stack, and code segments (See also: FPL-Translation, OS-Process)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Discuss how the classical von Neumann functional units are implemented in embedded systems, particularly on-chip and off-chip memory."
+        },
+        {
+          "description": "Describe how instructions are executed in a classical von Neumann machine, with extensions for threads, multiprocessor synchronization, and SIMD execution."
+        },
+        {
+          "description": "Assess an example diagram with instruction-level parallelism and hazards to describe how they are managed in typical processor pipelines."
+        }
+      ],
+      "outcomes-ka": [
+        {
+          "description": "Discuss how instructions are represented at the machine level and in the context of a symbolic assembler."
+        },
+        {
+          "description": "Map an example of high-level language patterns into assembly/machine language notations."
+        },
+        {
+          "description": "Contrast different instruction formats considering aspects such as addresses per instruction and variable-length vs fixed-length formats."
+        },
+        {
+          "description": "Analyze a subroutine diagram to comment on how subroutine calls are handled at the assembly level."
+        },
+        {
+          "description": "Describe basic concepts of interrupts and I/O operations."
+        },
+        {
+          "description": "Write a simple assembly language program for string/array processing and manipulation."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": "1 + 1 (PDC)"
+    },
+    {
+      "name": "Memory Hierarchy",
+      "code": "AR-Memory",
+      "topics-cs": [
+        {
+          "description": "Memory hierarchy: the importance of temporal and spatial locality (See also: SF-Performance, OS-Memory)"
+        },
+        {
+          "description": "Main memory organization and operations (See also: OS-Memory)"
+        },
+        {
+          "description": "Persistent memory (e.g., SSD, standard disks)"
+        },
+        {
+          "description": "Latency, cycle time, bandwidth, and interleaving (See also: SF-Performance)"
+        },
+        {
+          "description": "Cache memories (See also: SF-Performance)",
+          "topics": [
+            {
+              "description": "Address mapping"
+            },
+            {
+              "description": "Block size",
+              "topics": [
+                {
+                  "description": "Replacement and store policy"
+                },
+                {
+                  "description": "Prefetching"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Multiprocessor cache coherence (See also: OS-Scheduling)"
+        },
+        {
+          "description": "Virtual memory (hardware support) (See also: OS-Memory)"
+        },
+        {
+          "description": "Fault handling and reliability (See also: SF-Reliability)"
+        },
+        {
+          "description": "Reliability (See also: SF-Reliability, OS-Faults)",
+          "topics": [
+            {
+              "description": "Error coding"
+            },
+            {
+              "description": "Data compression"
+            },
+            {
+              "description": "Data integrity"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [
+        {
+          "description": "Processing In-Memory (PIM)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Using a memory system diagram, identify the main types of memory technology (e.g., SRAM, DRAM) and their relative cost and performance."
+        },
+        {
+          "description": "Measure the effect of memory latency on running time."
+        },
+        {
+          "description": "Enumerate the functions of a system with virtual memory management."
+        },
+        {
+          "description": "Compute average memory access time under various cache and memory configurations and mixes of instruction and data references."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "4+2 (OS)",
+      "hours-ka": ""
+    },
+    {
+      "name": "Interfacing and Communication",
+      "code": "AR-IO",
+      "topics-cs": [
+        {
+          "description": "I/O fundamentals (See also: OS-Devices, PDC-Communication)",
+          "topics": [
+            {
+              "description": "Handshaking and buffering"
+            },
+            {
+              "description": "Programmed I/O"
+            },
+            {
+              "description": "Interrupt-driven I/O (See also: OS-Principles)"
+            }
+          ]
+        },
+        {
+          "description": "Interrupt structures: vectored and prioritized, interrupt acknowledgment (See also: OS-Principles)"
+        },
+        {
+          "description": "I/O devices (e.g., mouse, keyboard, display, camera, sensors, actuators) (See also: GIT-Fundamentals, GIT-Interaction, OS-Advanced-Files, PDC-Programs)"
+        },
+        {
+          "description": "External storage, physical organization, and drives"
+        },
+        {
+          "description": "Buses fundamentals (See also: OS-Devices)",
+          "topics": [
+            {
+              "description": "Bus protocols"
+            },
+            {
+              "description": "Arbitration"
+            },
+            {
+              "description": "Direct-memory access (DMA)"
+            }
+          ]
+        }
+      ],
+      "topics-ka": [],
+      "topics-non": [],
+      "outcomes-cs": [
+        {
+          "description": "Analyze an interrupt control diagram to comment on how interrupts are used to implement I/O control and data transfers."
+        },
+        {
+          "description": "Enumerate various types of buses in a computer system."
+        },
+        {
+          "description": "List the advantages of magnetic disks and contrast them with those of solid-state disks."
+        }
+      ],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "1",
+      "hours-ka": ""
+    },
+    {
+      "name": "Functional Organization",
+      "code": "AR-Organization",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Implementation of simple datapaths, including instruction pipelining, hazard detection, and resolution (e.g., stalls, forwarding)"
+        },
+        {
+          "description": "Control unit",
+          "topics": [
+            {
+              "description": "Hardwired implementation"
+            },
+            {
+              "description": "Microprogrammed realization"
+            }
+          ]
+        },
+        {
+          "description": "Instruction pipelining (See also: SF-Overview)"
+        },
+        {
+          "description": "Introduction to instruction-level parallelism (ILP) (See also: PDC-Programs)"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Compare alternative implementation of datapaths in modern computer architectures."
+        },
+        {
+          "description": "Produce a set of control signals for adding two integers using hardwired and microprogrammed implementations."
+        },
+        {
+          "description": "Discuss instruction-level parallelism using pipelining and significant hazards that may occur."
+        },
+        {
+          "description": "Design a complete processor, including datapath and control."
+        },
+        {
+          "description": "Compute the average cycles per instruction for a given processor and memory system implementation."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Performance and Energy Efficiency",
+      "code": "AR-Performance-Energy",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Performance-energy evaluation (introduction): performance, power consumption, memory, and communication costs (See also: SF-Evaluation, OS-Scheduling, SPD-Game)"
+        },
+        {
+          "description": "Branch prediction, speculative execution, out-of-order execution, Tomasulo's algorithm"
+        },
+        {
+          "description": "Enhancements for vector processors and GPUs (See also: SPD-Game)"
+        },
+        {
+          "description": "Hardware support for multithreading (See also: OS-Concurrency, OS-Scheduling, PDC-Programs)",
+          "topics": [
+            {
+              "description": "Race conditions"
+            },
+            {
+              "description": "Lock implementations"
+            },
+            {
+              "description": "Point-to-point synchronization"
+            },
+            {
+              "description": "Barrier implementation"
+            }
+          ]
+        },
+        {
+          "description": "Scalability"
+        },
+        {
+          "description": "Alternative architectures including VLIW/EPIC, accelerators, and other special purpose processors"
+        },
+        {
+          "description": "Dynamic voltage and frequency scaling (DVFS)"
+        },
+        {
+          "description": "Dark Silicon"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Discuss performance and energy efficiency evaluation metrics."
+        },
+        {
+          "description": "Analyze a speculative execution diagram and write about the decisions that can be made."
+        },
+        {
+          "description": "Create a GPU performance-watt benchmarking diagram."
+        },
+        {
+          "description": "Write a multithreaded program that adds (in parallel) elements of two integer vectors."
+        },
+        {
+          "description": "Recommend a set of design choices for alternative computer architectures."
+        },
+        {
+          "description": "Enumerate key concepts associated with dynamic voltage and frequency scaling."
+        },
+        {
+          "description": "Measure energy savings improvement for an 8-bit integer quantization compared to a 32-bit quantization."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "3"
+    },
+    {
+      "name": "Heterogeneous Architectures",
+      "code": "AR-Heterogeneity",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "SIMD and MIMD architectures (e.g., General-Purpose GPUs, TPUs, and NPUs) (See also: PDC-Programs, SPD-Embedded, GIT-Shading, SPD-Game)"
+        },
+        {
+          "description": "Heterogeneous memory systems (See also: OS-Process, PDC-Communication)",
+          "topics": [
+            {
+              "description": "Shared memory versus distributed memory"
+            },
+            {
+              "description": "Volatile vs non-volatile memory"
+            },
+            {
+              "description": "Coherence protocols"
+            }
+          ]
+        },
+        {
+          "description": "Domain-Specific Architectures (DSAs) (See also: HCI-Accountability, GIT-Shading)",
+          "topics": [
+            {
+              "description": "Machine Learning Accelerator"
+            },
+            {
+              "description": "In-networking computing (See also: NC-Applications)"
+            },
+            {
+              "description": "Embedded systems for emerging applications"
+            },
+            {
+              "description": "Neuromorphic computing"
+            },
+            {
+              "description": "Edge computing devices"
+            }
+          ]
+        },
+        {
+          "description": "Packaging and integration solutions such as 3DIC and chiplets"
+        },
+        {
+          "description": "Machine learning in architecture design",
+          "topics": [
+            {
+              "description": "AI algorithms for workload analysis"
+            },
+            {
+              "description": "Optimization of architecture configurations for performance and power efficiency"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Secure Processor Architectures",
+      "code": "AR-Security",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Principles of Secure Hardware",
+          "topics": [
+            {
+              "description": "Security Risk Analysis, Asset Protection, and Threat Model"
+            },
+            {
+              "description": "Cryptographic Acceleration with Hardware (See also: SEC-Crypto)",
+              "topics": [
+                {
+                  "description": "Support for virtualization (e.g., OS isolation)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Roots of trust in hardware, Physically Unclonable Functions (PUF)"
+        },
+        {
+          "description": "Hardware Random Number Generators"
+        },
+        {
+          "description": "Memory protection extensions",
+          "topics": [
+            {
+              "description": "Runtime pointer bounds checking (e.g., buffer overflow)"
+            },
+            {
+              "description": "Protection at the microarchitectural level"
+            },
+            {
+              "description": "Protection at the ISA level"
+            }
+          ]
+        },
+        {
+          "description": "Trusted Execution Environment (TEE)",
+          "topics": [
+            {
+              "description": "Trusted Computer Base Protections"
+            },
+            {
+              "description": "Protecting virtual machines"
+            },
+            {
+              "description": "Protecting containers"
+            },
+            {
+              "description": "Trusted software modules (Enclaves)"
+            }
+          ]
+        },
+        {
+          "description": "Homomorphic encryption for privacy-preserving data processing"
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Discuss principles of secure hardware, exploring a framework for risk analysis and asset protection."
+        },
+        {
+          "description": "Summarize how Physically Unclonable Functions (PUF) can be a unique device identifier in security applications."
+        },
+        {
+          "description": "Distinguish a random number generator with dedicated hardware support from generators without hardware dedicated to generating entropy."
+        },
+        {
+          "description": "List the advantages and disadvantages of memory protection at the ISA level."
+        },
+        {
+          "description": "Describe key design issues of a trusted execution environment (TEE) to support virtual machines."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Quantum Architectures",
+      "code": "AR-Quantum",
+      "topics-cs": [],
+      "topics-ka": [
+        {
+          "description": "Principles (See also: AL-Models: 8)",
+          "topics": [
+            {
+              "description": "The wave-particle duality principle"
+            },
+            {
+              "description": "The uncertainty principle in the double-slit experiment"
+            },
+            {
+              "description": "What is a Qubit? Superposition, interference, and measurement. Photons as qubits"
+            },
+            {
+              "description": "Systems of two qubits, Entanglement, Bell states, The No-Signaling theorem"
+            }
+          ]
+        },
+        {
+          "description": "Axioms of QM: superposition principle, measurement axiom, unitary evolution"
+        },
+        {
+          "description": "Single qubit gates for the circuit model of quantum computation: X, Z, H"
+        },
+        {
+          "description": "Two qubit gates and tensor products, working with matrices"
+        },
+        {
+          "description": "The No-Cloning Theorem. The Quantum Teleportation protocol"
+        },
+        {
+          "description": "Algorithms (See also: AL-Foundational)",
+          "topics": [
+            {
+              "description": "Simple quantum algorithms: Bernstein-Vazirani, Simon’s algorithm"
+            },
+            {
+              "description": "Implementing Deutsch-Josza with Mach-Zehnder Interferometers"
+            },
+            {
+              "description": "Quantum factoring (Shor’s Algorithm)"
+            },
+            {
+              "description": "Quantum search (Grover’s Algorithm)"
+            }
+          ]
+        },
+        {
+          "description": "Implementation aspects (See also: SPD-Interactive)",
+          "topics": [
+            {
+              "description": "The physical implementation of qubits"
+            },
+            {
+              "description": "Classical control of a Quantum Processing Unit (QPU)"
+            },
+            {
+              "description": "Error mitigation and control, NISQ and beyond"
+            },
+            {
+              "description": "Measurement approaches"
+            }
+          ]
+        },
+        {
+          "description": "Emerging Applications",
+          "topics": [
+            {
+              "description": "Post-quantum encryption"
+            },
+            {
+              "description": "The Quantum Internet"
+            },
+            {
+              "description": "Adiabatic quantum computation (AQC) and quantum annealing"
+            }
+          ]
+        }
+      ],
+      "topics-non": [],
+      "outcomes-cs": [],
+      "outcomes-ka": [
+        {
+          "description": "Discuss how a quantum object produced as a particle propagates like a wave and is detected as a particle with a probability distribution corresponding to the wave."
+        },
+        {
+          "description": "Discuss the quantum-level nature that is inherently probabilistic."
+        },
+        {
+          "description": "Express your view on entanglement that can be used to create non-classical correlations, but there is no way to use quantum entanglement to send messages faster than the speed of light."
+        },
+        {
+          "description": "Describe quantum parallelism and the role of constructive vs destructive interference in quantum algorithms given the probabilistic nature of measurement(s)."
+        },
+        {
+          "description": "Analyze a code snippet providing the role of quantum Fourier transform (QFT) in Shor’s algorithm."
+        },
+        {
+          "description": "Write a program to implement Shor’s algorithm in a simulator, highlighting the classical components and aspects of Shor’s algorithm."
+        },
+        {
+          "description": "Enumerate the specifics of each qubit modality (e.g., trapped ion, superconducting, silicon spin, photonic, quantum dot, neutral atom, topological, color center, electron-on-helium)."
+        },
+        {
+          "description": "Contrast AQC with the gate model of quantum computation and the problems each is better suited to solve."
+        }
+      ],
+      "outcomes-non": [],
+      "hours-cs": "",
+      "hours-ka": "2"
+    },
+    {
+      "name": "Sustainability Issues",
+      "code": "AR-SEP",
+      "topics-cs": [],
+      "topics-ka": [],
+      "topics-non": [
+        {
+          "description": "Environmental impacts of implementation decisions",
+          "topics": [
+            {
+              "description": "Sustainability goals, resource consumption, and economic viability"
+            },
+            {
+              "description": "Carbon footprint, hardware electronic waste"
+            },
+            {
+              "description": "The energy footprint of data centers at various workloads (e.g., AI model training and use)"
+            },
+            {
+              "description": "Guidelines for sustainable design standards"
+            }
+          ]
+        }
+      ],
+      "outcomes-cs": [],
+      "outcomes-ka": [],
+      "outcomes-non": [
+        {
+          "description": "Assess the environmental impacts of a given project’s deployment (e.g., the energy consumption of CPUs and GPUs, contribution to e-waste, and effect of hardware virtualization in data centers)."
+        }
+      ],
+      "hours-cs": "",
+      "hours-ka": "Included in SEP hours"
+    }
+  ]
+}
