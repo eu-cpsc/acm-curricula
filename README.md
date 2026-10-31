@@ -24,7 +24,7 @@ npm run build    # static site in dist/ (works from any path, e.g. GitHub Pages)
   - *Track*: students pick one track. Each track has its own required courses and options.
 
   The plan page shows minimum credits and a coverage analysis. Each topic is marked *guaranteed*, *some tracks*, *elective only* or *not covered*, and you can view this for any student or for a student in one track. A gap list shows the CS Core topics the plan doesn't guarantee.
-- **Data**: saved automatically in the browser's localStorage. You can export or import `curriculum.json` to back it up, share it, or commit it, and export a topic × course CSV.
+- **Data**: the shared curriculum lives in `data/curriculum.json`, and every visitor starts from it. Edits made in the app are saved in that browser only (the header shows "Unpublished edits"). To publish them, download `curriculum.json` from the Data page, replace `data/curriculum.json` with it, and push to `main`. You can also export a topic × course CSV.
 
 ## Data model
 
@@ -40,5 +40,5 @@ within its unit.
 `main` (or manually from the Actions tab). One-time setup: **Settings → Pages →
 Build and deployment → Source: GitHub Actions**.
 
-The deployed site contains only the app and the CS2023 topic text. Course and
-plan data stays in each visitor's browser unless someone commits it.
+The deployed site is public. It includes `data/curriculum.json`, so anyone
+with the URL can see the committed courses and plans.

@@ -247,3 +247,7 @@ details.outcomes ul { margin: 4px 0 8px; padding-left: 20px; font-size: 12.5px; 
   .course-head .title { font-size: 19px; min-width: 100%; order: 3; }
   .course-head .link.danger { order: 5; }
 }
+
+.topbar .unpublished { margin-left: auto; font-size: 12px; color: #fde68a; border: 1px solid #a16207; border-radius: 10px; padding: 1px 8px; white-space: nowrap; }
+.card.warn { border-color: #f59e0b; background: #fffbeb; }
+code { font-size: 12px; background: #eef1f5; padding: 0 3px; border-radius: 3px; }

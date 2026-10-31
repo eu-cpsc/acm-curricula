@@ -1,5 +1,5 @@
 import { NavLink, Route, Routes } from 'react-router-dom'
-import { useData } from './store'
+import { hasLocalChanges, useData } from './store'
 import Dashboard from './pages/Dashboard'
 import BodyOfKnowledge from './pages/BodyOfKnowledge'
 import Courses from './pages/Courses'
@@ -26,6 +26,11 @@ export default function App() {
           <NavLink to="/plans">Degree Plans</NavLink>
           <NavLink to="/data">Data</NavLink>
         </nav>
+        {hasLocalChanges() && (
+          <NavLink to="/data" className="unpublished" title="Edits are saved in this browser only">
+            Unpublished edits
+          </NavLink>
+        )}
       </header>
       <main>
         <Routes>

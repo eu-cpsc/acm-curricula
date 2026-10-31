@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { KAS, TIER_LABEL } from '../bok'
 import { coverageIndex } from '../coverage'
-import { compareCourses, courseLabel, EMPTY_DATA, normalize, setData, update, useData } from '../store'
+import { compareCourses, courseLabel, EMPTY_DATA, hasLocalChanges, normalize, resetToPublished, setData, update, useData } from '../store'
 import { EditableText } from '../components/common'
 import { loadSample } from '../sample'
 
@@ -60,9 +60,27 @@ export default function DataPage() {
   return (
     <div className="page">
       <h1>Data</h1>
-      <p className="muted">
-        Your data is saved in this browser automatically. Export it to back it up, share it, or commit it to the repository.
-      </p>
+      <div className={`card ${hasLocalChanges() ? 'warn' : ''}`}>
+        <h3>Published curriculum</h3>
+        <p className="small">
+          Everyone sees the curriculum committed to the repository at <code>data/curriculum.json</code>. Edits you make here
+          are saved only in this browser. To publish them, download <code>curriculum.json</code> below and commit it to{' '}
+          <code>data/</code>.
+        </p>
+        {hasLocalChanges() ? (
+          <div className="toolbar">
+            <b className="small">This browser has edits that are not published.</b>
+            <button
+              className="danger"
+              onClick={() => confirm('Discard your local edits and load the published curriculum?') && resetToPublished()}
+            >
+              Discard local edits
+            </button>
+          </div>
+        ) : (
+          <p className="small muted">You are viewing the published curriculum.</p>
+        )}
+      </div>
       <div className="card">
         <h3>Institution</h3>
         <EditableText value={data.institution} placeholder="Institution name" onSave={(v) => update((d) => ({ ...d, institution: v }))} />

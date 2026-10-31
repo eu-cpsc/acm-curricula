@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react'
+import publishedJson from '../data/curriculum.json'
 
 // ---------------------------------------------------------------- data model
 
@@ -56,15 +57,26 @@ export const EMPTY_DATA: AppData = { version: 1, institution: '', courses: [], p
 // --------------------------------------------------------------- the store
 
 const STORAGE_KEY = 'acm-curriculum-planner:data'
+/** Set once the user edits; until then the browser follows data/curriculum.json. */
+const DIRTY_KEY = 'acm-curriculum-planner:dirty'
+
+/** The curriculum committed to the repo at data/curriculum.json. */
+export function publishedData(): AppData {
+  return normalize(publishedJson)
+}
+
+export function hasLocalChanges(): boolean {
+  return localStorage.getItem(DIRTY_KEY) === '1'
+}
 
 function load(): AppData {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) return normalize(JSON.parse(raw))
+    if (raw && hasLocalChanges()) return normalize(JSON.parse(raw))
   } catch (e) {
     console.error('Failed to load saved data', e)
   }
-  return EMPTY_DATA
+  return publishedData()
 }
 
 /** Coerce possibly-partial imported JSON into a valid AppData. */
@@ -118,9 +130,18 @@ export function setData(next: AppData) {
   state = next
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+    localStorage.setItem(DIRTY_KEY, '1')
   } catch (e) {
     console.error('Failed to save data', e)
   }
+  listeners.forEach((l) => l())
+}
+
+/** Discard local edits and follow data/curriculum.json again. */
+export function resetToPublished() {
+  localStorage.removeItem(STORAGE_KEY)
+  localStorage.removeItem(DIRTY_KEY)
+  state = publishedData()
   listeners.forEach((l) => l())
 }
 
