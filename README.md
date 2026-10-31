@@ -33,3 +33,12 @@ example `OS-Memory:cs:3` (the 3rd CS Core topic in OS-Memory). These IDs are
 built from the JSON when the app runs. If you re-generate or edit the JSON,
 existing assignments only stay correct as long as each topic keeps its position
 within its unit.
+
+## Deploying to GitHub Pages
+
+`.github/workflows/pages.yml` builds the site and deploys it on every push to
+`main` (or manually from the Actions tab). One-time setup: **Settings → Pages →
+Build and deployment → Source: GitHub Actions**.
+
+The deployed site contains only the app and the CS2023 topic text. Course and
+plan data stays in each visitor's browser unless someone commits it.

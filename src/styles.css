@@ -186,7 +186,7 @@ details.outcomes { background: var(--panel); border: 1px solid var(--border); bo
 details.outcomes summary { cursor: pointer; }
 details.outcomes ul { margin: 4px 0 8px; padding-left: 20px; font-size: 12.5px; }
 
-.groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); gap: 10px; margin-bottom: 10px; }
 .group { background: var(--panel); border: 1px solid var(--border); border-left-width: 4px; border-radius: 8px; padding: 8px 12px; }
 .group-core { border-left-color: var(--guaranteed); }
 .group-elective { border-left-color: var(--elective); }
@@ -199,3 +199,51 @@ details.outcomes ul { margin: 4px 0 8px; padding-left: 20px; font-size: 12.5px; 
 .course-list { margin-top: 6px; }
 .choose { margin-top: 8px; }
 .add-select { font-size: 11px; padding: 0 4px !important; color: var(--muted); }
+
+/* ------------------------------------------------------------- mobile */
+@media (max-width: 760px) {
+  :root { font-size: 14px; }
+  .topbar { position: static; flex-wrap: wrap; height: auto; gap: 4px 12px; padding: 8px 10px; }
+  .topbar nav { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .topbar nav a { white-space: nowrap; padding: 6px 8px; }
+  main { padding: 10px; }
+  h1 { font-size: 19px; }
+  .page-head { flex-wrap: wrap; }
+
+  .toolbar > * { flex: 1 1 40%; max-width: 100%; }
+  .toolbar .seg-toggle { flex-basis: 100%; }
+  .toolbar .search { width: 100%; }
+  .toolbar select { min-width: 0; }
+  .seg-toggle label { padding: 6px 8px; }
+  .legend { flex-wrap: wrap; }
+
+  /* tables scroll sideways instead of squashing */
+  table.grid { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.grid td, table.grid th { white-space: nowrap; }
+
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .card { min-width: 100%; }
+
+  /* tree: let rows wrap; chips drop under the text */
+  .ka-row { top: 0; flex-wrap: wrap; }
+  .bok .row { flex-wrap: wrap; padding: 4px 8px; min-height: 32px; }
+  .bok .cb { width: 18px; height: 18px; }
+  .unit-row .code { min-width: 0; }
+  .unit-row .name { flex: 1 1 60%; }
+  .unit-row .spacer, .ka-row .spacer { display: none; }
+  .unit-row .chips { flex: 1 1 auto; padding-left: 18px; }
+  .unit-row .hours { order: 5; }
+  .topic-row { padding-left: 16px !important; }
+  .topic-row .text { white-space: normal; flex: 1 1 70%; }
+  .topic-row .chips { max-width: 100%; flex: 0 1 auto; margin-left: auto; }
+  .topic-row .chips:empty { display: none; }
+  .subtopics { padding-left: 40px; }
+  .chip { line-height: 22px; font-size: 12px; }
+
+  .matrix-wrap { max-height: 75vh; }
+  table.matrix .sticky-col { max-width: 140px; }
+
+  .course-head .dept, .course-head .number { font-size: 19px; width: 72px; }
+  .course-head .title { font-size: 19px; min-width: 100%; order: 3; }
+  .course-head .link.danger { order: 5; }
+}
