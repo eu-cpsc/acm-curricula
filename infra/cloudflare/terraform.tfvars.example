@@ -1,7 +1,0 @@
-account_id            = "your-cloudflare-account-id"
-allowed_email_domains = ["evangel.edu"]
-allowed_emails        = []
-
-# Optional custom domain (zone must be on Cloudflare):
-# custom_domain = "curriculum.example.edu"
-# zone_id       = "your-zone-id"
