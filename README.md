@@ -10,7 +10,13 @@ A browser app for mapping courses and degree plans onto the ACM/IEEE-CS/AAAI
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # static site in dist/ (works from any path, e.g. GitHub Pages)
+npm test         # unit + page smoke tests (Vitest); `npm run test:watch` while developing
 ```
+
+Tests run in CI on every push and pull request, and the Pages deploy only
+publishes if they pass. They cover the CS2023 data and topic IDs, opening and
+upgrading files, the coverage and credit calculations, the saved working copy,
+and a render of every page with the sample program.
 
 ## How it works
 
