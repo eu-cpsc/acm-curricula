@@ -1,21 +1,36 @@
 import { NavLink, Route, Routes } from 'react-router-dom'
-import { hasLocalChanges, useData } from './store'
+import { useAppState } from './store'
+import { FileStatus } from './components/FileStatus'
+import Welcome from './pages/Welcome'
 import Dashboard from './pages/Dashboard'
 import BodyOfKnowledge from './pages/BodyOfKnowledge'
 import Courses from './pages/Courses'
 import CourseDetail from './pages/CourseDetail'
 import Plans from './pages/Plans'
 import PlanDetail from './pages/PlanDetail'
-import DataPage from './pages/DataPage'
+import Compare from './pages/Compare'
+import ProgramPage from './pages/ProgramPage'
 
 export default function App() {
-  const data = useData()
+  const { program } = useAppState()
+  if (!program) {
+    return (
+      <div className="app">
+        <header className="topbar">
+          <span className="brand">ACM Curriculum Planner</span>
+        </header>
+        <main>
+          <Welcome />
+        </main>
+      </div>
+    )
+  }
   return (
     <div className="app">
       <header className="topbar">
-        <NavLink to="/" className="brand">
-          Curriculum Planner
-          {data.institution && <span className="muted"> · {data.institution}</span>}
+        <NavLink to="/" className="brand" title="Overview">
+          {program.name || 'Program'}
+          {program.institution && <span className="muted"> · {program.institution}</span>}
         </NavLink>
         <nav>
           <NavLink to="/" end>
@@ -24,13 +39,10 @@ export default function App() {
           <NavLink to="/knowledge">Knowledge Areas</NavLink>
           <NavLink to="/courses">Courses</NavLink>
           <NavLink to="/plans">Degree Plans</NavLink>
-          <NavLink to="/data">Data</NavLink>
+          <NavLink to="/compare">Compare</NavLink>
+          <NavLink to="/program">Program</NavLink>
         </nav>
-        {hasLocalChanges() && (
-          <NavLink to="/data" className="unpublished" title="Edits are saved in this browser only">
-            Unpublished edits
-          </NavLink>
-        )}
+        <FileStatus />
       </header>
       <main>
         <Routes>
@@ -40,7 +52,8 @@ export default function App() {
           <Route path="/courses/:id" element={<CourseDetail />} />
           <Route path="/plans" element={<Plans />} />
           <Route path="/plans/:id" element={<PlanDetail />} />
-          <Route path="/data" element={<DataPage />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/program" element={<ProgramPage />} />
           <Route path="*" element={<p>Page not found.</p>} />
         </Routes>
       </main>

@@ -3,7 +3,6 @@ import { KAS, TOPICS, TIERS, TIER_LABEL } from '../bok'
 import { countCovered, coverageIndex, pct } from '../coverage'
 import { compareCourses, useData } from '../store'
 import { CourseChip, CoverageCell } from '../components/common'
-import { loadSample } from '../sample'
 
 export default function Dashboard() {
   const data = useData()
@@ -15,11 +14,9 @@ export default function Dashboard() {
       <h1>Overview</h1>
       {data.courses.length === 0 && (
         <div className="callout">
-          No courses yet. <Link to="/courses">Add your courses</Link>, then assign CS2023 topics to each one — or{' '}
-          <button className="link" onClick={loadSample}>
-            load sample data
-          </button>{' '}
-          to explore.
+          No courses yet. Start by <Link to="/courses">adding your courses</Link>, then tick the CS2023 topics each one covers. Then
+          build <Link to="/plans">degree plans</Link> from them and <Link to="/compare">compare</Link> how well each plan covers the
+          guidelines.
         </div>
       )}
       <div className="stats">

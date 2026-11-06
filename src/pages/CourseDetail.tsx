@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { KAS, TIERS, TIER_LABEL, TOPIC_BY_ID, UNITS } from '../bok'
 import { countCovered } from '../coverage'
-import { courseLabel, deleteCourse, GROUP_KIND_LABEL, updateCourse, useData } from '../store'
+import { courseLabel, deleteCourse, updateCourse, useData } from '../store'
 import { BokFilters, BokTree, useBokFilters } from '../components/BokTree'
 import { CourseChip, CoverageCell, EditableText, TierBadge } from '../components/common'
 
@@ -36,11 +36,11 @@ export default function CourseDetail() {
     .filter((x) => x.n > 0)
     .sort((a, b) => b.n - a.n)
 
-  const memberships = data.plans.flatMap((p) =>
-    p.groups
-      .filter((g) => g.required.includes(course.id) || g.options.includes(course.id))
-      .map((g) => ({ p, g, role: g.required.includes(course.id) ? 'required' : `option (choose ${g.choose})` })),
-  )
+  const memberships = data.plans.flatMap((p) => {
+    if (p.required.includes(course.id)) return [{ p, role: 'required' }]
+    const g = p.electives.find((g) => g.options.includes(course.id))
+    return g ? [{ p, role: `elective (${g.name}: choose ${g.choose} of ${g.options.length})` }] : []
+  })
 
   const tierTotals = TIERS.map((t) => ({ t, n: course.coverage.filter((id) => TOPIC_BY_ID.get(id)?.tier === t).length }))
 
@@ -100,9 +100,9 @@ export default function CourseDetail() {
         <div className="card">
           <h3>Degree plans</h3>
           {memberships.length === 0 && <p className="muted small">Not part of any plan.</p>}
-          {memberships.map(({ p, g, role }) => (
-            <div key={p.id + g.id} className="small">
-              <Link to={`/plans/${p.id}`}>{p.name}</Link> — {GROUP_KIND_LABEL[g.kind]} “{g.name}”, {role}
+          {memberships.map(({ p, role }) => (
+            <div key={p.id} className="small">
+              <Link to={`/plans/${p.id}`}>{p.name}</Link> — {role}
             </div>
           ))}
         </div>

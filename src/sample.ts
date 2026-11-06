@@ -1,5 +1,5 @@
 import { UNITS, type Tier } from './bok'
-import { newId, setData, type AppData, type Course } from './store'
+import { newId, type Course, type Program } from './store'
 
 /** Topic IDs for units whose code starts with any prefix (e.g. "OS-" or "SDF-Fundamentals"). */
 function cov(prefixes: string[], tiers: Tier[] = ['cs', 'ka']): string[] {
@@ -14,7 +14,7 @@ function c(dept: string, number: string, name: string, coverage: string[], credi
 }
 
 /** Illustrative data so the app can be explored before entering real courses. */
-export function sampleData(): AppData {
+export function sampleProgram(): Program {
   const courses = [
     c('CPSC', '101', 'Introduction to Programming', [...cov(['SDF-Fundamentals', 'SDF-Practices'], ['cs']), ...cov(['SEP-Context'], ['cs'])], 4),
     c('CPSC', '102', 'Data Structures', cov(['SDF-Data-Structures', 'SDF-Algorithms', 'AL-Foundational'], ['cs']), 4),
@@ -34,42 +34,36 @@ export function sampleData(): AppData {
     c('CPSC', '490', 'Senior Capstone', cov(['SE-Teamwork', 'SEP-Communication', 'SEP-Professional-Ethics'], ['cs'])),
   ]
   const id = (num: string) => courses.find((x) => x.number === num)!.id
+  const core = ['101', '102', '250', '310', '220', '300', '350', '415', '490']
+  const electives = (choose: number, nums: string[]) => [{ id: newId(), name: 'CS electives', choose, options: nums.map(id) }]
   return {
-    version: 1,
+    format: 'acm-curriculum-planner',
+    version: 2,
     institution: 'Sample University',
+    name: 'Computer Science',
     courses,
     plans: [
       {
         id: newId(),
-        name: 'B.S. Computer Science (sample)',
-        description: 'Illustrative plan — replace with your own.',
-        groups: [
-          {
-            id: newId(),
-            kind: 'core',
-            name: 'CS Core',
-            description: '',
-            required: ['101', '102', '250', '310', '220', '300', '350', '415', '490'].map(id),
-            options: [],
-            choose: 0,
-          },
-          {
-            id: newId(),
-            kind: 'elective',
-            name: 'CS Electives',
-            description: '',
-            required: [],
-            options: ['330', '420', '430', '440', '450', '460'].map(id),
-            choose: 2,
-          },
-          { id: newId(), kind: 'track', name: 'Cybersecurity', description: '', required: ['420', '430'].map(id), options: [], choose: 0 },
-          { id: newId(), kind: 'track', name: 'AI & Data Science', description: '', required: ['440', '330'].map(id), options: [], choose: 0 },
-        ],
+        name: 'B.S. Computer Science',
+        description: 'General track: core plus three electives.',
+        required: core.map(id),
+        electives: electives(3, ['330', '420', '430', '440', '450', '460']),
+      },
+      {
+        id: newId(),
+        name: 'B.S. Computer Science – Cybersecurity',
+        description: '',
+        required: [...core, '420', '430'].map(id),
+        electives: electives(1, ['330', '440', '450', '460']),
+      },
+      {
+        id: newId(),
+        name: 'B.S. Computer Science – AI & Data Science',
+        description: '',
+        required: [...core, '330', '440'].map(id),
+        electives: electives(1, ['420', '430', '450', '460']),
       },
     ],
   }
-}
-
-export function loadSample() {
-  setData(sampleData())
 }

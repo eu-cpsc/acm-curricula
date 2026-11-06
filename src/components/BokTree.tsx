@@ -93,7 +93,6 @@ interface Props {
   assignCourse?: Course | null
   /** Optional per-topic plan status, used to color rows. */
   planStatus?: Map<string, PlanStatus>
-  tracksFor?: Map<string, string[]>
   /** Extra predicate applied on top of the filters. */
   topicFilter?: (t: Topic) => boolean
 }
@@ -108,7 +107,7 @@ interface VisibleKa {
   topics: Topic[]
 }
 
-export function BokTree({ filters, courses, assignCourse, planStatus, tracksFor, topicFilter }: Props) {
+export function BokTree({ filters, courses, assignCourse, planStatus, topicFilter }: Props) {
   const idx = coverageIndex(courses)
   const assigned = useMemo(() => new Set(assignCourse?.coverage ?? []), [assignCourse])
   const q = filters.search.trim().toLowerCase()
@@ -272,7 +271,7 @@ export function BokTree({ filters, courses, assignCourse, planStatus, tracksFor,
                             <div
                               className={`row topic-row ${tOpen ? 'open' : ''} ${ps ? `ps-${ps}` : cs.length ? '' : 'uncovered'}`}
                               onClick={() => setOpenTopics(toggle(openTopics, t.id))}
-                              title={ps ? PLAN_STATUS_LABEL[ps] + (tracksFor?.get(t.id) ? ` (${tracksFor.get(t.id)!.join(', ')})` : '') : undefined}
+                              title={ps ? PLAN_STATUS_LABEL[ps] : undefined}
                             >
                               {assignCourse && (
                                 <input

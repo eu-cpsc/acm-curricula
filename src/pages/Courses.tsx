@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { KAS, TOPIC_BY_ID } from '../bok'
+import { planHasCourse } from '../coverage'
 import { addCourse, compareCourses, courseLabel, deleteCourse, useData } from '../store'
 import { TierBadge } from '../components/common'
 
@@ -75,7 +76,7 @@ export default function Courses() {
                 tiers[t.tier]++
                 byKa.set(t.kaCode, (byKa.get(t.kaCode) ?? 0) + 1)
               }
-              const plans = data.plans.filter((p) => p.groups.some((g) => g.required.includes(c.id) || g.options.includes(c.id)))
+              const plans = data.plans.filter((p) => planHasCourse(p, c.id))
               return (
                 <tr key={c.id}>
                   <td className="nowrap">
